@@ -1,9 +1,6 @@
 # Gym System
 The Gym Management System is an online platform designed to manage member and employee interactions within a gym. The system allows users to log in as either employees or members, each with specific capabilities according to their roles. The project’s functionality is modeled based on a detailed UML diagram, outlining the core classes, controllers, and interactions.
 
-### View 
-- Handles user interface and interaction with user
-
 ### Controller
 - UserController: A controller managing both members and employees within the system.
 - MemberController: A controller managing member-specific operations.
