@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Project_AD
 {
-    public class Employee
+    public class Employee : User
     {
+        private static int employeeIdCounter = 1;
+        public string EmployeeId { get; private set; }
+
+        public Employee(string fName, string lName, Address address, string phoneNumber)
+            : base(fName, lName, address, phoneNumber)
+        {
+            EmployeeId = employeeIdCounter++.ToString();
+        }
     }
 }
