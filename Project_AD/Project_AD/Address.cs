@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_AD
 {
-    internal class Address
+    public class Address
     {
     }
 }
