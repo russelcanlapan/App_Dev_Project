@@ -24,11 +24,11 @@ namespace Project_AD
         {
             if (frequencyType.Equals("monthly", System.StringComparison.OrdinalIgnoreCase))
             {
-                return Type.MonthlyPrice;
+                return Type.MonthlyPrice();
             }
             else if (frequencyType.Equals("yearly", System.StringComparison.OrdinalIgnoreCase))
             {
-                return Type.YearlyPrice;
+                return Type.YearlyPrice();
             }
             throw new System.ArgumentException("Invalid frequency: " + frequencyType);
         }
