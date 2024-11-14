@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Project_AD
 {
-    internal class Payment
+    public interface IPayment
     {
+        PaymentType GetPaymentType();
+    }
+
+    public enum PaymentType
+    {
+        Cash,
+        CreditCard,
+        DebitCard
     }
 }

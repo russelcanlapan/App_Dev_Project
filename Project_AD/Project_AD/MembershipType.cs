@@ -14,7 +14,7 @@ namespace Project_AD
 
     public static class MembershipTypeExtensions
     {
-        public static double GetMonthlyPrice(this MembershipType type)
+        public static double MonthlyPrice(this MembershipType type)
         {
             return type switch
             {
@@ -24,7 +24,7 @@ namespace Project_AD
             };
         }
 
-        public static double GetYearlyPrice(this MembershipType type)
+        public static double YearlyPrice(this MembershipType type)
         {
             return type switch
             {
