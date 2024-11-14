@@ -1,0 +1,17 @@
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\bin\Debug\net8.0-windows\Project_AD.exe
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\bin\Debug\net8.0-windows\Project_AD.deps.json
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\bin\Debug\net8.0-windows\Project_AD.runtimeconfig.json
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\bin\Debug\net8.0-windows\Project_AD.dll
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\bin\Debug\net8.0-windows\Project_AD.pdb
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.Form1.resources
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.csproj.GenerateResource.cache
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.AssemblyInfoInputs.cache
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.AssemblyInfo.cs
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.csproj.CoreCompileInputs.cache
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.sourcelink.json
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.dll
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\refint\Project_AD.dll
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.pdb
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.genruntimeconfig.cache
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\ref\Project_AD.dll
