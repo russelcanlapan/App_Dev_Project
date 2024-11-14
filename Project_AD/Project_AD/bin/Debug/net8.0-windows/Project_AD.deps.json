@@ -9,6 +9,11 @@
       "Project_AD/1.0.0": {
         "runtime": {
           "Project_AD.dll": {}
+        },
+        "resources": {
+          "fr/Project_AD.resources.dll": {
+            "locale": "fr"
+          }
         }
       }
     }
