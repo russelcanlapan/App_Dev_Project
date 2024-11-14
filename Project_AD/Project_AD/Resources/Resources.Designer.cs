@@ -59,5 +59,14 @@ namespace Project_AD.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to French.
+        /// </summary>
+        internal static string languageButton {
+            get {
+                return ResourceManager.GetString("languageButton", resourceCulture);
+            }
+        }
     }
 }
