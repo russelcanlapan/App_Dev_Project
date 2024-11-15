@@ -7,6 +7,9 @@
     <Compile Update="MemberLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ViewProfile.cs">
       <SubType>Form</SubType>
     </Compile>
