@@ -10,20 +10,12 @@ using System.Windows.Forms;
 
 namespace Project_AD
 {
-    public partial class SignUp : Form
+    public partial class ViewProfile : Form
     {
-        public SignUp()
+        public ViewProfile()
         {
             InitializeComponent();
             UpdateComponent();
-
-            regularButton.Checked = true;
-            monthlyButton.Checked = true;
-        }
-
-        private void submitButton_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

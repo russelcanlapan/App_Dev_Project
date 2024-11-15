@@ -70,6 +70,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to City.
+        /// </summary>
+        internal static string cityLabel {
+            get {
+                return ResourceManager.GetString("cityLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Exit.
         /// </summary>
         internal static string exitButton {
@@ -79,11 +88,38 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to First Name.
+        /// </summary>
+        internal static string firstNameLabel {
+            get {
+                return ResourceManager.GetString("firstNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Frequency Type.
+        /// </summary>
+        internal static string frequencyTypeGB {
+            get {
+                return ResourceManager.GetString("frequencyTypeGB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to French.
         /// </summary>
         internal static string languageButton {
             get {
                 return ResourceManager.GetString("languageButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last Name.
+        /// </summary>
+        internal static string lastNameLabel {
+            get {
+                return ResourceManager.GetString("lastNameLabel", resourceCulture);
             }
         }
         
@@ -133,11 +169,92 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Membership Type.
+        /// </summary>
+        internal static string membershipTypeGB {
+            get {
+                return ResourceManager.GetString("membershipTypeGB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monthly.
+        /// </summary>
+        internal static string monthlyRB {
+            get {
+                return ResourceManager.GetString("monthlyRB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Phone Number.
+        /// </summary>
+        internal static string phoneNumberLabel {
+            get {
+                return ResourceManager.GetString("phoneNumberLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Premium.
+        /// </summary>
+        internal static string premiumRB {
+            get {
+                return ResourceManager.GetString("premiumRB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Province.
+        /// </summary>
+        internal static string provinceLabel {
+            get {
+                return ResourceManager.GetString("provinceLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular.
+        /// </summary>
+        internal static string regularRB {
+            get {
+                return ResourceManager.GetString("regularRB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sign Up.
         /// </summary>
         internal static string signupButton {
             get {
                 return ResourceManager.GetString("signupButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Street Name.
+        /// </summary>
+        internal static string streetNameLabel {
+            get {
+                return ResourceManager.GetString("streetNameLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Street Number.
+        /// </summary>
+        internal static string streetNumberLabel {
+            get {
+                return ResourceManager.GetString("streetNumberLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        internal static string submitButton {
+            get {
+                return ResourceManager.GetString("submitButton", resourceCulture);
             }
         }
         
@@ -165,6 +282,24 @@ namespace Project_AD.Resources {
         internal static string viewProfileButton {
             get {
                 return ResourceManager.GetString("viewProfileButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yearly.
+        /// </summary>
+        internal static string yearlyRB {
+            get {
+                return ResourceManager.GetString("yearlyRB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Zip Code.
+        /// </summary>
+        internal static string zipCodeLabel {
+            get {
+                return ResourceManager.GetString("zipCodeLabel", resourceCulture);
             }
         }
     }

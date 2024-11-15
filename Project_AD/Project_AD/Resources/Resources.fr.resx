@@ -153,4 +153,49 @@
   <data name="logoutButton" xml:space="preserve">
     <value>Déconnexion</value>
   </data>
+  <data name="submitButton" xml:space="preserve">
+    <value>Soumettre</value>
+  </data>
+  <data name="firstNameLabel" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="lastNameLabel" xml:space="preserve">
+    <value>Nom de Famille</value>
+  </data>
+  <data name="phoneNumberLabel" xml:space="preserve">
+    <value>Numéro de Téléphone</value>
+  </data>
+  <data name="streetNumberLabel" xml:space="preserve">
+    <value>Numéro de Rue</value>
+  </data>
+  <data name="streetNameLabel" xml:space="preserve">
+    <value>Nom de Rue</value>
+  </data>
+  <data name="cityLabel" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="provinceLabel" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="zipCodeLabel" xml:space="preserve">
+    <value>Code Postal</value>
+  </data>
+  <data name="membershipTypeGB" xml:space="preserve">
+    <value>Type de Membre</value>
+  </data>
+  <data name="frequencyTypeGB" xml:space="preserve">
+    <value>Type de Fréquence</value>
+  </data>
+  <data name="regularRB" xml:space="preserve">
+    <value>Régulier</value>
+  </data>
+  <data name="premiumRB" xml:space="preserve">
+    <value>Premium</value>
+  </data>
+  <data name="monthlyRB" xml:space="preserve">
+    <value>Mensuel</value>
+  </data>
+  <data name="yearlyRB" xml:space="preserve">
+    <value>Annuel</value>
+  </data>
 </root>
