@@ -15,6 +15,7 @@ namespace Project_AD
         public MemberLogin()
         {
             InitializeComponent();
+            UpdateComponent();
         }
     }
 }

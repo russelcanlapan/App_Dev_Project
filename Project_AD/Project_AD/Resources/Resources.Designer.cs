@@ -61,6 +61,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Check Prices.
+        /// </summary>
+        internal static string checkPricesButton {
+            get {
+                return ResourceManager.GetString("checkPricesButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Exit.
         /// </summary>
         internal static string exitButton {
@@ -97,11 +106,65 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Logout.
+        /// </summary>
+        internal static string logoutButton {
+            get {
+                return ResourceManager.GetString("logoutButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make Payment.
+        /// </summary>
+        internal static string makePaymentButton {
+            get {
+                return ResourceManager.GetString("makePaymentButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage Membership.
+        /// </summary>
+        internal static string manageMembershipButton {
+            get {
+                return ResourceManager.GetString("manageMembershipButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sign Up.
         /// </summary>
         internal static string signupButton {
             get {
                 return ResourceManager.GetString("signupButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update.
+        /// </summary>
+        internal static string updateProfileButton {
+            get {
+                return ResourceManager.GetString("updateProfileButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View Notifications.
+        /// </summary>
+        internal static string viewNotificationsButton {
+            get {
+                return ResourceManager.GetString("viewNotificationsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View.
+        /// </summary>
+        internal static string viewProfileButton {
+            get {
+                return ResourceManager.GetString("viewProfileButton", resourceCulture);
             }
         }
     }

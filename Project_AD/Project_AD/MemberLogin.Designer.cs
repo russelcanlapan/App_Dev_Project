@@ -1,4 +1,6 @@
-﻿namespace Project_AD
+﻿using System.Resources;
+
+namespace Project_AD
 {
     partial class MemberLogin
     {
@@ -38,74 +40,74 @@
             logoutButton = new Button();
             SuspendLayout();
             // 
-            // label1
+            // memberOptionsLabel
             // 
             memberOptionsLabel.AutoSize = true;
             memberOptionsLabel.Location = new Point(196, 87);
             memberOptionsLabel.Name = "memberOptionsLabel";
-            memberOptionsLabel.Size = new Size(38, 15);
+            memberOptionsLabel.Size = new Size(52, 15);
             memberOptionsLabel.TabIndex = 0;
             memberOptionsLabel.Text = "Options:";
             // 
-            // button1
+            // viewProfileButton
             // 
             viewProfileButton.Location = new Point(196, 130);
             viewProfileButton.Name = "viewProfileButton";
-            viewProfileButton.Size = new Size(75, 23);
+            viewProfileButton.Size = new Size(134, 23);
             viewProfileButton.TabIndex = 1;
             viewProfileButton.Text = "View Profile";
             viewProfileButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // updateProfileButton
             // 
             updateProfileButton.Location = new Point(196, 159);
             updateProfileButton.Name = "updateProfileButton";
-            updateProfileButton.Size = new Size(75, 23);
+            updateProfileButton.Size = new Size(134, 23);
             updateProfileButton.TabIndex = 2;
             updateProfileButton.Text = "Update Profile";
             updateProfileButton.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // manageMembershipButton
             // 
             manageMembershipButton.Location = new Point(196, 188);
             manageMembershipButton.Name = "manageMembershipButton";
-            manageMembershipButton.Size = new Size(75, 23);
+            manageMembershipButton.Size = new Size(134, 23);
             manageMembershipButton.TabIndex = 3;
             manageMembershipButton.Text = "Manage Membership";
             manageMembershipButton.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // checkPricesButton
             // 
             checkPricesButton.Location = new Point(196, 217);
             checkPricesButton.Name = "checkPricesButton";
-            checkPricesButton.Size = new Size(75, 23);
+            checkPricesButton.Size = new Size(134, 23);
             checkPricesButton.TabIndex = 4;
             checkPricesButton.Text = "Check Prices";
             checkPricesButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // makePaymentButton
             // 
             makePaymentButton.Location = new Point(196, 246);
             makePaymentButton.Name = "makePaymentButton";
-            makePaymentButton.Size = new Size(75, 23);
+            makePaymentButton.Size = new Size(134, 23);
             makePaymentButton.TabIndex = 5;
             makePaymentButton.Text = "Make Payment";
             makePaymentButton.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // viewNotificationsButton
             // 
             viewNotificationsButton.Location = new Point(196, 275);
             viewNotificationsButton.Name = "viewNotificationsButton";
-            viewNotificationsButton.Size = new Size(75, 23);
+            viewNotificationsButton.Size = new Size(134, 23);
             viewNotificationsButton.TabIndex = 6;
             viewNotificationsButton.Text = "View Notifications";
             viewNotificationsButton.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // logoutButton
             // 
             logoutButton.Location = new Point(196, 304);
             logoutButton.Name = "logoutButton";
-            logoutButton.Size = new Size(75, 23);
+            logoutButton.Size = new Size(134, 23);
             logoutButton.TabIndex = 7;
             logoutButton.Text = "Logout";
             logoutButton.UseVisualStyleBackColor = true;
@@ -130,6 +132,19 @@
         }
 
         #endregion
+
+        public void UpdateComponent()
+        {
+            ResourceManager rm = new ResourceManager("Project_AD.Resources.Resources", typeof(Program).Assembly);
+
+            viewProfileButton.Text = rm.GetString("viewProfileButton");
+            updateProfileButton.Text = rm.GetString("updateProfileButton");
+            manageMembershipButton.Text = rm.GetString("manageMembershipButton");
+            makePaymentButton.Text = rm.GetString("makePaymentButton");
+            checkPricesButton.Text = rm.GetString("checkPricesButton");
+            viewNotificationsButton.Text = rm.GetString("viewNotificationsButton");
+            logoutButton.Text = rm.GetString("logoutButton");
+        }
 
         private Label memberOptionsLabel;
         private Button viewProfileButton;
