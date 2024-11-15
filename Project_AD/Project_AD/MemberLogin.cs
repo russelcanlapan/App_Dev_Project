@@ -20,8 +20,15 @@ namespace Project_AD
 
         private void viewProfileButton_Click(object sender, EventArgs e)
         {
-            ViewProfile viewProfile = new ViewProfile();
-            viewProfile.ShowDialog();
+            // Hide the MemberLogin form
+            this.Hide();
+
+            // Open the ViewProfile form as a modal dialog
+            ViewProfile viewProfileForm = new ViewProfile();
+            viewProfileForm.ShowDialog();
+
+            // Show MemberLogin again when ViewProfile is closed
+            this.Show();
         }
 
         private void logoutButton_Click(object sender, EventArgs e)

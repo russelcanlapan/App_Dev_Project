@@ -201,4 +201,7 @@
   <data name="cancelButton" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="previousButton" xml:space="preserve">
+    <value>Previous</value>
+  </data>
 </root>
