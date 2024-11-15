@@ -19,3 +19,5 @@ C:\Sem 3\App Dev\Project\Project_AD\Project_AD\bin\Debug\net8.0-windows\fr\Proje
 C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.Resources.Resources.resources
 C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.Resources.Resources.fr.resources
 C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\fr\Project_AD.resources.dll
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.MemberLogin.resources
+C:\Sem 3\App Dev\Project\Project_AD\Project_AD\obj\Debug\net8.0-windows\Project_AD.Form1.fr.resources
