@@ -120,4 +120,37 @@
   <data name="languageButton" xml:space="preserve">
     <value>Anglais</value>
   </data>
+  <data name="loginMemberButton" xml:space="preserve">
+    <value>Membre</value>
+  </data>
+  <data name="loginEmployeeButton" xml:space="preserve">
+    <value>Employé(e)</value>
+  </data>
+  <data name="signupButton" xml:space="preserve">
+    <value>S'inscrire</value>
+  </data>
+  <data name="exitButton" xml:space="preserve">
+    <value>Quitter</value>
+  </data>
+  <data name="viewProfileButton" xml:space="preserve">
+    <value>Voir</value>
+  </data>
+  <data name="updateProfileButton" xml:space="preserve">
+    <value>Mise à jour</value>
+  </data>
+  <data name="manageMembershipButton" xml:space="preserve">
+    <value>Gérer l'Adhésion</value>
+  </data>
+  <data name="makePaymentButton" xml:space="preserve">
+    <value>Effectuer Paiement</value>
+  </data>
+  <data name="checkPricesButton" xml:space="preserve">
+    <value>Vérifier Prix</value>
+  </data>
+  <data name="viewNotificationsButton" xml:space="preserve">
+    <value>Afficher Notifications</value>
+  </data>
+  <data name="logoutButton" xml:space="preserve">
+    <value>Déconnexion</value>
+  </data>
 </root>
