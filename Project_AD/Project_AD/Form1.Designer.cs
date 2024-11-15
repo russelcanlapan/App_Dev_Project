@@ -36,14 +36,18 @@ namespace Project_AD
             loginEmployeeButton = new Button();
             signupButton = new Button();
             exitButton = new Button();
+            memberLoginGB = new GroupBox();
+            submitButton = new Button();
+            memberIdTB = new TextBox();
+            memberIdLabel = new Label();
+            memberLoginGB.SuspendLayout();
             SuspendLayout();
             // 
             // languageButton
             // 
-            languageButton.Location = new Point(779, 16);
-            languageButton.Margin = new Padding(3, 4, 3, 4);
+            languageButton.Location = new Point(682, 12);
             languageButton.Name = "languageButton";
-            languageButton.Size = new Size(121, 55);
+            languageButton.Size = new Size(106, 41);
             languageButton.TabIndex = 0;
             languageButton.Text = "French";
             languageButton.UseVisualStyleBackColor = true;
@@ -52,18 +56,17 @@ namespace Project_AD
             // titleLabel
             // 
             titleLabel.AutoSize = true;
-            titleLabel.Location = new Point(390, 130);
+            titleLabel.Location = new Point(341, 98);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(83, 20);
+            titleLabel.Size = new Size(67, 15);
             titleLabel.TabIndex = 1;
             titleLabel.Text = "Gym World";
             // 
             // loginMemberButton
             // 
-            loginMemberButton.Location = new Point(381, 247);
-            loginMemberButton.Margin = new Padding(3, 4, 3, 4);
+            loginMemberButton.Location = new Point(333, 185);
             loginMemberButton.Name = "loginMemberButton";
-            loginMemberButton.Size = new Size(101, 31);
+            loginMemberButton.Size = new Size(88, 23);
             loginMemberButton.TabIndex = 3;
             loginMemberButton.Text = "Member Login";
             loginMemberButton.UseVisualStyleBackColor = true;
@@ -71,20 +74,18 @@ namespace Project_AD
             // 
             // loginEmployeeButton
             // 
-            loginEmployeeButton.Location = new Point(381, 310);
-            loginEmployeeButton.Margin = new Padding(3, 4, 3, 4);
+            loginEmployeeButton.Location = new Point(333, 232);
             loginEmployeeButton.Name = "loginEmployeeButton";
-            loginEmployeeButton.Size = new Size(101, 31);
+            loginEmployeeButton.Size = new Size(88, 23);
             loginEmployeeButton.TabIndex = 4;
             loginEmployeeButton.Text = "Employee Login";
             loginEmployeeButton.UseVisualStyleBackColor = true;
             // 
             // signupButton
             // 
-            signupButton.Location = new Point(381, 373);
-            signupButton.Margin = new Padding(3, 4, 3, 4);
+            signupButton.Location = new Point(333, 280);
             signupButton.Name = "signupButton";
-            signupButton.Size = new Size(101, 31);
+            signupButton.Size = new Size(88, 23);
             signupButton.TabIndex = 5;
             signupButton.Text = "Sign Up";
             signupButton.UseVisualStyleBackColor = true;
@@ -92,29 +93,67 @@ namespace Project_AD
             // 
             // exitButton
             // 
-            exitButton.Location = new Point(381, 436);
-            exitButton.Margin = new Padding(3, 4, 3, 4);
+            exitButton.Location = new Point(333, 327);
             exitButton.Name = "exitButton";
-            exitButton.Size = new Size(101, 31);
+            exitButton.Size = new Size(88, 23);
             exitButton.TabIndex = 6;
             exitButton.Text = "Exit";
             exitButton.UseVisualStyleBackColor = true;
             exitButton.Click += exitButton_Click;
             // 
+            // memberLoginGB
+            // 
+            memberLoginGB.Controls.Add(submitButton);
+            memberLoginGB.Controls.Add(memberIdTB);
+            memberLoginGB.Controls.Add(memberIdLabel);
+            memberLoginGB.Location = new Point(453, 171);
+            memberLoginGB.Name = "memberLoginGB";
+            memberLoginGB.Size = new Size(293, 50);
+            memberLoginGB.TabIndex = 7;
+            memberLoginGB.TabStop = false;
+            // 
+            // submitButton
+            // 
+            submitButton.Location = new Point(201, 16);
+            submitButton.Name = "submitButton";
+            submitButton.Size = new Size(75, 23);
+            submitButton.TabIndex = 2;
+            submitButton.Text = "Submit";
+            submitButton.UseVisualStyleBackColor = true;
+            submitButton.Click += submitButton_Click;
+            // 
+            // memberIdTB
+            // 
+            memberIdTB.Location = new Point(95, 16);
+            memberIdTB.Name = "memberIdTB";
+            memberIdTB.Size = new Size(100, 23);
+            memberIdTB.TabIndex = 1;
+            // 
+            // memberIdLabel
+            // 
+            memberIdLabel.AutoSize = true;
+            memberIdLabel.Location = new Point(6, 19);
+            memberIdLabel.Name = "memberIdLabel";
+            memberIdLabel.Size = new Size(69, 15);
+            memberIdLabel.TabIndex = 0;
+            memberIdLabel.Text = "Member ID:";
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
+            Controls.Add(memberLoginGB);
             Controls.Add(exitButton);
             Controls.Add(signupButton);
             Controls.Add(loginEmployeeButton);
             Controls.Add(loginMemberButton);
             Controls.Add(titleLabel);
             Controls.Add(languageButton);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
+            memberLoginGB.ResumeLayout(false);
+            memberLoginGB.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -130,14 +169,21 @@ namespace Project_AD
             loginEmployeeButton.Text = rm.GetString("loginEmployeeButton");
             signupButton.Text = rm.GetString("signupButton");
             exitButton.Text = rm.GetString("exitButton");
-
+            submitButton.Text = rm.GetString("submitButton");
+            memberIdLabel.Text = rm.GetString("memberIdLabel");
         }
 
         private Button languageButton;
+
         private Label titleLabel;
         private Button loginMemberButton;
         private Button loginEmployeeButton;
         private Button signupButton;
         private Button exitButton;
+
+        public GroupBox memberLoginGB;
+        private Button submitButton;
+        private TextBox memberIdTB;
+        private Label memberIdLabel;
     }
 }

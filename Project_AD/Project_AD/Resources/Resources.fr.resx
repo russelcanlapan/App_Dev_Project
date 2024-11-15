@@ -201,4 +201,10 @@
   <data name="cancelButton" xml:space="preserve">
     <value>Annuler</value>
   </data>
+  <data name="previousButton" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
+  <data name="memberIdLabel" xml:space="preserve">
+    <value>ID du membre :</value>
+  </data>
 </root>

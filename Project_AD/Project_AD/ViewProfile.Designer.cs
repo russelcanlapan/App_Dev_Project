@@ -49,6 +49,7 @@ namespace Project_AD
             zipcodeResultsLabel = new Label();
             phoneNumResultsLabel = new Label();
             membershipTypeResultsLabel = new Label();
+            previousButton = new Button();
             SuspendLayout();
             // 
             // viewProfileLabel
@@ -141,92 +142,94 @@ namespace Project_AD
             membershipTypeLabel.TabIndex = 9;
             membershipTypeLabel.Text = "Membership Type:";
             // 
-            // label1
+            // firstNameResultsLabel
             // 
             firstNameResultsLabel.AutoSize = true;
             firstNameResultsLabel.Location = new Point(353, 384);
             firstNameResultsLabel.Name = "firstNameResultsLabel";
-            firstNameResultsLabel.Size = new Size(104, 15);
+            firstNameResultsLabel.Size = new Size(0, 15);
             firstNameResultsLabel.TabIndex = 18;
-            firstNameResultsLabel.Text = "";
             // 
-            // label2
+            // lastNameResultsLabel
             // 
             lastNameResultsLabel.AutoSize = true;
             lastNameResultsLabel.Location = new Point(353, 345);
             lastNameResultsLabel.Name = "lastNameResultsLabel";
-            lastNameResultsLabel.Size = new Size(91, 15);
+            lastNameResultsLabel.Size = new Size(0, 15);
             lastNameResultsLabel.TabIndex = 17;
-            lastNameResultsLabel.Text = "";
             // 
-            // label3
+            // streetNumResultsLabel
             // 
             streetNumResultsLabel.AutoSize = true;
             streetNumResultsLabel.Location = new Point(353, 308);
             streetNumResultsLabel.Name = "streetNumResultsLabel";
-            streetNumResultsLabel.Size = new Size(53, 15);
+            streetNumResultsLabel.Size = new Size(0, 15);
             streetNumResultsLabel.TabIndex = 16;
-            streetNumResultsLabel.Text = "";
             // 
-            // label4
+            // streetNameResultsLabel
             // 
             streetNameResultsLabel.AutoSize = true;
             streetNameResultsLabel.Location = new Point(353, 270);
             streetNameResultsLabel.Name = "streetNameResultsLabel";
-            streetNameResultsLabel.Size = new Size(56, 15);
+            streetNameResultsLabel.Size = new Size(0, 15);
             streetNameResultsLabel.TabIndex = 15;
-            streetNameResultsLabel.Text = "";
             // 
-            // label5
+            // cityResultsLabel
             // 
             cityResultsLabel.AutoSize = true;
             cityResultsLabel.Location = new Point(353, 236);
             cityResultsLabel.Name = "cityResultsLabel";
-            cityResultsLabel.Size = new Size(31, 15);
+            cityResultsLabel.Size = new Size(0, 15);
             cityResultsLabel.TabIndex = 14;
-            cityResultsLabel.Text = "";
             // 
-            // label6
+            // provinceResultsLabel
             // 
             provinceResultsLabel.AutoSize = true;
             provinceResultsLabel.Location = new Point(353, 197);
             provinceResultsLabel.Name = "provinceResultsLabel";
-            provinceResultsLabel.Size = new Size(75, 15);
+            provinceResultsLabel.Size = new Size(0, 15);
             provinceResultsLabel.TabIndex = 13;
-            provinceResultsLabel.Text = "";
             // 
-            // label7
+            // zipcodeResultsLabel
             // 
             zipcodeResultsLabel.AutoSize = true;
             zipcodeResultsLabel.Location = new Point(353, 157);
             zipcodeResultsLabel.Name = "zipcodeResultsLabel";
-            zipcodeResultsLabel.Size = new Size(87, 15);
+            zipcodeResultsLabel.Size = new Size(0, 15);
             zipcodeResultsLabel.TabIndex = 12;
-            zipcodeResultsLabel.Text = "";
             // 
-            // label8
+            // phoneNumResultsLabel
             // 
             phoneNumResultsLabel.AutoSize = true;
             phoneNumResultsLabel.Location = new Point(353, 116);
             phoneNumResultsLabel.Name = "phoneNumResultsLabel";
-            phoneNumResultsLabel.Size = new Size(66, 15);
+            phoneNumResultsLabel.Size = new Size(0, 15);
             phoneNumResultsLabel.TabIndex = 11;
-            phoneNumResultsLabel.Text = "";
             // 
-            // label9
+            // membershipTypeResultsLabel
             // 
             membershipTypeResultsLabel.AutoSize = true;
             membershipTypeResultsLabel.Location = new Point(353, 79);
             membershipTypeResultsLabel.Name = "membershipTypeResultsLabel";
-            membershipTypeResultsLabel.Size = new Size(67, 15);
+            membershipTypeResultsLabel.Size = new Size(0, 15);
             membershipTypeResultsLabel.TabIndex = 10;
-            membershipTypeResultsLabel.Text = "";
+            // 
+            // previousButton
+            // 
+            previousButton.Location = new Point(12, 415);
+            previousButton.Name = "previousButton";
+            previousButton.Size = new Size(75, 23);
+            previousButton.TabIndex = 19;
+            previousButton.Text = "Previous";
+            previousButton.UseVisualStyleBackColor = true;
+            previousButton.Click += previousButton_Click;
             // 
             // ViewProfile
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(previousButton);
             Controls.Add(firstNameResultsLabel);
             Controls.Add(lastNameResultsLabel);
             Controls.Add(streetNumResultsLabel);
@@ -265,9 +268,11 @@ namespace Project_AD
             streetNameLabel.Text = rm.GetString("streetNameLabel");
             cityLabel.Text = rm.GetString("cityLabel");
             provinceLabel.Text = rm.GetString("provinceLabel");
-            zipcodeLabel.Text = rm.GetString("zipcodeLabel");
-            phoneNumLabel.Text = rm.GetString("phoneNumLabel");
-            membershipTypeLabel.Text = rm.GetString("membershipTypeLabel");
+            zipcodeLabel.Text = rm.GetString("zipCodeLabel");
+            phoneNumLabel.Text = rm.GetString("phoneNumberLabel");
+            membershipTypeLabel.Text = rm.GetString("membershipTypeGB");
+            previousButton.Text = rm.GetString("previousButton");
+
         }
 
         private Label viewProfileLabel;
@@ -292,5 +297,8 @@ namespace Project_AD
         private Label zipcodeResultsLabel;
         private Label phoneNumResultsLabel;
         private Label membershipTypeResultsLabel;
+
+        // Back button
+        private Button previousButton;
     }
 }
