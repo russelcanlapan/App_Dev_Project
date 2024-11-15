@@ -61,11 +61,47 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        internal static string exitButton {
+            get {
+                return ResourceManager.GetString("exitButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to French.
         /// </summary>
         internal static string languageButton {
             get {
                 return ResourceManager.GetString("languageButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Employee.
+        /// </summary>
+        internal static string loginEmployeeButton {
+            get {
+                return ResourceManager.GetString("loginEmployeeButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Member.
+        /// </summary>
+        internal static string loginMemberButton {
+            get {
+                return ResourceManager.GetString("loginMemberButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign Up.
+        /// </summary>
+        internal static string signupButton {
+            get {
+                return ResourceManager.GetString("signupButton", resourceCulture);
             }
         }
     }

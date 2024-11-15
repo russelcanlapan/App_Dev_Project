@@ -65,6 +65,7 @@ namespace Project_AD
             loginMemberButton.TabIndex = 3;
             loginMemberButton.Text = "Member Login";
             loginMemberButton.UseVisualStyleBackColor = true;
+            loginMemberButton.Click += loginMemberButton_Click;
             // 
             // loginEmployeeButton
             // 
@@ -118,6 +119,11 @@ namespace Project_AD
             ResourceManager rm = new ResourceManager("Project_AD.Resources.Resources", typeof(Program).Assembly);
 
             languageButton.Text = rm.GetString("languageButton");
+            loginMemberButton.Text = rm.GetString("loginMemberButton");
+            loginEmployeeButton.Text = rm.GetString("loginEmployeeButton");
+            signupButton.Text = rm.GetString("signupButton");
+            exitButton.Text = rm.GetString("exitButton");
+
         }
 
         private Button languageButton;
