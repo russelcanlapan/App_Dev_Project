@@ -28,5 +28,15 @@ namespace Project_AD
             }
             UpdateComponent();
         }
+
+        /// <summary>
+        /// Program close
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
