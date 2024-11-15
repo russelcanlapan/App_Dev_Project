@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_AD
 {
-    internal class DebitCardPayment
+    public class DebitCardPayment
     {
     }
 }

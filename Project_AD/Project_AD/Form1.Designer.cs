@@ -92,6 +92,7 @@ namespace Project_AD
             exitButton.TabIndex = 6;
             exitButton.Text = "Exit";
             exitButton.UseVisualStyleBackColor = true;
+            exitButton.Click += exitButton_Click;
             // 
             // Form1
             // 
