@@ -120,4 +120,16 @@
   <data name="languageButton" xml:space="preserve">
     <value>French</value>
   </data>
+  <data name="loginMemberButton" xml:space="preserve">
+    <value>Member</value>
+  </data>
+  <data name="loginEmployeeButton" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="signupButton" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="exitButton" xml:space="preserve">
+    <value>Exit</value>
+  </data>
 </root>

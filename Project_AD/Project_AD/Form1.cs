@@ -38,5 +38,11 @@ namespace Project_AD
         {
             Application.Exit();
         }
+
+        private void loginMemberButton_Click(object sender, EventArgs e)
+        {
+            MemberLogin memberLoginForm = new MemberLogin();
+            memberLoginForm.Show(); // This opens the form in a non-blocking way
+        }
     }
 }
