@@ -261,7 +261,7 @@ namespace Project_AD
             viewProfileLabel.Text = rm.GetString("viewProfileButton");
             firstNameLabel.Text = rm.GetString("firstNameLabel");
             lastNameLabel.Text = rm.GetString("lastNameLabel");
-            streetNumLabel.Text = rm.GetString("streetNumLabel");
+            streetNumLabel.Text = rm.GetString("streetNumberLabel");
             streetNameLabel.Text = rm.GetString("streetNameLabel");
             cityLabel.Text = rm.GetString("cityLabel");
             provinceLabel.Text = rm.GetString("provinceLabel");
