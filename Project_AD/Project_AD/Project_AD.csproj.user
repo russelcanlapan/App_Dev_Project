@@ -7,5 +7,8 @@
     <Compile Update="MemberLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ViewProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
