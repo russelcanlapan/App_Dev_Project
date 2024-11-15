@@ -17,5 +17,17 @@ namespace Project_AD
             InitializeComponent();
             UpdateComponent();
         }
+
+        private void previousButton_Click(object sender, EventArgs e)
+        {
+            // Hide the current form (ViewProfile)
+            this.Hide();
+
+            // Show the main form (Form1)
+            Application.OpenForms["MemberLogin"].Show();
+
+            // Close the current form
+            this.Close();
+        }
     }
 }
