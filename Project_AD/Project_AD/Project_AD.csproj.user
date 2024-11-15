@@ -10,8 +10,11 @@
     <Compile Update="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
+=======
     <Compile Update="ViewProfile.cs">
       <SubType>Form</SubType>
     </Compile>
+>>>>>>> 1a813545f83d95ba1ac0a50669fb8d344ab738b5
   </ItemGroup>
 </Project>

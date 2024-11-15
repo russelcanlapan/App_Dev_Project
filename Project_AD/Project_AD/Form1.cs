@@ -51,5 +51,11 @@ namespace Project_AD
             // Show Form1 again when MemberLogin is closed
             this.Show();
         }
+
+        private void signupButton_Click(object sender, EventArgs e)
+        {
+            SignUp signUpForm = new SignUp();
+            signUpForm.Show();
+        }
     }
 }
