@@ -33,10 +33,17 @@ namespace Project_AD
 
         private void logoutButton_Click(object sender, EventArgs e)
         {
+            // Hide the MemberLogin form
             this.Hide();
 
-            // Show the main form (Form1)
-            Application.OpenForms["Form1"].Show();
+            // Access the main form (Form1)
+            Form1 form1 = (Form1)Application.OpenForms["Form1"];
+
+            // Hide the GroupBox in Form1
+            form1.memberLoginGB.Visible = false;
+
+            // Show Form1 again
+            form1.Show();
 
             // Close the MemberLogin form
             this.Close();
