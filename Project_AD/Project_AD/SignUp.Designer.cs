@@ -49,10 +49,10 @@ namespace Project_AD
             zipCodeLabel = new Label();
             submitButton = new Button();
             membershipTypeGB = new GroupBox();
-            premiumButton = new RadioButton();
-            regularButton = new RadioButton();
-            yearlyButton = new RadioButton();
-            monthlyButton = new RadioButton();
+            premiumRB = new RadioButton();
+            regularRB = new RadioButton();
+            yearlyRB = new RadioButton();
+            monthlyRB = new RadioButton();
             frequencyTypeGB = new GroupBox();
             cancelButton = new Button();
             membershipTypeGB.SuspendLayout();
@@ -208,8 +208,8 @@ namespace Project_AD
             // 
             // membershipTypeGB
             // 
-            membershipTypeGB.Controls.Add(premiumButton);
-            membershipTypeGB.Controls.Add(regularButton);
+            membershipTypeGB.Controls.Add(premiumRB);
+            membershipTypeGB.Controls.Add(regularRB);
             membershipTypeGB.Location = new Point(422, 170);
             membershipTypeGB.Name = "membershipTypeGB";
             membershipTypeGB.Size = new Size(164, 127);
@@ -217,54 +217,54 @@ namespace Project_AD
             membershipTypeGB.TabStop = false;
             membershipTypeGB.Text = "Membership Type";
             // 
-            // premiumButton
+            // premiumRB
             // 
-            premiumButton.AutoSize = true;
-            premiumButton.Location = new Point(6, 70);
-            premiumButton.Name = "premiumButton";
-            premiumButton.Size = new Size(89, 24);
-            premiumButton.TabIndex = 1;
-            premiumButton.TabStop = true;
-            premiumButton.Text = "Premium";
-            premiumButton.UseVisualStyleBackColor = true;
+            premiumRB.AutoSize = true;
+            premiumRB.Location = new Point(6, 70);
+            premiumRB.Name = "premiumRB";
+            premiumRB.Size = new Size(89, 24);
+            premiumRB.TabIndex = 1;
+            premiumRB.TabStop = true;
+            premiumRB.Text = "Premium";
+            premiumRB.UseVisualStyleBackColor = true;
             // 
-            // regularButton
+            // regularRB
             // 
-            regularButton.AutoSize = true;
-            regularButton.Location = new Point(6, 35);
-            regularButton.Name = "regularButton";
-            regularButton.Size = new Size(81, 24);
-            regularButton.TabIndex = 0;
-            regularButton.TabStop = true;
-            regularButton.Text = "Regular";
-            regularButton.UseVisualStyleBackColor = true;
+            regularRB.AutoSize = true;
+            regularRB.Location = new Point(6, 35);
+            regularRB.Name = "regularRB";
+            regularRB.Size = new Size(81, 24);
+            regularRB.TabIndex = 0;
+            regularRB.TabStop = true;
+            regularRB.Text = "Regular";
+            regularRB.UseVisualStyleBackColor = true;
             // 
-            // yearlyButton
+            // yearlyRB
             // 
-            yearlyButton.AutoSize = true;
-            yearlyButton.Location = new Point(6, 67);
-            yearlyButton.Name = "yearlyButton";
-            yearlyButton.Size = new Size(69, 24);
-            yearlyButton.TabIndex = 3;
-            yearlyButton.TabStop = true;
-            yearlyButton.Text = "Yearly";
-            yearlyButton.UseVisualStyleBackColor = true;
+            yearlyRB.AutoSize = true;
+            yearlyRB.Location = new Point(6, 67);
+            yearlyRB.Name = "yearlyRB";
+            yearlyRB.Size = new Size(69, 24);
+            yearlyRB.TabIndex = 3;
+            yearlyRB.TabStop = true;
+            yearlyRB.Text = "Yearly";
+            yearlyRB.UseVisualStyleBackColor = true;
             // 
-            // monthlyButton
+            // monthlyRB
             // 
-            monthlyButton.AutoSize = true;
-            monthlyButton.Location = new Point(6, 32);
-            monthlyButton.Name = "monthlyButton";
-            monthlyButton.Size = new Size(84, 24);
-            monthlyButton.TabIndex = 2;
-            monthlyButton.TabStop = true;
-            monthlyButton.Text = "Monthly";
-            monthlyButton.UseVisualStyleBackColor = true;
+            monthlyRB.AutoSize = true;
+            monthlyRB.Location = new Point(6, 32);
+            monthlyRB.Name = "monthlyRB";
+            monthlyRB.Size = new Size(84, 24);
+            monthlyRB.TabIndex = 2;
+            monthlyRB.TabStop = true;
+            monthlyRB.Text = "Monthly";
+            monthlyRB.UseVisualStyleBackColor = true;
             // 
             // frequencyTypeGB
             // 
-            frequencyTypeGB.Controls.Add(yearlyButton);
-            frequencyTypeGB.Controls.Add(monthlyButton);
+            frequencyTypeGB.Controls.Add(yearlyRB);
+            frequencyTypeGB.Controls.Add(monthlyRB);
             frequencyTypeGB.Location = new Point(607, 170);
             frequencyTypeGB.Name = "frequencyTypeGB";
             frequencyTypeGB.Size = new Size(169, 127);
@@ -335,11 +335,11 @@ namespace Project_AD
             zipCodeLabel.Text = rm.GetString("zipCodeLabel");
             submitButton.Text = rm.GetString("submitButton");
             membershipTypeGB.Text = rm.GetString("membershipTypeGB");
-            regularButton.Text = rm.GetString("regularButton");
-            premiumButton.Text = rm.GetString("premiumButton");
+            regularRB.Text = rm.GetString("regularRB");
+            premiumRB.Text = rm.GetString("premiumRB");
             frequencyTypeGB.Text = rm.GetString("frequencyTypeGB");
-            monthlyButton.Text = rm.GetString("monthlyButton");
-            yearlyButton.Text = rm.GetString("yearlyButton");
+            monthlyRB.Text = rm.GetString("monthlyRB");
+            yearlyRB.Text = rm.GetString("yearlyRB");
             cancelButton.Text = rm.GetString("cancelButton");
         }
 
@@ -362,10 +362,10 @@ namespace Project_AD
         private Label zipCodeLabel;
         private Button submitButton;
         private GroupBox membershipTypeGB;
-        private RadioButton yearlyButton;
-        private RadioButton monthlyButton;
-        private RadioButton premiumButton;
-        private RadioButton regularButton;
+        private RadioButton yearlyRB;
+        private RadioButton monthlyRB;
+        private RadioButton premiumRB;
+        private RadioButton regularRB;
         private GroupBox frequencyTypeGB;
         private Button cancelButton;
     }
