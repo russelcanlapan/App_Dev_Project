@@ -33,12 +33,12 @@ namespace Project_AD
             signUpLabel = new Label();
             firstNameTB = new TextBox();
             lastNameTB = new TextBox();
-            phoneNumberTB = new TextBox();
             streetNumberTB = new TextBox();
             streetNameTB = new TextBox();
             cityTB = new TextBox();
             provinceTB = new TextBox();
-            zipCodeTB = new TextBox();
+            zipcodeTB = new TextBox();
+            phoneNumberTB = new TextBox();
             firstNameLabel = new Label();
             lastNameLabel = new Label();
             phoneNumberLabel = new Label();
@@ -54,6 +54,7 @@ namespace Project_AD
             yearlyButton = new RadioButton();
             monthlyButton = new RadioButton();
             frequencyTypeGB = new GroupBox();
+            cancelButton = new Button();
             membershipTypeGB.SuspendLayout();
             frequencyTypeGB.SuspendLayout();
             SuspendLayout();
@@ -81,47 +82,47 @@ namespace Project_AD
             lastNameTB.Size = new Size(168, 27);
             lastNameTB.TabIndex = 2;
             // 
-            // phoneNumberTB
-            // 
-            phoneNumberTB.Location = new Point(224, 336);
-            phoneNumberTB.Name = "phoneNumberTB";
-            phoneNumberTB.Size = new Size(170, 27);
-            phoneNumberTB.TabIndex = 3;
-            // 
             // streetNumberTB
             // 
             streetNumberTB.Location = new Point(224, 170);
             streetNumberTB.Name = "streetNumberTB";
             streetNumberTB.Size = new Size(170, 27);
-            streetNumberTB.TabIndex = 4;
+            streetNumberTB.TabIndex = 3;
             // 
             // streetNameTB
             // 
-            streetNameTB.Location = new Point(224, 237);
+            streetNameTB.Location = new Point(224, 204);
             streetNameTB.Name = "streetNameTB";
             streetNameTB.Size = new Size(170, 27);
-            streetNameTB.TabIndex = 5;
+            streetNameTB.TabIndex = 4;
             // 
             // cityTB
             // 
-            cityTB.Location = new Point(224, 270);
+            cityTB.Location = new Point(224, 237);
             cityTB.Name = "cityTB";
             cityTB.Size = new Size(170, 27);
-            cityTB.TabIndex = 6;
+            cityTB.TabIndex = 5;
             // 
             // provinceTB
             // 
-            provinceTB.Location = new Point(224, 204);
+            provinceTB.Location = new Point(224, 270);
             provinceTB.Name = "provinceTB";
             provinceTB.Size = new Size(170, 27);
-            provinceTB.TabIndex = 7;
+            provinceTB.TabIndex = 6;
             // 
-            // zipCodeTB
+            // zipcodeTB
             // 
-            zipCodeTB.Location = new Point(224, 303);
-            zipCodeTB.Name = "zipCodeTB";
-            zipCodeTB.Size = new Size(170, 27);
-            zipCodeTB.TabIndex = 8;
+            zipcodeTB.Location = new Point(224, 303);
+            zipcodeTB.Name = "zipcodeTB";
+            zipcodeTB.Size = new Size(170, 27);
+            zipcodeTB.TabIndex = 7;
+            // 
+            // phoneNumberTB
+            // 
+            phoneNumberTB.Location = new Point(224, 336);
+            phoneNumberTB.Name = "phoneNumberTB";
+            phoneNumberTB.Size = new Size(170, 27);
+            phoneNumberTB.TabIndex = 8;
             // 
             // firstNameLabel
             // 
@@ -271,11 +272,22 @@ namespace Project_AD
             frequencyTypeGB.TabStop = false;
             frequencyTypeGB.Text = "Frequency Type";
             // 
+            // cancelButton
+            // 
+            cancelButton.Location = new Point(12, 409);
+            cancelButton.Name = "cancelButton";
+            cancelButton.Size = new Size(94, 29);
+            cancelButton.TabIndex = 20;
+            cancelButton.Text = "Cancel";
+            cancelButton.UseVisualStyleBackColor = true;
+            cancelButton.Click += cancelButton_Click;
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(cancelButton);
             Controls.Add(frequencyTypeGB);
             Controls.Add(membershipTypeGB);
             Controls.Add(submitButton);
@@ -287,12 +299,12 @@ namespace Project_AD
             Controls.Add(phoneNumberLabel);
             Controls.Add(lastNameLabel);
             Controls.Add(firstNameLabel);
-            Controls.Add(zipCodeTB);
+            Controls.Add(phoneNumberTB);
+            Controls.Add(zipcodeTB);
             Controls.Add(provinceTB);
             Controls.Add(cityTB);
             Controls.Add(streetNameTB);
             Controls.Add(streetNumberTB);
-            Controls.Add(phoneNumberTB);
             Controls.Add(lastNameTB);
             Controls.Add(firstNameTB);
             Controls.Add(signUpLabel);
@@ -328,17 +340,18 @@ namespace Project_AD
             frequencyTypeGB.Text = rm.GetString("frequencyTypeGB");
             monthlyButton.Text = rm.GetString("monthlyButton");
             yearlyButton.Text = rm.GetString("yearlyButton");
+            cancelButton.Text = rm.GetString("cancelButton");
         }
 
         private Label signUpLabel;
         private TextBox firstNameTB;
         private TextBox lastNameTB;
-        private TextBox phoneNumberTB;
         private TextBox streetNumberTB;
         private TextBox streetNameTB;
         private TextBox cityTB;
         private TextBox provinceTB;
-        private TextBox zipCodeTB;
+        private TextBox zipcodeTB;
+        private TextBox phoneNumberTB;
         private Label firstNameLabel;
         private Label lastNameLabel;
         private Label phoneNumberLabel;
@@ -354,5 +367,6 @@ namespace Project_AD
         private RadioButton premiumButton;
         private RadioButton regularButton;
         private GroupBox frequencyTypeGB;
+        private Button cancelButton;
     }
 }

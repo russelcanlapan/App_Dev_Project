@@ -54,8 +54,15 @@ namespace Project_AD
 
         private void signupButton_Click(object sender, EventArgs e)
         {
+            // Hide Form1
+            this.Hide();
+
+            // Open SignUp form
             SignUp signUpForm = new SignUp();
-            signUpForm.Show();
+            signUpForm.ShowDialog();
+
+            // Show Form1 again when MemberLogin is closed
+            this.Show();
         }
     }
 }

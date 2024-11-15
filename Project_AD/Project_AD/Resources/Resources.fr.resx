@@ -198,4 +198,7 @@
   <data name="yearlyRB" xml:space="preserve">
     <value>Annuel</value>
   </data>
+  <data name="cancelButton" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
 </root>

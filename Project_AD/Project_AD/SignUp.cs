@@ -25,5 +25,16 @@ namespace Project_AD
         {
 
         }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            // Show the main form (Form1)
+            Application.OpenForms["Form1"].Show();
+
+            // Close the MemberLogin form
+            this.Close();
+        }
     }
 }
