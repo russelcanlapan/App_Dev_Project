@@ -44,5 +44,11 @@ namespace Project_AD
             MemberLogin memberLoginForm = new MemberLogin();
             memberLoginForm.Show(); // This opens the form in a non-blocking way
         }
+
+        private void signupButton_Click(object sender, EventArgs e)
+        {
+            SignUp signUpForm = new SignUp();
+            signUpForm.Show();
+        }
     }
 }

@@ -16,6 +16,14 @@ namespace Project_AD
         {
             InitializeComponent();
             UpdateComponent();
+
+            regularButton.Checked = true;
+            monthlyButton.Checked = true;
+        }
+
+        private void submitButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
