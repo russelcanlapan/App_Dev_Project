@@ -204,4 +204,7 @@
   <data name="previousButton" xml:space="preserve">
     <value>Précédent</value>
   </data>
+  <data name="memberIdLabel" xml:space="preserve">
+    <value>ID du membre :</value>
+  </data>
 </root>

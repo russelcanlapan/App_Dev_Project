@@ -8,6 +8,7 @@ namespace Project_AD
         public Form1()
         {
             InitializeComponent();
+            memberLoginGB.Visible = false;
         }
 
         private void languageButton_Click(object sender, EventArgs e)
@@ -41,15 +42,7 @@ namespace Project_AD
 
         private void loginMemberButton_Click(object sender, EventArgs e)
         {
-            // Hide Form1
-            this.Hide();
-
-            // Open MemberLogin form
-            MemberLogin memberLoginForm = new MemberLogin();
-            memberLoginForm.ShowDialog();
-
-            // Show Form1 again when MemberLogin is closed
-            this.Show();
+            memberLoginGB.Visible = true;
         }
 
         private void signupButton_Click(object sender, EventArgs e)
@@ -63,6 +56,33 @@ namespace Project_AD
 
             // Show Form1 again when MemberLogin is closed
             this.Show();
+        }
+
+        private void submitButton_Click(object sender, EventArgs e)
+        {
+            int memberId;
+
+            // Check if the input is a valid integer
+            if (int.TryParse(memberIdTB.Text, out memberId))
+            {
+                // Hide Form1
+                this.Hide();
+
+                // Open MemberLogin form
+                MemberLogin memberLogin = new MemberLogin();
+                memberLogin.ShowDialog();
+
+                // Clear the TextBox after submit
+                memberIdTB.Text = string.Empty;
+
+                // Show Form1 again when MemberLogin is closed
+                this.Show();
+            }
+            else
+            {
+                // Show a message to the user if the input is not a number
+                MessageBox.Show("Please enter a valid numeric Member ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }
