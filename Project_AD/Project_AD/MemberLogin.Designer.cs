@@ -112,6 +112,7 @@ namespace Project_AD
             logoutButton.TabIndex = 7;
             logoutButton.Text = "Logout";
             logoutButton.UseVisualStyleBackColor = true;
+            logoutButton.Click += logoutButton_Click;
             // 
             // MemberLogin
             // 
