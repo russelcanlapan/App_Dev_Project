@@ -15,6 +15,7 @@ namespace Project_AD
         public ViewProfile()
         {
             InitializeComponent();
+            UpdateComponent();
         }
     }
 }
