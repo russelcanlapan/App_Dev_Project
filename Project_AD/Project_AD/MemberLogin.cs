@@ -17,5 +17,22 @@ namespace Project_AD
             InitializeComponent();
             UpdateComponent();
         }
+
+        private void viewProfileButton_Click(object sender, EventArgs e)
+        {
+            ViewProfile viewProfile = new ViewProfile();
+            viewProfile.ShowDialog();
+        }
+
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            // Show the main form (Form1)
+            Application.OpenForms["Form1"].Show();
+
+            // Close the MemberLogin form
+            this.Close();
+        }
     }
 }

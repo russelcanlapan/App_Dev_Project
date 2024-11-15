@@ -43,7 +43,7 @@ namespace Project_AD
             // memberOptionsLabel
             // 
             memberOptionsLabel.AutoSize = true;
-            memberOptionsLabel.Location = new Point(196, 87);
+            memberOptionsLabel.Location = new Point(310, 102);
             memberOptionsLabel.Name = "memberOptionsLabel";
             memberOptionsLabel.Size = new Size(52, 15);
             memberOptionsLabel.TabIndex = 0;
@@ -51,16 +51,17 @@ namespace Project_AD
             // 
             // viewProfileButton
             // 
-            viewProfileButton.Location = new Point(196, 130);
+            viewProfileButton.Location = new Point(310, 145);
             viewProfileButton.Name = "viewProfileButton";
             viewProfileButton.Size = new Size(134, 23);
             viewProfileButton.TabIndex = 1;
             viewProfileButton.Text = "View Profile";
             viewProfileButton.UseVisualStyleBackColor = true;
+            viewProfileButton.Click += viewProfileButton_Click;
             // 
             // updateProfileButton
             // 
-            updateProfileButton.Location = new Point(196, 159);
+            updateProfileButton.Location = new Point(310, 174);
             updateProfileButton.Name = "updateProfileButton";
             updateProfileButton.Size = new Size(134, 23);
             updateProfileButton.TabIndex = 2;
@@ -69,7 +70,7 @@ namespace Project_AD
             // 
             // manageMembershipButton
             // 
-            manageMembershipButton.Location = new Point(196, 188);
+            manageMembershipButton.Location = new Point(310, 203);
             manageMembershipButton.Name = "manageMembershipButton";
             manageMembershipButton.Size = new Size(134, 23);
             manageMembershipButton.TabIndex = 3;
@@ -78,7 +79,7 @@ namespace Project_AD
             // 
             // checkPricesButton
             // 
-            checkPricesButton.Location = new Point(196, 217);
+            checkPricesButton.Location = new Point(310, 232);
             checkPricesButton.Name = "checkPricesButton";
             checkPricesButton.Size = new Size(134, 23);
             checkPricesButton.TabIndex = 4;
@@ -87,7 +88,7 @@ namespace Project_AD
             // 
             // makePaymentButton
             // 
-            makePaymentButton.Location = new Point(196, 246);
+            makePaymentButton.Location = new Point(310, 261);
             makePaymentButton.Name = "makePaymentButton";
             makePaymentButton.Size = new Size(134, 23);
             makePaymentButton.TabIndex = 5;
@@ -96,7 +97,7 @@ namespace Project_AD
             // 
             // viewNotificationsButton
             // 
-            viewNotificationsButton.Location = new Point(196, 275);
+            viewNotificationsButton.Location = new Point(310, 290);
             viewNotificationsButton.Name = "viewNotificationsButton";
             viewNotificationsButton.Size = new Size(134, 23);
             viewNotificationsButton.TabIndex = 6;
@@ -105,12 +106,13 @@ namespace Project_AD
             // 
             // logoutButton
             // 
-            logoutButton.Location = new Point(196, 304);
+            logoutButton.Location = new Point(310, 319);
             logoutButton.Name = "logoutButton";
             logoutButton.Size = new Size(134, 23);
             logoutButton.TabIndex = 7;
             logoutButton.Text = "Logout";
             logoutButton.UseVisualStyleBackColor = true;
+            logoutButton.Click += logoutButton_Click;
             // 
             // MemberLogin
             // 

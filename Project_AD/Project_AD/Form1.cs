@@ -41,8 +41,15 @@ namespace Project_AD
 
         private void loginMemberButton_Click(object sender, EventArgs e)
         {
+            // Hide Form1
+            this.Hide();
+
+            // Open MemberLogin form
             MemberLogin memberLoginForm = new MemberLogin();
-            memberLoginForm.Show(); // This opens the form in a non-blocking way
+            memberLoginForm.ShowDialog();
+
+            // Show Form1 again when MemberLogin is closed
+            this.Show();
         }
 
         private void signupButton_Click(object sender, EventArgs e)
