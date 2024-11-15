@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Project_AD
 {
-    public partial class MemberLogin : Form
+    public partial class ViewProfile : Form
     {
-        public MemberLogin()
+        public ViewProfile()
         {
             InitializeComponent();
-            UpdateComponent();
-        }
-
-        private void viewProfileButton_Click(object sender, EventArgs e)
-        {
-            ViewProfile viewProfile = new ViewProfile();
-            viewProfile.ShowDialog();
         }
     }
 }
