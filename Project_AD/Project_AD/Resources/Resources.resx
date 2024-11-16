@@ -198,13 +198,7 @@
   <data name="yearlyRB" xml:space="preserve">
     <value>Yearly</value>
   </data>
-  <data name="cancelButton" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="previousButton" xml:space="preserve">
-    <value>Previous</value>
-  </data>
-  <data name="memberIdLabel" xml:space="preserve">
-    <value>Member ID:</value>
+  <data name="backButton" xml:space="preserve">
+    <value>Back</value>
   </data>
 </root>

@@ -64,7 +64,7 @@ namespace Project_AD
             MessageBox.Show("User information saved successfully.\n Member ID: " + newUser.MemberId);
         }
 
-        private void cancelButton_Click(object sender, EventArgs e)
+        private void backlButton_Click(object sender, EventArgs e)
         {
             this.Hide();
 
