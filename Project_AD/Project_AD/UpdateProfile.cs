@@ -16,7 +16,7 @@ namespace Project_AD
         public UpdateProfile()
         {
             InitializeComponent();
-
+            UpdateComponent();
         }
 
         private void submitButton_Click(object sender, EventArgs e)
