@@ -54,7 +54,7 @@ namespace Project_AD
             yearlyRB = new RadioButton();
             monthlyRB = new RadioButton();
             frequencyTypeGB = new GroupBox();
-            cancelButton = new Button();
+            backButton = new Button();
             membershipTypeGB.SuspendLayout();
             frequencyTypeGB.SuspendLayout();
             SuspendLayout();
@@ -212,7 +212,7 @@ namespace Project_AD
             membershipTypeGB.Controls.Add(regularRB);
             membershipTypeGB.Location = new Point(422, 170);
             membershipTypeGB.Name = "membershipTypeGB";
-            membershipTypeGB.Size = new Size(164, 127);
+            membershipTypeGB.Size = new Size(164, 123);
             membershipTypeGB.TabIndex = 18;
             membershipTypeGB.TabStop = false;
             membershipTypeGB.Text = "Membership Type";
@@ -267,27 +267,27 @@ namespace Project_AD
             frequencyTypeGB.Controls.Add(monthlyRB);
             frequencyTypeGB.Location = new Point(607, 170);
             frequencyTypeGB.Name = "frequencyTypeGB";
-            frequencyTypeGB.Size = new Size(169, 127);
+            frequencyTypeGB.Size = new Size(169, 123);
             frequencyTypeGB.TabIndex = 19;
             frequencyTypeGB.TabStop = false;
             frequencyTypeGB.Text = "Frequency Type";
             // 
-            // cancelButton
+            // backButton
             // 
-            cancelButton.Location = new Point(12, 409);
-            cancelButton.Name = "cancelButton";
-            cancelButton.Size = new Size(94, 29);
-            cancelButton.TabIndex = 20;
-            cancelButton.Text = "Cancel";
-            cancelButton.UseVisualStyleBackColor = true;
-            cancelButton.Click += cancelButton_Click;
+            backButton.Location = new Point(12, 409);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(94, 29);
+            backButton.TabIndex = 20;
+            backButton.Text = "Back";
+            backButton.UseVisualStyleBackColor = true;
+            backButton.Click += backlButton_Click;
             // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(cancelButton);
+            Controls.Add(backButton);
             Controls.Add(frequencyTypeGB);
             Controls.Add(membershipTypeGB);
             Controls.Add(submitButton);
@@ -340,7 +340,7 @@ namespace Project_AD
             frequencyTypeGB.Text = rm.GetString("frequencyTypeGB");
             monthlyRB.Text = rm.GetString("monthlyRB");
             yearlyRB.Text = rm.GetString("yearlyRB");
-            cancelButton.Text = rm.GetString("cancelButton");
+            backButton.Text = rm.GetString("backButton");
         }
 
         private Label signUpLabel;
@@ -367,6 +367,6 @@ namespace Project_AD
         private RadioButton premiumRB;
         private RadioButton regularRB;
         private GroupBox frequencyTypeGB;
-        private Button cancelButton;
+        private Button backButton;
     }
 }
