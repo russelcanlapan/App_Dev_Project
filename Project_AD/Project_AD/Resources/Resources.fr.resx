@@ -204,4 +204,10 @@
   <data name="memberIdLabel" xml:space="preserve">
     <value>ID du Membre:</value>
   </data>
+  <data name="backButton" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="previousButton" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
 </root>
