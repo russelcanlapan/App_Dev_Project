@@ -58,6 +58,18 @@ namespace Project_AD
             this.Show();
         }
 
+
+        private void loginEmployeeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EmployeeLogin employeeForm = new EmployeeLogin();
+            employeeForm.ShowDialog();
+
+            this.Show();
+        }
+
+
         private void submitButton_Click(object sender, EventArgs e)
         {
             int memberId;

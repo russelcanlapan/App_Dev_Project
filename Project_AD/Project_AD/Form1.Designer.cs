@@ -80,6 +80,7 @@ namespace Project_AD
             loginEmployeeButton.TabIndex = 4;
             loginEmployeeButton.Text = "Employee Login";
             loginEmployeeButton.UseVisualStyleBackColor = true;
+            loginEmployeeButton.Click += loginEmployeeButton_Click;
             // 
             // signupButton
             // 
@@ -143,6 +144,7 @@ namespace Project_AD
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+
             Controls.Add(memberLoginGB);
             Controls.Add(exitButton);
             Controls.Add(signupButton);
