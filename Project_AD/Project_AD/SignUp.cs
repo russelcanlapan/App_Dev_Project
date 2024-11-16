@@ -53,6 +53,13 @@ namespace Project_AD
                 new Address(int.Parse(streetNumberTB.Text), streetNameTB.Text,
                 cityTB.Text, provinceTB.Text, zipcodeTB.Text), phoneNumberTB.Text, membership, membership.GetPrice(frequencyType));
 
+            // Save the member information to the file
+            FileSystemAPI.SaveMember(
+                int.Parse(newUser.MemberId), newUser.FName, newUser.LName, newUser.PhoneNumber,
+                newUser.Address.StreetNumber, newUser.Address.StreetName, newUser.Address.City,
+                newUser.Address.Province, newUser.Address.ZipCode, membershipType.ToString(),
+                newUser.Balance);
+
             // Display confirmation or handle the user object as needed
             MessageBox.Show("User information saved successfully.\n Member ID: " + newUser.MemberId);
         }

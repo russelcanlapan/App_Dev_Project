@@ -65,18 +65,29 @@ namespace Project_AD
             // Check if the input is a valid integer
             if (int.TryParse(memberIdTB.Text, out memberId))
             {
-                // Hide Form1
-                this.Hide();
+                // Retrieve the member data from the file
+                string memberData = FileSystemAPI.GetMemberById(memberId);
 
-                // Open MemberLogin form
-                MemberLogin memberLogin = new MemberLogin();
-                memberLogin.ShowDialog();
+                if (memberData != null)
+                {
+                    // Hide Form1
+                    this.Hide();
 
-                // Clear the TextBox after submit
-                memberIdTB.Text = string.Empty;
+                    // Open MemberLogin form
+                    MemberLogin memberLogin = new MemberLogin();
+                    memberLogin.ShowDialog();
 
-                // Show Form1 again when MemberLogin is closed
-                this.Show();
+                    // Clear the TextBox after submit
+                    memberIdTB.Text = string.Empty;
+
+                    // Show Form1 again when MemberLogin is closed
+                    this.Show();
+                }
+                else
+                {
+                    // Show a message if the Member ID is not found
+                    MessageBox.Show("Invalid Member ID. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
