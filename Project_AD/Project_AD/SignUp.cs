@@ -25,33 +25,10 @@ namespace Project_AD
         {
             MembershipType membershipType = MembershipType.Regular; // Default to Regular
             Membership membership = new Membership(membershipType);
-            string frequencyType = "";
 
             // Determine membership type and frequency
-            if (regularRB.Checked)
-            {
-                membershipType = MembershipType.Regular;
-                if (monthlyRB.Checked)
-                {
-                    frequencyType = "monthly";
-                }
-                else if (yearlyRB.Checked)
-                {
-                    frequencyType = "yearly";
-                }
-            }
-            else if (premiumRB.Checked)
-            {
-                membershipType = MembershipType.Premium;
-                if (monthlyRB.Checked)
-                {
-                    frequencyType = "monthly";
-                }
-                else if (yearlyRB.Checked)
-                {
-                    frequencyType = "yearly";
-                }
-            }
+            membershipType = regularRB.Checked ? MembershipType.Regular : MembershipType.Premium;
+            string frequencyType = monthlyRB.Checked ? "Monthly" : "Yearly";
 
             // Create a new Member instance
             Member newUser = new Member(
@@ -86,6 +63,7 @@ namespace Project_AD
 
             // Display confirmation or handle the user object as needed
             MessageBox.Show("User information saved successfully.\n Member ID: " + newUser.MemberId);
+            this.Close();
         }
 
         private void backButton_Click(object sender, EventArgs e)

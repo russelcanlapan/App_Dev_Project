@@ -97,5 +97,18 @@ namespace Project_AD
             // Close the MemberLogin form
             this.Close();
         }
+
+        private void updateProfileButton_Click(object sender, EventArgs e)
+        {
+            // Hide the MemberLogin form
+            this.Hide();
+
+            // Open the ViewProfile form as a modal dialog
+            UpdateProfile updateProfileForm = new UpdateProfile();
+            updateProfileForm.ShowDialog();
+
+            // Show MemberLogin again when ViewProfile is closed
+            this.Show();
+        }
     }
 }

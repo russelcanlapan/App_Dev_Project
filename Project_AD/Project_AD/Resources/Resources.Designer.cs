@@ -61,20 +61,11 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Back.
+        ///   Looks up a localized string similar to Cancel.
         /// </summary>
         internal static string backButton {
             get {
                 return ResourceManager.GetString("backButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Cancel.
-        /// </summary>
-        internal static string cancelButton {
-            get {
-                return ResourceManager.GetString("cancelButton", resourceCulture);
             }
         }
         
