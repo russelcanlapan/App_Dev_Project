@@ -198,7 +198,10 @@
   <data name="yearlyRB" xml:space="preserve">
     <value>Annuel</value>
   </data>
-  <data name="backButton" xml:space="preserve">
-    <value>Retour</value>
+  <data name="cancelButton" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="memberIdLabel" xml:space="preserve">
+    <value>ID du Membre:</value>
   </data>
 </root>
