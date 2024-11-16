@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,15 +21,63 @@ namespace Project_AD
 
         private void viewProfileButton_Click(object sender, EventArgs e)
         {
-            // Hide the MemberLogin form
-            this.Hide();
+            // Reference to the main form (Form1) to get the Member ID TextBox
+            Form1 mainForm = Application.OpenForms["Form1"] as Form1;
 
-            // Open the ViewProfile form as a modal dialog
-            ViewProfile viewProfileForm = new ViewProfile();
-            viewProfileForm.ShowDialog();
+            if (mainForm != null)
+            {
+                // Get the Member ID text from the main form's TextBox
+                string memberIdText = mainForm.GetMemberIdText(); // Ensure this method is implemented in Form1
 
-            // Show MemberLogin again when ViewProfile is closed
-            this.Show();
+                int memberId;
+
+                // Check if the input is a valid integer
+                if (int.TryParse(memberIdText, out memberId))
+                {
+                    string memberLine = FileSystemAPI.GetMemberById(memberId);
+
+                    if (memberLine != null)
+                    {
+                        // Parse the member's data
+                        string[] memberData = memberLine.Split(',');
+
+                        // Create the ViewProfile form
+                        ViewProfile viewProfileForm = new ViewProfile();
+
+                        // Use SetMemberData to populate the labels in the correct order
+                        viewProfileForm.SetMemberData(
+                            memberData[0], // Member ID
+                            memberData[1], // First Name
+                            memberData[2], // Last Name
+                            memberData[3], // Phone Number
+                            memberData[4], // Street Number
+                            memberData[5], // Street Name
+                            memberData[6], // City
+                            memberData[7], // Province
+                            memberData[8], // Zip Code
+                            memberData[9], // Membership Type
+                            double.Parse(memberData[10], CultureInfo.InvariantCulture) // Balance
+                        );
+
+                        // Show the ViewProfile form
+                        this.Hide();
+                        viewProfileForm.ShowDialog();
+                        this.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Member not found. Please check the Member ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please enter a valid numeric Member ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Main form not found. Unable to retrieve Member ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void logoutButton_Click(object sender, EventArgs e)

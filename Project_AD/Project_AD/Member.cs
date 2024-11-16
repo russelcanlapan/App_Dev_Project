@@ -14,7 +14,7 @@ namespace Project_AD
         public double Balance { get; set; }
         public static List<Notification> Notifications { get; private set; } = new List<Notification>();
 
-        public Member(string fname, string lname, string phoneNumber, Address address,  Membership membershipType, double balance)
+        public Member(string fname, string lname, string phoneNumber, Address address, Membership membershipType, double balance)
             : base(fname, lname, address, phoneNumber)
         {
             MemberId = memberIdCounter++.ToString();

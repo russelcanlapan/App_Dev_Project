@@ -201,4 +201,10 @@
   <data name="backButton" xml:space="preserve">
     <value>Retour</value>
   </data>
+  <data name="backButton" xml:space="preserve">
+    <value>Retour</value>
+  </data>
+  <data name="previousButton" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
 </root>
