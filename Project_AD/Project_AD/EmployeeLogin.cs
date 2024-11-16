@@ -24,21 +24,12 @@ namespace Project_AD
 
         private void AddMemberBtn_Click(object sender, EventArgs e)
         {
-            if (isValidName(FNameTB.Text) && isValidName(LNameTB.Text) && isValidName(StreetNameTB.Text)
-                && isValidName(ProvinceTB.Text) && isValidName(CityTB.Text) && isValidNumber(StreetNumberTB.Text)
-                && isValidNumber(PhoneTB.Text) && isValidNumber(BalanceTB.Text))
-            {
-                address = new Address(int.Parse(StreetNumberTB.Text), StreetNameTB.Text, CityTB.Text, ProvinceTB.Text, ZipcodeTB.Text);
-                if (RegularRB.Checked) 
-                {
-                    membership = new Membership(MembershipType.Regular);
-                    member = new Member(FNameTB.Text, LNameTB.Text, address, PhoneTB.Text, membership, double.Parse(BalanceTB.Text));
-                } else
-                {
-                    membership = new Membership(MembershipType.Premium);
-                    member = new Member(FNameTB.Text, LNameTB.Text, address, PhoneTB.Text, membership, double.Parse(BalanceTB.Text));
-                }
-            }
+            this.Hide();
+
+            EmployeeAddMemberForm employeeAddMemberForm = new EmployeeAddMemberForm();
+            employeeAddMemberForm.ShowDialog();
+
+            this.Show();           
         }
 
         private static bool isValidName(string Name)
@@ -63,6 +54,16 @@ namespace Project_AD
                 }
             }
             return true;
+        }
+
+        private void ViewMemberBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EmployeeViewMemberForm emp = new EmployeeViewMemberForm();
+            emp.ShowDialog();
+
+            this.Show();
         }
     }
 }

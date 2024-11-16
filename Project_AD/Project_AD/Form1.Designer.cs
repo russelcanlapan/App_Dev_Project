@@ -40,10 +40,9 @@ namespace Project_AD
             // 
             // languageButton
             // 
-            languageButton.Location = new Point(779, 16);
-            languageButton.Margin = new Padding(3, 4, 3, 4);
+            languageButton.Location = new Point(682, 12);
             languageButton.Name = "languageButton";
-            languageButton.Size = new Size(121, 55);
+            languageButton.Size = new Size(106, 41);
             languageButton.TabIndex = 0;
             languageButton.Text = "French";
             languageButton.UseVisualStyleBackColor = true;
@@ -52,18 +51,17 @@ namespace Project_AD
             // titleLabel
             // 
             titleLabel.AutoSize = true;
-            titleLabel.Location = new Point(390, 130);
+            titleLabel.Location = new Point(341, 98);
             titleLabel.Name = "titleLabel";
-            titleLabel.Size = new Size(83, 20);
+            titleLabel.Size = new Size(67, 15);
             titleLabel.TabIndex = 1;
             titleLabel.Text = "Gym World";
             // 
             // loginMemberButton
             // 
-            loginMemberButton.Location = new Point(381, 247);
-            loginMemberButton.Margin = new Padding(3, 4, 3, 4);
+            loginMemberButton.Location = new Point(333, 185);
             loginMemberButton.Name = "loginMemberButton";
-            loginMemberButton.Size = new Size(101, 31);
+            loginMemberButton.Size = new Size(88, 23);
             loginMemberButton.TabIndex = 3;
             loginMemberButton.Text = "Member Login";
             loginMemberButton.UseVisualStyleBackColor = true;
@@ -71,20 +69,19 @@ namespace Project_AD
             // 
             // loginEmployeeButton
             // 
-            loginEmployeeButton.Location = new Point(381, 310);
-            loginEmployeeButton.Margin = new Padding(3, 4, 3, 4);
+            loginEmployeeButton.Location = new Point(333, 232);
             loginEmployeeButton.Name = "loginEmployeeButton";
-            loginEmployeeButton.Size = new Size(101, 31);
+            loginEmployeeButton.Size = new Size(88, 23);
             loginEmployeeButton.TabIndex = 4;
             loginEmployeeButton.Text = "Employee Login";
             loginEmployeeButton.UseVisualStyleBackColor = true;
+            loginEmployeeButton.Click += loginEmployeeButton_Click;
             // 
             // signupButton
             // 
-            signupButton.Location = new Point(381, 373);
-            signupButton.Margin = new Padding(3, 4, 3, 4);
+            signupButton.Location = new Point(333, 280);
             signupButton.Name = "signupButton";
-            signupButton.Size = new Size(101, 31);
+            signupButton.Size = new Size(88, 23);
             signupButton.TabIndex = 5;
             signupButton.Text = "Sign Up";
             signupButton.UseVisualStyleBackColor = true;
@@ -92,10 +89,9 @@ namespace Project_AD
             // 
             // exitButton
             // 
-            exitButton.Location = new Point(381, 436);
-            exitButton.Margin = new Padding(3, 4, 3, 4);
+            exitButton.Location = new Point(333, 327);
             exitButton.Name = "exitButton";
-            exitButton.Size = new Size(101, 31);
+            exitButton.Size = new Size(88, 23);
             exitButton.TabIndex = 6;
             exitButton.Text = "Exit";
             exitButton.UseVisualStyleBackColor = true;
@@ -103,16 +99,15 @@ namespace Project_AD
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(800, 450);
             Controls.Add(exitButton);
             Controls.Add(signupButton);
             Controls.Add(loginEmployeeButton);
             Controls.Add(loginMemberButton);
             Controls.Add(titleLabel);
             Controls.Add(languageButton);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);

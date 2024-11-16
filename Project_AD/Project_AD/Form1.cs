@@ -64,5 +64,15 @@ namespace Project_AD
             // Show Form1 again when MemberLogin is closed
             this.Show();
         }
+
+        private void loginEmployeeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EmployeeLogin employeeForm = new EmployeeLogin();
+            employeeForm.ShowDialog();
+
+            this.Show();
+        }
     }
 }
