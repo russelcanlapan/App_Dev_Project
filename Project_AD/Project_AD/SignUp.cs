@@ -23,11 +23,14 @@ namespace Project_AD
 
         private void submitButton_Click(object sender, EventArgs e)
         {
-            MembershipType membershipType = new MembershipType();
+            MembershipType membershipType = MembershipType.Regular; // Default to Regular
             Membership membership = new Membership(membershipType);
             string frequencyType = "";
 
-            if (regularRB.Checked) {
+            // Determine membership type and frequency
+            if (regularRB.Checked)
+            {
+                membershipType = MembershipType.Regular;
                 if (monthlyRB.Checked)
                 {
                     frequencyType = "monthly";
@@ -36,8 +39,9 @@ namespace Project_AD
                 {
                     frequencyType = "yearly";
                 }
-            } 
-            else if (premiumRB.Checked) {
+            }
+            else if (premiumRB.Checked)
+            {
                 membershipType = MembershipType.Premium;
                 if (monthlyRB.Checked)
                 {
@@ -48,23 +52,43 @@ namespace Project_AD
                     frequencyType = "yearly";
                 }
             }
-            // Create a new User instance
-            Member newUser = new Member(firstNameTB.Text, lastNameTB.Text,
-                new Address(int.Parse(streetNumberTB.Text), streetNameTB.Text,
-                cityTB.Text, provinceTB.Text, zipcodeTB.Text), phoneNumberTB.Text, membership, membership.GetPrice(frequencyType));
 
-            // Save the member information to the file
+            // Create a new Member instance
+            Member newUser = new Member(
+                firstNameTB.Text,
+                lastNameTB.Text,
+                phoneNumberTB.Text,
+                new Address(
+                    int.Parse(streetNumberTB.Text),
+                    streetNameTB.Text,
+                    cityTB.Text,
+                    provinceTB.Text,
+                    zipcodeTB.Text
+                ),
+                membership,
+                membership.GetPrice(frequencyType)
+            );
+
+            // Save the member information to the file (MemberId will be auto-generated)
             FileSystemAPI.SaveMember(
-                int.Parse(newUser.MemberId), newUser.FName, newUser.LName, newUser.PhoneNumber,
-                newUser.Address.StreetNumber, newUser.Address.StreetName, newUser.Address.City,
-                newUser.Address.Province, newUser.Address.ZipCode, membershipType.ToString(),
-                newUser.Balance);
+                int.Parse(newUser.MemberId),
+                newUser.FName,
+                newUser.LName,
+                newUser.PhoneNumber,
+                newUser.Address.StreetNumber,
+                newUser.Address.StreetName,
+                newUser.Address.City,
+                newUser.Address.Province,
+                newUser.Address.ZipCode,
+                membershipType.ToString(),
+                newUser.Balance
+            );
 
             // Display confirmation or handle the user object as needed
             MessageBox.Show("User information saved successfully.\n Member ID: " + newUser.MemberId);
         }
 
-        private void backlButton_Click(object sender, EventArgs e)
+        private void backButton_Click(object sender, EventArgs e)
         {
             this.Hide();
 

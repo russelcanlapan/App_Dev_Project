@@ -173,6 +173,11 @@ namespace Project_AD
             memberIdLabel.Text = rm.GetString("memberIdLabel");
         }
 
+        public string GetMemberIdText()
+        {
+            return memberIdTB.Text;
+        }
+
         private Button languageButton;
 
         private Label titleLabel;
