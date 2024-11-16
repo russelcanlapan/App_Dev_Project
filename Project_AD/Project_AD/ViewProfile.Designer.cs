@@ -217,7 +217,7 @@ namespace Project_AD
             membershipTypeResultsLabel.Name = "membershipTypeResultsLabel";
             membershipTypeResultsLabel.Size = new Size(47, 15);
             membershipTypeResultsLabel.TabIndex = 10;
-            membershipTypeResultsLabel.Text = "Regular";
+            membershipTypeResultsLabel.Text = "";
             // 
             // previousButton
             // 

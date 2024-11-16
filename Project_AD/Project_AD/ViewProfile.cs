@@ -43,7 +43,7 @@ namespace Project_AD
             provinceResultsLabel.Text = province;
             zipcodeResultsLabel.Text = zipCode;
             membershipTypeResultsLabel.Text = membershipType;
-            balanceResultsLabel.Text = balance.ToString("F2");
+            balanceResultsLabel.Text = Convert.ToString(balance);
         }
     }
 }
