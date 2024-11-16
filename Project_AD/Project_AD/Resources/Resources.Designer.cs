@@ -63,9 +63,9 @@ namespace Project_AD.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
-        internal static string cancelButton {
+        internal static string backButton {
             get {
-                return ResourceManager.GetString("cancelButton", resourceCulture);
+                return ResourceManager.GetString("backButton", resourceCulture);
             }
         }
         
@@ -178,6 +178,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Member ID:.
+        /// </summary>
+        internal static string memberIdLabel {
+            get {
+                return ResourceManager.GetString("memberIdLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Membership Type.
         /// </summary>
         internal static string membershipTypeGB {
@@ -210,6 +219,15 @@ namespace Project_AD.Resources {
         internal static string premiumRB {
             get {
                 return ResourceManager.GetString("premiumRB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous.
+        /// </summary>
+        internal static string previousButton {
+            get {
+                return ResourceManager.GetString("previousButton", resourceCulture);
             }
         }
         

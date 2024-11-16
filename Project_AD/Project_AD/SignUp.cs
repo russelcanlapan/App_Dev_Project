@@ -17,16 +17,56 @@ namespace Project_AD
             InitializeComponent();
             UpdateComponent();
 
-            regularButton.Checked = true;
-            monthlyButton.Checked = true;
+            regularRB.Checked = true;
+            monthlyRB.Checked = true;
         }
 
         private void submitButton_Click(object sender, EventArgs e)
         {
+            MembershipType membershipType = MembershipType.Regular; // Default to Regular
+            Membership membership = new Membership(membershipType);
 
+            // Determine membership type and frequency
+            membershipType = regularRB.Checked ? MembershipType.Regular : MembershipType.Premium;
+            string frequencyType = monthlyRB.Checked ? "Monthly" : "Yearly";
+
+            // Create a new Member instance
+            Member newUser = new Member(
+                firstNameTB.Text,
+                lastNameTB.Text,
+                phoneNumberTB.Text,
+                new Address(
+                    int.Parse(streetNumberTB.Text),
+                    streetNameTB.Text,
+                    cityTB.Text,
+                    provinceTB.Text,
+                    zipcodeTB.Text
+                ),
+                membership,
+                membership.GetPrice(frequencyType)
+            );
+
+            // Save the member information to the file (MemberId will be auto-generated)
+            FileSystemAPI.SaveMember(
+                int.Parse(newUser.MemberId),
+                newUser.FName,
+                newUser.LName,
+                newUser.PhoneNumber,
+                newUser.Address.StreetNumber,
+                newUser.Address.StreetName,
+                newUser.Address.City,
+                newUser.Address.Province,
+                newUser.Address.ZipCode,
+                membershipType.ToString(),
+                newUser.Balance
+            );
+
+            // Display confirmation or handle the user object as needed
+            MessageBox.Show("User information saved successfully.\n Member ID: " + newUser.MemberId);
+            this.Close();
         }
 
-        private void cancelButton_Click(object sender, EventArgs e)
+        private void backButton_Click(object sender, EventArgs e)
         {
             this.Hide();
 

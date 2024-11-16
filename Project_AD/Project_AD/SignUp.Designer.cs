@@ -49,12 +49,12 @@ namespace Project_AD
             zipCodeLabel = new Label();
             submitButton = new Button();
             membershipTypeGB = new GroupBox();
-            premiumButton = new RadioButton();
-            regularButton = new RadioButton();
-            yearlyButton = new RadioButton();
-            monthlyButton = new RadioButton();
+            premiumRB = new RadioButton();
+            regularRB = new RadioButton();
+            yearlyRB = new RadioButton();
+            monthlyRB = new RadioButton();
             frequencyTypeGB = new GroupBox();
-            cancelButton = new Button();
+            backButton = new Button();
             membershipTypeGB.SuspendLayout();
             frequencyTypeGB.SuspendLayout();
             SuspendLayout();
@@ -62,145 +62,154 @@ namespace Project_AD
             // signUpLabel
             // 
             signUpLabel.AutoSize = true;
-            signUpLabel.Location = new Point(373, 36);
+            signUpLabel.Location = new Point(326, 27);
             signUpLabel.Name = "signUpLabel";
-            signUpLabel.Size = new Size(61, 20);
+            signUpLabel.Size = new Size(48, 15);
             signUpLabel.TabIndex = 0;
             signUpLabel.Text = "Sign Up";
             // 
             // firstNameTB
             // 
-            firstNameTB.Location = new Point(224, 104);
+            firstNameTB.Location = new Point(196, 78);
+            firstNameTB.Margin = new Padding(3, 2, 3, 2);
             firstNameTB.Name = "firstNameTB";
-            firstNameTB.Size = new Size(168, 27);
+            firstNameTB.Size = new Size(148, 23);
             firstNameTB.TabIndex = 1;
             // 
             // lastNameTB
             // 
-            lastNameTB.Location = new Point(224, 137);
+            lastNameTB.Location = new Point(196, 103);
+            lastNameTB.Margin = new Padding(3, 2, 3, 2);
             lastNameTB.Name = "lastNameTB";
-            lastNameTB.Size = new Size(168, 27);
+            lastNameTB.Size = new Size(148, 23);
             lastNameTB.TabIndex = 2;
             // 
             // streetNumberTB
             // 
-            streetNumberTB.Location = new Point(224, 170);
+            streetNumberTB.Location = new Point(196, 155);
+            streetNumberTB.Margin = new Padding(3, 2, 3, 2);
             streetNumberTB.Name = "streetNumberTB";
-            streetNumberTB.Size = new Size(170, 27);
-            streetNumberTB.TabIndex = 3;
+            streetNumberTB.Size = new Size(149, 23);
+            streetNumberTB.TabIndex = 4;
             // 
             // streetNameTB
             // 
-            streetNameTB.Location = new Point(224, 204);
+            streetNameTB.Location = new Point(196, 180);
+            streetNameTB.Margin = new Padding(3, 2, 3, 2);
             streetNameTB.Name = "streetNameTB";
-            streetNameTB.Size = new Size(170, 27);
-            streetNameTB.TabIndex = 4;
+            streetNameTB.Size = new Size(149, 23);
+            streetNameTB.TabIndex = 5;
             // 
             // cityTB
             // 
-            cityTB.Location = new Point(224, 237);
+            cityTB.Location = new Point(196, 205);
+            cityTB.Margin = new Padding(3, 2, 3, 2);
             cityTB.Name = "cityTB";
-            cityTB.Size = new Size(170, 27);
-            cityTB.TabIndex = 5;
+            cityTB.Size = new Size(149, 23);
+            cityTB.TabIndex = 6;
             // 
             // provinceTB
             // 
-            provinceTB.Location = new Point(224, 270);
+            provinceTB.Location = new Point(196, 229);
+            provinceTB.Margin = new Padding(3, 2, 3, 2);
             provinceTB.Name = "provinceTB";
-            provinceTB.Size = new Size(170, 27);
-            provinceTB.TabIndex = 6;
+            provinceTB.Size = new Size(149, 23);
+            provinceTB.TabIndex = 7;
             // 
             // zipcodeTB
             // 
-            zipcodeTB.Location = new Point(224, 303);
+            zipcodeTB.Location = new Point(196, 254);
+            zipcodeTB.Margin = new Padding(3, 2, 3, 2);
             zipcodeTB.Name = "zipcodeTB";
-            zipcodeTB.Size = new Size(170, 27);
-            zipcodeTB.TabIndex = 7;
+            zipcodeTB.Size = new Size(149, 23);
+            zipcodeTB.TabIndex = 8;
             // 
             // phoneNumberTB
             // 
-            phoneNumberTB.Location = new Point(224, 336);
+            phoneNumberTB.Location = new Point(196, 130);
+            phoneNumberTB.Margin = new Padding(3, 2, 3, 2);
             phoneNumberTB.Name = "phoneNumberTB";
-            phoneNumberTB.Size = new Size(170, 27);
-            phoneNumberTB.TabIndex = 8;
+            phoneNumberTB.Size = new Size(149, 23);
+            phoneNumberTB.TabIndex = 3;
             // 
             // firstNameLabel
             // 
             firstNameLabel.AutoSize = true;
-            firstNameLabel.Location = new Point(64, 107);
+            firstNameLabel.Location = new Point(56, 80);
             firstNameLabel.Name = "firstNameLabel";
-            firstNameLabel.Size = new Size(80, 20);
+            firstNameLabel.Size = new Size(64, 15);
             firstNameLabel.TabIndex = 9;
             firstNameLabel.Text = "First Name";
             // 
             // lastNameLabel
             // 
             lastNameLabel.AutoSize = true;
-            lastNameLabel.Location = new Point(64, 140);
+            lastNameLabel.Location = new Point(56, 105);
             lastNameLabel.Name = "lastNameLabel";
-            lastNameLabel.Size = new Size(79, 20);
+            lastNameLabel.Size = new Size(63, 15);
             lastNameLabel.TabIndex = 10;
             lastNameLabel.Text = "Last Name";
             // 
             // phoneNumberLabel
             // 
             phoneNumberLabel.AutoSize = true;
-            phoneNumberLabel.Location = new Point(64, 339);
+            phoneNumberLabel.Location = new Point(56, 133);
             phoneNumberLabel.Name = "phoneNumberLabel";
-            phoneNumberLabel.Size = new Size(108, 20);
+            phoneNumberLabel.Size = new Size(88, 15);
             phoneNumberLabel.TabIndex = 11;
             phoneNumberLabel.Text = "Phone Number";
             // 
             // streetNumberLabel
             // 
             streetNumberLabel.AutoSize = true;
-            streetNumberLabel.Location = new Point(64, 173);
+            streetNumberLabel.Location = new Point(56, 157);
             streetNumberLabel.Name = "streetNumberLabel";
-            streetNumberLabel.Size = new Size(106, 20);
+            streetNumberLabel.Size = new Size(84, 15);
             streetNumberLabel.TabIndex = 12;
             streetNumberLabel.Text = "Street Number";
             // 
             // streetNameLabel
             // 
             streetNameLabel.AutoSize = true;
-            streetNameLabel.Location = new Point(64, 207);
+            streetNameLabel.Location = new Point(56, 182);
             streetNameLabel.Name = "streetNameLabel";
-            streetNameLabel.Size = new Size(92, 20);
+            streetNameLabel.Size = new Size(72, 15);
             streetNameLabel.TabIndex = 13;
             streetNameLabel.Text = "Street Name";
             // 
             // cityLabel
             // 
             cityLabel.AutoSize = true;
-            cityLabel.Location = new Point(64, 240);
+            cityLabel.Location = new Point(56, 207);
             cityLabel.Name = "cityLabel";
-            cityLabel.Size = new Size(34, 20);
+            cityLabel.Size = new Size(28, 15);
             cityLabel.TabIndex = 14;
             cityLabel.Text = "City";
             // 
             // provinceLabel
             // 
             provinceLabel.AutoSize = true;
-            provinceLabel.Location = new Point(64, 273);
+            provinceLabel.Location = new Point(56, 232);
             provinceLabel.Name = "provinceLabel";
-            provinceLabel.Size = new Size(65, 20);
+            provinceLabel.Size = new Size(53, 15);
             provinceLabel.TabIndex = 15;
             provinceLabel.Text = "Province";
             // 
             // zipCodeLabel
             // 
             zipCodeLabel.AutoSize = true;
-            zipCodeLabel.Location = new Point(64, 306);
+            zipCodeLabel.Location = new Point(56, 257);
             zipCodeLabel.Name = "zipCodeLabel";
-            zipCodeLabel.Size = new Size(70, 20);
+            zipCodeLabel.Size = new Size(55, 15);
             zipCodeLabel.TabIndex = 16;
             zipCodeLabel.Text = "Zip Code";
             // 
             // submitButton
             // 
-            submitButton.Location = new Point(694, 409);
+            submitButton.Location = new Point(607, 307);
+            submitButton.Margin = new Padding(3, 2, 3, 2);
             submitButton.Name = "submitButton";
-            submitButton.Size = new Size(94, 29);
+            submitButton.Size = new Size(82, 22);
             submitButton.TabIndex = 17;
             submitButton.Text = "Submit";
             submitButton.UseVisualStyleBackColor = true;
@@ -208,86 +217,95 @@ namespace Project_AD
             // 
             // membershipTypeGB
             // 
-            membershipTypeGB.Controls.Add(premiumButton);
-            membershipTypeGB.Controls.Add(regularButton);
-            membershipTypeGB.Location = new Point(422, 170);
+            membershipTypeGB.Controls.Add(premiumRB);
+            membershipTypeGB.Controls.Add(regularRB);
+            membershipTypeGB.Location = new Point(369, 128);
+            membershipTypeGB.Margin = new Padding(3, 2, 3, 2);
             membershipTypeGB.Name = "membershipTypeGB";
-            membershipTypeGB.Size = new Size(164, 127);
+            membershipTypeGB.Padding = new Padding(3, 2, 3, 2);
+            membershipTypeGB.Size = new Size(144, 92);
             membershipTypeGB.TabIndex = 18;
             membershipTypeGB.TabStop = false;
             membershipTypeGB.Text = "Membership Type";
             // 
-            // premiumButton
+            // premiumRB
             // 
-            premiumButton.AutoSize = true;
-            premiumButton.Location = new Point(6, 70);
-            premiumButton.Name = "premiumButton";
-            premiumButton.Size = new Size(89, 24);
-            premiumButton.TabIndex = 1;
-            premiumButton.TabStop = true;
-            premiumButton.Text = "Premium";
-            premiumButton.UseVisualStyleBackColor = true;
+            premiumRB.AutoSize = true;
+            premiumRB.Location = new Point(5, 52);
+            premiumRB.Margin = new Padding(3, 2, 3, 2);
+            premiumRB.Name = "premiumRB";
+            premiumRB.Size = new Size(74, 19);
+            premiumRB.TabIndex = 1;
+            premiumRB.TabStop = true;
+            premiumRB.Text = "Premium";
+            premiumRB.UseVisualStyleBackColor = true;
             // 
-            // regularButton
+            // regularRB
             // 
-            regularButton.AutoSize = true;
-            regularButton.Location = new Point(6, 35);
-            regularButton.Name = "regularButton";
-            regularButton.Size = new Size(81, 24);
-            regularButton.TabIndex = 0;
-            regularButton.TabStop = true;
-            regularButton.Text = "Regular";
-            regularButton.UseVisualStyleBackColor = true;
+            regularRB.AutoSize = true;
+            regularRB.Location = new Point(5, 26);
+            regularRB.Margin = new Padding(3, 2, 3, 2);
+            regularRB.Name = "regularRB";
+            regularRB.Size = new Size(65, 19);
+            regularRB.TabIndex = 0;
+            regularRB.TabStop = true;
+            regularRB.Text = "Regular";
+            regularRB.UseVisualStyleBackColor = true;
             // 
-            // yearlyButton
+            // yearlyRB
             // 
-            yearlyButton.AutoSize = true;
-            yearlyButton.Location = new Point(6, 67);
-            yearlyButton.Name = "yearlyButton";
-            yearlyButton.Size = new Size(69, 24);
-            yearlyButton.TabIndex = 3;
-            yearlyButton.TabStop = true;
-            yearlyButton.Text = "Yearly";
-            yearlyButton.UseVisualStyleBackColor = true;
+            yearlyRB.AutoSize = true;
+            yearlyRB.Location = new Point(5, 50);
+            yearlyRB.Margin = new Padding(3, 2, 3, 2);
+            yearlyRB.Name = "yearlyRB";
+            yearlyRB.Size = new Size(56, 19);
+            yearlyRB.TabIndex = 3;
+            yearlyRB.TabStop = true;
+            yearlyRB.Text = "Yearly";
+            yearlyRB.UseVisualStyleBackColor = true;
             // 
-            // monthlyButton
+            // monthlyRB
             // 
-            monthlyButton.AutoSize = true;
-            monthlyButton.Location = new Point(6, 32);
-            monthlyButton.Name = "monthlyButton";
-            monthlyButton.Size = new Size(84, 24);
-            monthlyButton.TabIndex = 2;
-            monthlyButton.TabStop = true;
-            monthlyButton.Text = "Monthly";
-            monthlyButton.UseVisualStyleBackColor = true;
+            monthlyRB.AutoSize = true;
+            monthlyRB.Location = new Point(5, 24);
+            monthlyRB.Margin = new Padding(3, 2, 3, 2);
+            monthlyRB.Name = "monthlyRB";
+            monthlyRB.Size = new Size(70, 19);
+            monthlyRB.TabIndex = 2;
+            monthlyRB.TabStop = true;
+            monthlyRB.Text = "Monthly";
+            monthlyRB.UseVisualStyleBackColor = true;
             // 
             // frequencyTypeGB
             // 
-            frequencyTypeGB.Controls.Add(yearlyButton);
-            frequencyTypeGB.Controls.Add(monthlyButton);
-            frequencyTypeGB.Location = new Point(607, 170);
+            frequencyTypeGB.Controls.Add(yearlyRB);
+            frequencyTypeGB.Controls.Add(monthlyRB);
+            frequencyTypeGB.Location = new Point(531, 128);
+            frequencyTypeGB.Margin = new Padding(3, 2, 3, 2);
             frequencyTypeGB.Name = "frequencyTypeGB";
-            frequencyTypeGB.Size = new Size(169, 127);
+            frequencyTypeGB.Padding = new Padding(3, 2, 3, 2);
+            frequencyTypeGB.Size = new Size(148, 92);
             frequencyTypeGB.TabIndex = 19;
             frequencyTypeGB.TabStop = false;
             frequencyTypeGB.Text = "Frequency Type";
             // 
-            // cancelButton
+            // backButton
             // 
-            cancelButton.Location = new Point(12, 409);
-            cancelButton.Name = "cancelButton";
-            cancelButton.Size = new Size(94, 29);
-            cancelButton.TabIndex = 20;
-            cancelButton.Text = "Cancel";
-            cancelButton.UseVisualStyleBackColor = true;
-            cancelButton.Click += cancelButton_Click;
+            backButton.Location = new Point(10, 307);
+            backButton.Margin = new Padding(3, 2, 3, 2);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(82, 22);
+            backButton.TabIndex = 20;
+            backButton.Text = "Back";
+            backButton.UseVisualStyleBackColor = true;
+            backButton.Click += backButton_Click;
             // 
             // SignUp
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(cancelButton);
+            ClientSize = new Size(700, 338);
+            Controls.Add(backButton);
             Controls.Add(frequencyTypeGB);
             Controls.Add(membershipTypeGB);
             Controls.Add(submitButton);
@@ -308,6 +326,7 @@ namespace Project_AD
             Controls.Add(lastNameTB);
             Controls.Add(firstNameTB);
             Controls.Add(signUpLabel);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "SignUp";
             Text = "SignUp";
             membershipTypeGB.ResumeLayout(false);
@@ -335,12 +354,12 @@ namespace Project_AD
             zipCodeLabel.Text = rm.GetString("zipCodeLabel");
             submitButton.Text = rm.GetString("submitButton");
             membershipTypeGB.Text = rm.GetString("membershipTypeGB");
-            regularButton.Text = rm.GetString("regularButton");
-            premiumButton.Text = rm.GetString("premiumButton");
+            regularRB.Text = rm.GetString("regularRB");
+            premiumRB.Text = rm.GetString("premiumRB");
             frequencyTypeGB.Text = rm.GetString("frequencyTypeGB");
-            monthlyButton.Text = rm.GetString("monthlyButton");
-            yearlyButton.Text = rm.GetString("yearlyButton");
-            cancelButton.Text = rm.GetString("cancelButton");
+            monthlyRB.Text = rm.GetString("monthlyRB");
+            yearlyRB.Text = rm.GetString("yearlyRB");
+            backButton.Text = rm.GetString("backButton");
         }
 
         private Label signUpLabel;
@@ -362,11 +381,11 @@ namespace Project_AD
         private Label zipCodeLabel;
         private Button submitButton;
         private GroupBox membershipTypeGB;
-        private RadioButton yearlyButton;
-        private RadioButton monthlyButton;
-        private RadioButton premiumButton;
-        private RadioButton regularButton;
+        private RadioButton yearlyRB;
+        private RadioButton monthlyRB;
+        private RadioButton premiumRB;
+        private RadioButton regularRB;
         private GroupBox frequencyTypeGB;
-        private Button cancelButton;
+        private Button backButton;
     }
 }

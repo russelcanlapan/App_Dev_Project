@@ -36,6 +36,11 @@ namespace Project_AD
             loginEmployeeButton = new Button();
             signupButton = new Button();
             exitButton = new Button();
+            memberLoginGB = new GroupBox();
+            submitButton = new Button();
+            memberIdTB = new TextBox();
+            memberIdLabel = new Label();
+            memberLoginGB.SuspendLayout();
             SuspendLayout();
             // 
             // languageButton
@@ -97,11 +102,50 @@ namespace Project_AD
             exitButton.UseVisualStyleBackColor = true;
             exitButton.Click += exitButton_Click;
             // 
+            // memberLoginGB
+            // 
+            memberLoginGB.Controls.Add(submitButton);
+            memberLoginGB.Controls.Add(memberIdTB);
+            memberLoginGB.Controls.Add(memberIdLabel);
+            memberLoginGB.Location = new Point(453, 171);
+            memberLoginGB.Name = "memberLoginGB";
+            memberLoginGB.Size = new Size(293, 50);
+            memberLoginGB.TabIndex = 7;
+            memberLoginGB.TabStop = false;
+            // 
+            // submitButton
+            // 
+            submitButton.Location = new Point(201, 16);
+            submitButton.Name = "submitButton";
+            submitButton.Size = new Size(75, 23);
+            submitButton.TabIndex = 2;
+            submitButton.Text = "Submit";
+            submitButton.UseVisualStyleBackColor = true;
+            submitButton.Click += submitButton_Click;
+            // 
+            // memberIdTB
+            // 
+            memberIdTB.Location = new Point(95, 16);
+            memberIdTB.Name = "memberIdTB";
+            memberIdTB.Size = new Size(100, 23);
+            memberIdTB.TabIndex = 1;
+            // 
+            // memberIdLabel
+            // 
+            memberIdLabel.AutoSize = true;
+            memberIdLabel.Location = new Point(6, 19);
+            memberIdLabel.Name = "memberIdLabel";
+            memberIdLabel.Size = new Size(69, 15);
+            memberIdLabel.TabIndex = 0;
+            memberIdLabel.Text = "Member ID:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+
+            Controls.Add(memberLoginGB);
             Controls.Add(exitButton);
             Controls.Add(signupButton);
             Controls.Add(loginEmployeeButton);
@@ -110,6 +154,8 @@ namespace Project_AD
             Controls.Add(languageButton);
             Name = "Form1";
             Text = "Form1";
+            memberLoginGB.ResumeLayout(false);
+            memberLoginGB.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -125,14 +171,26 @@ namespace Project_AD
             loginEmployeeButton.Text = rm.GetString("loginEmployeeButton");
             signupButton.Text = rm.GetString("signupButton");
             exitButton.Text = rm.GetString("exitButton");
+            submitButton.Text = rm.GetString("submitButton");
+            memberIdLabel.Text = rm.GetString("memberIdLabel");
+        }
 
+        public string GetMemberIdText()
+        {
+            return memberIdTB.Text;
         }
 
         private Button languageButton;
+
         private Label titleLabel;
         private Button loginMemberButton;
         private Button loginEmployeeButton;
         private Button signupButton;
         private Button exitButton;
+
+        public GroupBox memberLoginGB;
+        private Button submitButton;
+        private TextBox memberIdTB;
+        private Label memberIdLabel;
     }
 }
