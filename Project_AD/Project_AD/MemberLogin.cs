@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,7 +56,7 @@ namespace Project_AD
                             memberData[7], // Province
                             memberData[8], // Zip Code
                             memberData[9], // Membership Type
-                            double.Parse(memberData[10]) // Balance
+                            double.Parse(memberData[10], CultureInfo.InvariantCulture) // Balance
                         );
 
                         // Show the ViewProfile form
