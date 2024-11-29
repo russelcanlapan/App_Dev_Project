@@ -69,9 +69,14 @@ namespace Project_AD
             // Hide the current form (ViewProfile)
             this.Hide();
 
-            // Show the main form (Form1)
-            Application.OpenForms["MemberLogin"].Show();
-
+            if (MemberLogin.ActiveForm != null)
+            {
+                Application.OpenForms["MemberLogin"].Show();
+            }
+            else
+            {
+                Application.OpenForms["EmployeeLogin"].Show();
+            }
             // Close the current form
             this.Close();
         }

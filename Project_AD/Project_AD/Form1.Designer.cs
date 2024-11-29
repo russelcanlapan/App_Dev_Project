@@ -38,10 +38,15 @@ namespace Project_AD
             signupButton = new Button();
             exitButton = new Button();
             memberLoginGB = new GroupBox();
-            submitButton = new Button();
+            memberSubmitButton = new Button();
             memberIdTB = new TextBox();
             memberIdLabel = new Label();
+            employeeLoginGB = new GroupBox();
+            employeeSubmitButton = new Button();
+            employeeIdTB = new TextBox();
+            employeeIdLabel = new Label();
             memberLoginGB.SuspendLayout();
+            employeeLoginGB.SuspendLayout();
             SuspendLayout();
             // 
             // languageButton
@@ -110,7 +115,7 @@ namespace Project_AD
             // 
             // memberLoginGB
             // 
-            memberLoginGB.Controls.Add(submitButton);
+            memberLoginGB.Controls.Add(memberSubmitButton);
             memberLoginGB.Controls.Add(memberIdTB);
             memberLoginGB.Controls.Add(memberIdLabel);
             memberLoginGB.Location = new Point(518, 228);
@@ -121,16 +126,16 @@ namespace Project_AD
             memberLoginGB.TabIndex = 7;
             memberLoginGB.TabStop = false;
             // 
-            // submitButton
+            // memberSubmitButton
             // 
             submitButton.Location = new Point(230, 21);
             submitButton.Margin = new Padding(3, 4, 3, 4);
-            submitButton.Name = "submitButton";
-            submitButton.Size = new Size(86, 31);
-            submitButton.TabIndex = 2;
-            submitButton.Text = "Submit";
-            submitButton.UseVisualStyleBackColor = true;
-            submitButton.Click += submitButton_Click;
+            memberSubmitButton.Name = "memberSubmitButton";
+            memberSubmitButton.Size = new Size(75, 23);
+            memberSubmitButton.TabIndex = 2;
+            memberSubmitButton.Text = "Submit";
+            memberSubmitButton.UseVisualStyleBackColor = true;
+            memberSubmitButton.Click += submitButton_Click;
             // 
             // memberIdTB
             // 
@@ -149,6 +154,43 @@ namespace Project_AD
             memberIdLabel.TabIndex = 0;
             memberIdLabel.Text = "Member ID:";
             // 
+            // employeeLoginGB
+            // 
+            employeeLoginGB.Controls.Add(employeeSubmitButton);
+            employeeLoginGB.Controls.Add(employeeIdTB);
+            employeeLoginGB.Controls.Add(employeeIdLabel);
+            employeeLoginGB.Location = new Point(453, 216);
+            employeeLoginGB.Name = "employeeLoginGB";
+            employeeLoginGB.Size = new Size(293, 50);
+            employeeLoginGB.TabIndex = 8;
+            employeeLoginGB.TabStop = false;
+            // 
+            // employeeSubmitButton
+            // 
+            employeeSubmitButton.Location = new Point(201, 16);
+            employeeSubmitButton.Name = "employeeSubmitButton";
+            employeeSubmitButton.Size = new Size(75, 23);
+            employeeSubmitButton.TabIndex = 2;
+            employeeSubmitButton.Text = "Submit";
+            employeeSubmitButton.UseVisualStyleBackColor = true;
+            employeeSubmitButton.Click += employeeSubmitButton_Click;
+            // 
+            // employeeIdTB
+            // 
+            employeeIdTB.Location = new Point(95, 16);
+            employeeIdTB.Name = "employeeIdTB";
+            employeeIdTB.Size = new Size(100, 23);
+            employeeIdTB.TabIndex = 1;
+            // 
+            // employeeIdLabel
+            // 
+            employeeIdLabel.AutoSize = true;
+            employeeIdLabel.Location = new Point(6, 19);
+            employeeIdLabel.Name = "employeeIdLabel";
+            employeeIdLabel.Size = new Size(76, 15);
+            employeeIdLabel.TabIndex = 0;
+            employeeIdLabel.Text = "Employee ID:";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -156,6 +198,7 @@ namespace Project_AD
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(914, 600);
+            Controls.Add(employeeLoginGB);
             Controls.Add(memberLoginGB);
             Controls.Add(exitButton);
             Controls.Add(signupButton);
@@ -168,6 +211,8 @@ namespace Project_AD
             Text = "Form1";
             memberLoginGB.ResumeLayout(false);
             memberLoginGB.PerformLayout();
+            employeeLoginGB.ResumeLayout(false);
+            employeeLoginGB.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -183,7 +228,8 @@ namespace Project_AD
             loginEmployeeButton.Text = rm.GetString("loginEmployeeButton");
             signupButton.Text = rm.GetString("signupButton");
             exitButton.Text = rm.GetString("exitButton");
-            submitButton.Text = rm.GetString("submitButton");
+            memberSubmitButton.Text = rm.GetString("submitButton");
+            employeeSubmitButton.Text = rm.GetString("submitButton");
             memberIdLabel.Text = rm.GetString("memberIdLabel");
         }
 
@@ -200,9 +246,16 @@ namespace Project_AD
         private Button signupButton;
         private Button exitButton;
 
+        // Member login 
         public GroupBox memberLoginGB;
-        private Button submitButton;
+        private Button memberSubmitButton;
         private TextBox memberIdTB;
         private Label memberIdLabel;
+
+        // Employee login
+        public GroupBox employeeLoginGB;
+        private Button employeeSubmitButton;
+        private TextBox employeeIdTB;
+        private Label employeeIdLabel;
     }
 }

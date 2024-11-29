@@ -61,6 +61,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Member.
+        /// </summary>
+        internal static string addMemberButton {
+            get {
+                return ResourceManager.GetString("addMemberButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Back.
         /// </summary>
         internal static string backButton {
@@ -320,6 +329,14 @@ namespace Project_AD.Resources {
                 return ResourceManager.GetString("regularYearlyLabel", resourceCulture);
             }
         }
+
+        ///   Looks up a localized string similar to Remove Member.
+        /// </summary>
+        internal static string removeMemberButton {
+            get {
+                return ResourceManager.GetString("removeMemberButton", resourceCulture);
+            }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to Sign Up.
@@ -358,11 +375,29 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Update Member.
+        /// </summary>
+        internal static string updateMemberButton {
+            get {
+                return ResourceManager.GetString("updateMemberButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Update.
         /// </summary>
         internal static string updateProfileButton {
             get {
                 return ResourceManager.GetString("updateProfileButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View Member.
+        /// </summary>
+        internal static string viewMemberButton {
+            get {
+                return ResourceManager.GetString("viewMemberButton", resourceCulture);
             }
         }
         
