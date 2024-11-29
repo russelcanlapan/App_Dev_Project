@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -36,6 +37,35 @@ namespace Project_AD
                 writer.WriteLine($"{newMemberId},{firstName},{lastName},{phoneNumber}," +
                                  $"{streetNumber},{streetName},{city},{province}," +
                                  $"{zipCode},{membershipType},{balance:F2}");
+            }
+        }
+
+        public static void RemoveMember(int memberId)   
+        {
+            string memberToRemove = GetMemberById(memberId);
+            if (memberToRemove == null)
+            {
+                MessageBox.Show("Member Not Found.");
+            }
+            else
+            {
+                string tempFilePath = "tempFile.txt";
+                using (StreamReader reader = new StreamReader(filePath))
+                using (StreamWriter writer = new StreamWriter(tempFilePath))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        if (line != memberToRemove)
+                        {
+                            writer.WriteLine(line);
+                        }
+                    }
+                }
+                File.Delete(filePath);
+                File.Move(tempFilePath, filePath);
+
+                MessageBox.Show("Member removed.");
             }
         }
 

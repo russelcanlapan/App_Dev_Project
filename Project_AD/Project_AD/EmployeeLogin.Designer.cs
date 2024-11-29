@@ -52,6 +52,7 @@
             RemoveMemberBtn.TabIndex = 1;
             RemoveMemberBtn.Text = "Remove Member";
             RemoveMemberBtn.UseVisualStyleBackColor = true;
+            RemoveMemberBtn.Click += RemoveMemberBtn_Click;
             // 
             // UpdateMemberBtn
             // 

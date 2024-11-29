@@ -16,5 +16,10 @@ namespace Project_AD
         {
             InitializeComponent();
         }
+
+        private void RemoveBtn_Click(object sender, EventArgs e)
+        {
+            FileSystemAPI.RemoveMember(int.Parse(MemberIdTB.Text));
+        }
     }
 }

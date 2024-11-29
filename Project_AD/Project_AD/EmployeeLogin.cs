@@ -29,7 +29,7 @@ namespace Project_AD
             EmployeeAddMemberForm employeeAddMemberForm = new EmployeeAddMemberForm();
             employeeAddMemberForm.ShowDialog();
 
-            this.Show();           
+            this.Show();
         }
 
         private static bool isValidName(string Name)
@@ -61,6 +61,16 @@ namespace Project_AD
             this.Hide();
 
             EmployeeViewMemberForm emp = new EmployeeViewMemberForm();
+            emp.ShowDialog();
+
+            this.Show();
+        }
+
+        private void RemoveMemberBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EmployeeRemoveMemberForm emp = new EmployeeRemoveMemberForm();
             emp.ShowDialog();
 
             this.Show();
