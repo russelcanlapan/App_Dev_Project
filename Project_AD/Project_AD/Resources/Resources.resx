@@ -233,6 +233,7 @@
   </data>
   <data name="yearlyLabel" xml:space="preserve">
     <value>Yearly Prices:</value>
+    </data>
   <data name="addMemberButton" xml:space="preserve">
     <value>Add Member</value>
   </data>

@@ -329,7 +329,8 @@ namespace Project_AD.Resources {
                 return ResourceManager.GetString("regularYearlyLabel", resourceCulture);
             }
         }
-
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove Member.
         /// </summary>
         internal static string removeMemberButton {
