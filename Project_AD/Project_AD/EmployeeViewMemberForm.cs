@@ -16,13 +16,14 @@ namespace Project_AD
         public EmployeeViewMemberForm()
         {
             InitializeComponent();
+            UpdateComponent();
         }
 
         private void QueryBtn_Click(object sender, EventArgs e)
         {
             foreach (Member m in members)
             {
-                if (m.MemberId == QueryBtn.Text) 
+                if (m.MemberId == QueryBtn.Text)
                 {
                     FNameTB.Text = m.FName;
                     LNameTB.Text = m.LName;
@@ -35,6 +36,18 @@ namespace Project_AD
                     MembershipTypeTB.Text = m.MembershipType.ToString();
                 }
             }
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            // Hide the current form (ViewMemberProfile)
+            this.Hide();
+
+            // Show the employee form
+            Application.OpenForms["EmployeeLogin"].Show();
+
+            // Close the current form
+            this.Close();
         }
     }
 }
