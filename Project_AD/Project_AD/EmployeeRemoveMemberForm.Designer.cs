@@ -1,4 +1,6 @@
-﻿namespace Project_AD
+﻿using System.Resources;
+
+namespace Project_AD
 {
     partial class EmployeeRemoveMemberForm
     {
@@ -32,52 +34,67 @@
             MemberIdLabel = new Label();
             MemberIdTB = new TextBox();
             RemoveBtn = new Button();
+            backButton = new Button();
             SuspendLayout();
             // 
             // RemoveLabel
             // 
             RemoveLabel.AutoSize = true;
-            RemoveLabel.Location = new Point(347, 66);
+            RemoveLabel.Location = new Point(397, 88);
             RemoveLabel.Name = "RemoveLabel";
-            RemoveLabel.Size = new Size(98, 15);
+            RemoveLabel.Size = new Size(123, 20);
             RemoveLabel.TabIndex = 0;
             RemoveLabel.Text = "Remove Member";
             // 
             // MemberIdLabel
             // 
             MemberIdLabel.AutoSize = true;
-            MemberIdLabel.Location = new Point(269, 116);
+            MemberIdLabel.Location = new Point(307, 155);
             MemberIdLabel.Name = "MemberIdLabel";
-            MemberIdLabel.Size = new Size(69, 15);
+            MemberIdLabel.Size = new Size(87, 20);
             MemberIdLabel.TabIndex = 1;
             MemberIdLabel.Text = "Member ID:";
             // 
             // MemberIdTB
             // 
-            MemberIdTB.Location = new Point(347, 108);
+            MemberIdTB.Location = new Point(397, 144);
+            MemberIdTB.Margin = new Padding(3, 4, 3, 4);
             MemberIdTB.Name = "MemberIdTB";
-            MemberIdTB.Size = new Size(100, 23);
+            MemberIdTB.Size = new Size(114, 27);
             MemberIdTB.TabIndex = 2;
             // 
             // RemoveBtn
             // 
-            RemoveBtn.Location = new Point(482, 108);
+            RemoveBtn.Location = new Point(551, 144);
+            RemoveBtn.Margin = new Padding(3, 4, 3, 4);
             RemoveBtn.Name = "RemoveBtn";
-            RemoveBtn.Size = new Size(75, 23);
+            RemoveBtn.Size = new Size(86, 31);
             RemoveBtn.TabIndex = 3;
             RemoveBtn.Text = "Remove";
             RemoveBtn.UseVisualStyleBackColor = true;
             RemoveBtn.Click += RemoveBtn_Click;
             // 
+            // backButton
+            // 
+            backButton.Location = new Point(12, 559);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(94, 29);
+            backButton.TabIndex = 4;
+            backButton.Text = "Back";
+            backButton.UseVisualStyleBackColor = true;
+            backButton.Click += backButton_Click;
+            // 
             // EmployeeRemoveMemberForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(backButton);
             Controls.Add(RemoveBtn);
             Controls.Add(MemberIdTB);
             Controls.Add(MemberIdLabel);
             Controls.Add(RemoveLabel);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "EmployeeRemoveMemberForm";
             Text = "EmployeeRemoveMemberForm";
             ResumeLayout(false);
@@ -86,9 +103,20 @@
 
         #endregion
 
+        public void UpdateComponent()
+        {
+            ResourceManager rm = new ResourceManager("Project_AD.Resources.Resources", typeof(Program).Assembly);
+
+            RemoveLabel.Text = rm.GetString("removeMemberButton");
+            MemberIdLabel.Text = rm.GetString("memberIdLabel");
+            RemoveBtn.Text = rm.GetString("removeMemberButton");
+            backButton.Text = rm.GetString("backButton");
+        }
+
         private Label RemoveLabel;
         private Label MemberIdLabel;
         private TextBox MemberIdTB;
         private Button RemoveBtn;
+        private Button backButton;
     }
 }

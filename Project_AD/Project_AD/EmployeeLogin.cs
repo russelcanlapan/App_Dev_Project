@@ -64,7 +64,12 @@ namespace Project_AD
 
         private void RemoveMemberBtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            EmployeeRemoveMemberForm employeeRemoveMemberForm = new EmployeeRemoveMemberForm();
+            employeeRemoveMemberForm.ShowDialog();
+
+            this.Show();
         }
         
         private void logoutButton_Click(object sender, EventArgs e)
@@ -77,7 +82,6 @@ namespace Project_AD
 
             // Hide the GroupBox in Form1
             form1.memberLoginGB.Visible = false;
-
 
             // Show Form1 again
             form1.Show();
@@ -109,25 +113,7 @@ namespace Project_AD
             }
             return true;
         }
+
         
-        private void ViewMemberBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            EmployeeViewMemberForm emp = new EmployeeViewMemberForm();
-            emp.ShowDialog();
-
-            this.Show();
-        }
-
-        private void RemoveMemberBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            EmployeeRemoveMemberForm emp = new EmployeeRemoveMemberForm();
-            emp.ShowDialog();
-
-            this.Show();
-        }
     }
 }
