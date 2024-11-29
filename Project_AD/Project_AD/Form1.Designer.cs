@@ -216,6 +216,7 @@ namespace Project_AD
             signupButton.Text = rm.GetString("signupButton");
             exitButton.Text = rm.GetString("exitButton");
             memberSubmitButton.Text = rm.GetString("submitButton");
+            employeeSubmitButton.Text = rm.GetString("submitButton");
             memberIdLabel.Text = rm.GetString("memberIdLabel");
         }
 
