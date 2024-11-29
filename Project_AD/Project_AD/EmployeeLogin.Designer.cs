@@ -32,6 +32,7 @@
             RemoveMemberBtn = new Button();
             UpdateMemberBtn = new Button();
             ViewMemberBtn = new Button();
+            EmployeeName = new Label();
             SuspendLayout();
             // 
             // AddMemberBtn
@@ -72,11 +73,21 @@
             ViewMemberBtn.UseVisualStyleBackColor = true;
             ViewMemberBtn.Click += ViewMemberBtn_Click;
             // 
+            // label1
+            // 
+            EmployeeName.AutoSize = true;
+            EmployeeName.Location = new Point(23, 21);
+            EmployeeName.Name = "EmployeeName";
+            EmployeeName.Size = new Size(38, 15);
+            EmployeeName.TabIndex = 4;
+            EmployeeName.Text = "";
+            // 
             // EmployeeLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(EmployeeName);
             Controls.Add(ViewMemberBtn);
             Controls.Add(UpdateMemberBtn);
             Controls.Add(RemoveMemberBtn);
@@ -84,6 +95,7 @@
             Name = "EmployeeLogin";
             Text = "EmployeeLogin";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -92,5 +104,6 @@
         private Button RemoveMemberBtn;
         private Button UpdateMemberBtn;
         private Button ViewMemberBtn;
+        private Label EmployeeName;
     }
 }
