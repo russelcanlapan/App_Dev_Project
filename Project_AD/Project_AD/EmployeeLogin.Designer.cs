@@ -35,6 +35,8 @@ namespace Project_AD
             UpdateMemberBtn = new Button();
             ViewMemberBtn = new Button();
             logoutButton = new Button();
+            EmployeeName = new Label();
+
             SuspendLayout();
             // 
             // AddMemberBtn
@@ -90,6 +92,14 @@ namespace Project_AD
             logoutButton.Text = "Logout";
             logoutButton.UseVisualStyleBackColor = true;
             logoutButton.Click += logoutButton_Click;
+            // label1
+            // 
+            EmployeeName.AutoSize = true;
+            EmployeeName.Location = new Point(23, 21);
+            EmployeeName.Name = "EmployeeName";
+            EmployeeName.Size = new Size(38, 15);
+            EmployeeName.TabIndex = 4;
+            EmployeeName.Text = "";
             // 
             // EmployeeLogin
             // 
@@ -97,6 +107,7 @@ namespace Project_AD
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
             Controls.Add(logoutButton);
+            Controls.Add(EmployeeName);
             Controls.Add(ViewMemberBtn);
             Controls.Add(UpdateMemberBtn);
             Controls.Add(RemoveMemberBtn);
@@ -105,6 +116,7 @@ namespace Project_AD
             Name = "EmployeeLogin";
             Text = "EmployeeLogin";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -125,5 +137,6 @@ namespace Project_AD
         private Button UpdateMemberBtn;
         private Button ViewMemberBtn;
         private Button logoutButton;
+        private Label EmployeeName;
     }
 }
