@@ -22,6 +22,7 @@ namespace Project_AD
         public EmployeeLogin()
         {
             InitializeComponent();
+            UpdateComponent();
         }
 
         public void SetEmployee(Employee employee)
@@ -35,10 +36,54 @@ namespace Project_AD
         {
             this.Hide();
 
-            EmployeeAddMemberForm employeeAddMemberForm = new EmployeeAddMemberForm();
+            SignUp employeeAddMemberForm = new SignUp();
             employeeAddMemberForm.ShowDialog();
 
-            this.Show();           
+            this.Show();
+        }
+
+        private void ViewMemberBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EmployeeViewMemberForm emp = new EmployeeViewMemberForm();
+            emp.ShowDialog();
+
+            this.Show();
+        }
+
+        private void UpdateMemberBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            UpdateProfile updateProfile = new UpdateProfile();
+            updateProfile.ShowDialog();
+
+            this.Show();
+        }
+
+        private void RemoveMemberBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+        private void logoutButton_Click(object sender, EventArgs e)
+        {
+            // Hide the EmployeeLogin form
+            this.Hide();
+
+            // Access the main form (Form1)
+            Form1 form1 = (Form1)Application.OpenForms["Form1"];
+
+            // Hide the GroupBox in Form1
+            form1.memberLoginGB.Visible = false;
+
+
+            // Show Form1 again
+            form1.Show();
+
+            // Close the MemberLogin form
+            this.Close();
         }
 
         private static bool isValidName(string Name)
@@ -63,16 +108,6 @@ namespace Project_AD
                 }
             }
             return true;
-        }
-
-        private void ViewMemberBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            EmployeeViewMemberForm emp = new EmployeeViewMemberForm();
-            emp.ShowDialog();
-
-            this.Show();
         }
     }
 }
