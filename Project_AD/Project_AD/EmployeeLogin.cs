@@ -109,5 +109,25 @@ namespace Project_AD
             }
             return true;
         }
+        
+        private void ViewMemberBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EmployeeViewMemberForm emp = new EmployeeViewMemberForm();
+            emp.ShowDialog();
+
+            this.Show();
+        }
+
+        private void RemoveMemberBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EmployeeRemoveMemberForm emp = new EmployeeRemoveMemberForm();
+            emp.ShowDialog();
+
+            this.Show();
+        }
     }
 }
