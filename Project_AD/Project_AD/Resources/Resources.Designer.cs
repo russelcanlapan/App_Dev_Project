@@ -61,11 +61,20 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to Back.
         /// </summary>
         internal static string backButton {
             get {
                 return ResourceManager.GetString("backButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string cancelButton {
+            get {
+                return ResourceManager.GetString("cancelButton", resourceCulture);
             }
         }
         
@@ -75,6 +84,15 @@ namespace Project_AD.Resources {
         internal static string checkPricesButton {
             get {
                 return ResourceManager.GetString("checkPricesButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check Prices.
+        /// </summary>
+        internal static string checkPricesLabel {
+            get {
+                return ResourceManager.GetString("checkPricesLabel", resourceCulture);
             }
         }
         
@@ -196,6 +214,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Monthly Prices: .
+        /// </summary>
+        internal static string monthlyLabel {
+            get {
+                return ResourceManager.GetString("monthlyLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Monthly.
         /// </summary>
         internal static string monthlyRB {
@@ -214,11 +241,29 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Premium: 29.99$.
+        /// </summary>
+        internal static string premiumMonthlyLabel {
+            get {
+                return ResourceManager.GetString("premiumMonthlyLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Premium.
         /// </summary>
         internal static string premiumRB {
             get {
                 return ResourceManager.GetString("premiumRB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Premium: 389.75$.
+        /// </summary>
+        internal static string premiumYearlyLabel {
+            get {
+                return ResourceManager.GetString("premiumYearlyLabel", resourceCulture);
             }
         }
         
@@ -232,6 +277,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Black Friday! Achieve your fitness goals with our best deals of the year. Join now and save big on memberships.
+        /// </summary>
+        internal static string promotionLabel {
+            get {
+                return ResourceManager.GetString("promotionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Province.
         /// </summary>
         internal static string provinceLabel {
@@ -241,11 +295,29 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Regular: 19.99$.
+        /// </summary>
+        internal static string regularMonthlyLabel {
+            get {
+                return ResourceManager.GetString("regularMonthlyLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Regular.
         /// </summary>
         internal static string regularRB {
             get {
                 return ResourceManager.GetString("regularRB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular: 259.75$.
+        /// </summary>
+        internal static string regularYearlyLabel {
+            get {
+                return ResourceManager.GetString("regularYearlyLabel", resourceCulture);
             }
         }
         
@@ -309,6 +381,15 @@ namespace Project_AD.Resources {
         internal static string viewProfileButton {
             get {
                 return ResourceManager.GetString("viewProfileButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yearly Prices:.
+        /// </summary>
+        internal static string yearlyLabel {
+            get {
+                return ResourceManager.GetString("yearlyLabel", resourceCulture);
             }
         }
         

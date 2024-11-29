@@ -30,6 +30,7 @@ namespace Project_AD
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MemberLogin));
             memberOptionsLabel = new Label();
             viewProfileButton = new Button();
             updateProfileButton = new Button();
@@ -90,6 +91,7 @@ namespace Project_AD
             checkPricesButton.TabIndex = 4;
             checkPricesButton.Text = "Check Prices";
             checkPricesButton.UseVisualStyleBackColor = true;
+            checkPricesButton.Click += checkPricesButton_Click;
             // 
             // makePaymentButton
             // 
@@ -126,6 +128,8 @@ namespace Project_AD
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(914, 600);
             Controls.Add(logoutButton);
             Controls.Add(viewNotificationsButton);

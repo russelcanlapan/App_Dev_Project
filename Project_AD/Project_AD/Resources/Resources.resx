@@ -210,4 +210,28 @@
   <data name="previousButton" xml:space="preserve">
     <value>Previous</value>
   </data>
+  <data name="checkPricesLabel" xml:space="preserve">
+    <value>Check Prices</value>
+  </data>
+  <data name="regularMonthlyLabel" xml:space="preserve">
+    <value>Regular: 19.99$</value>
+  </data>
+  <data name="premiumMonthlyLabel" xml:space="preserve">
+    <value>Premium: 29.99$</value>
+  </data>
+  <data name="promotionLabel" xml:space="preserve">
+    <value>Black Friday! Achieve your fitness goals with our best deals of the year. Join now and save big on memberships</value>
+  </data>
+  <data name="regularYearlyLabel" xml:space="preserve">
+    <value>Regular: 259.75$</value>
+  </data>
+  <data name="premiumYearlyLabel" xml:space="preserve">
+    <value>Premium: 389.75$</value>
+  </data>
+  <data name="monthlyLabel" xml:space="preserve">
+    <value>Monthly Prices: </value>
+  </data>
+  <data name="yearlyLabel" xml:space="preserve">
+    <value>Yearly Prices:</value>
+  </data>
 </root>
