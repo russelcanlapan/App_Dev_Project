@@ -68,12 +68,18 @@ namespace Project_AD
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            // Hide the current form (ViewProfile)
             this.Hide();
 
-            // Show the main form (Form1)
-            Application.OpenForms["Form1"].Show();
-
-            // Close the MemberLogin form
+            if (EmployeeLogin.ActiveForm != null)
+            {
+                Application.OpenForms["EmployeeLogin"].Show();
+            }
+            else
+            {
+                Application.OpenForms["Form1"].Show();
+            }
+            // Close the current form
             this.Close();
         }
     }
