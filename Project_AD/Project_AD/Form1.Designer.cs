@@ -128,8 +128,8 @@ namespace Project_AD
             // 
             // memberSubmitButton
             // 
-            submitButton.Location = new Point(230, 21);
-            submitButton.Margin = new Padding(3, 4, 3, 4);
+            memberSubmitButton.Location = new Point(230, 21);
+            memberSubmitButton.Margin = new Padding(3, 4, 3, 4);
             memberSubmitButton.Name = "memberSubmitButton";
             memberSubmitButton.Size = new Size(75, 23);
             memberSubmitButton.TabIndex = 2;
