@@ -9,6 +9,7 @@ namespace Project_AD
         {
             InitializeComponent();
             memberLoginGB.Visible = false;
+            employeeLoginGB.Visible = false;
         }
 
         private void languageButton_Click(object sender, EventArgs e)
@@ -42,6 +43,10 @@ namespace Project_AD
 
         private void loginMemberButton_Click(object sender, EventArgs e)
         {
+            // Hide the employee login group box if it's visible
+            employeeLoginGB.Visible = false;
+
+            // Show the member login group box
             memberLoginGB.Visible = true;
         }
 
@@ -58,17 +63,17 @@ namespace Project_AD
             this.Show();
         }
 
-
         private void loginEmployeeButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            // Hide the member login group box if it's visible
+            memberLoginGB.Visible = false;
 
+            // Show the employee login group box
+            employeeLoginGB.Visible = true;
+
+            // You can also create and show the EmployeeLogin form here if needed
             EmployeeLogin employeeForm = new EmployeeLogin();
-            employeeForm.ShowDialog();
-
-            this.Show();
         }
-
 
         private void submitButton_Click(object sender, EventArgs e)
         {
@@ -105,6 +110,47 @@ namespace Project_AD
             {
                 // Show a message to the user if the input is not a number
                 MessageBox.Show("Please enter a valid numeric Member ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void employeeSubmitButton_Click(object sender, EventArgs e)
+        {
+            int employeeId;
+
+            // Check if the input is a valid integer
+            if (int.TryParse(employeeIdTB.Text, out employeeId))
+            {
+                // Retrieve the employee data from the file or database
+                Employee employee = FileSystemAPI.GetEmployeeById(employeeId);
+
+                if (employee != null)
+                {
+                    // Hide Form1
+                    this.Hide();
+
+                    // Open EmployeeLogin form
+                    EmployeeLogin employeeLogin = new EmployeeLogin();
+
+                    employeeLogin.SetEmployee(employee);
+
+                    employeeLogin.ShowDialog();
+
+                    // Clear the TextBox after submit
+                    employeeIdTB.Text = string.Empty;
+
+                    // Show Form1 again when EmployeeLogin is closed
+                    this.Show();
+                }
+                else
+                {
+                    // Show a message if the Employee ID is not found
+                    MessageBox.Show("Invalid Employee ID. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                // Show a message to the user if the input is not a number
+                MessageBox.Show("Please enter a valid numeric Employee ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

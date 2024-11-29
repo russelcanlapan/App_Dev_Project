@@ -14,7 +14,7 @@ namespace Project_AD
         public Employee(string fName, string lName, Address address, string phoneNumber)
             : base(fName, lName, address, phoneNumber)
         {
-            EmployeeId = employeeIdCounter++.ToString();
+            EmployeeId = employeeIdCounter++.ToString(); // Auto-increment employee ID (as string)
         }
     }
 }

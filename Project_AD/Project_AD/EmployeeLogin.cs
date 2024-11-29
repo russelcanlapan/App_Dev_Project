@@ -17,9 +17,18 @@ namespace Project_AD
         Address address;
         List<Member> members;
         Membership membership;
+        public Employee _employee;  // Store the employee object
+
         public EmployeeLogin()
         {
             InitializeComponent();
+        }
+
+        public void SetEmployee(Employee employee)
+        {
+            _employee = employee;
+            // Set the EmployeeName label to the employee's full name
+            EmployeeName.Text = $"{_employee.FName} {_employee.LName}";
         }
 
         private void AddMemberBtn_Click(object sender, EventArgs e)
