@@ -210,4 +210,16 @@
   <data name="previousButton" xml:space="preserve">
     <value>Previous</value>
   </data>
+  <data name="addMemberButton" xml:space="preserve">
+    <value>Add Member</value>
+  </data>
+  <data name="removeMemberButton" xml:space="preserve">
+    <value>Remove Member</value>
+  </data>
+  <data name="updateMemberButton" xml:space="preserve">
+    <value>Update Member</value>
+  </data>
+  <data name="viewMemberButton" xml:space="preserve">
+    <value>View Member</value>
+  </data>
 </root>
