@@ -204,12 +204,32 @@
   <data name="memberIdLabel" xml:space="preserve">
     <value>Membre ID:</value>
   </data>
-  <data name="backButton" xml:space="preserve">
-    <value>Retour</value>
-  </data>
   <data name="previousButton" xml:space="preserve">
     <value>Précédent</value>
   </data>
+  <data name="checkPricesLabel" xml:space="preserve">
+    <value>Vérifier Prix</value>
+  </data>
+  <data name="regularMonthlyLabel" xml:space="preserve">
+    <value>Régulier: 19.99$</value>
+  </data>
+  <data name="premiumMonthlyLabel" xml:space="preserve">
+    <value>Prémium: 29.99$</value>
+  </data>
+  <data name="promotionLabel" xml:space="preserve">
+    <value>Vendredi noir ! Atteignez vos objectifs de remise en forme grâce à nos meilleures offres de l’année. Inscrivez-vous maintenant et économisez gros sur les adhésions</value>
+  </data>
+  <data name="regularYearlyLabel" xml:space="preserve">
+    <value>Régulier: 259.75$</value>
+  </data>
+  <data name="premiumYearlyLabel" xml:space="preserve">
+    <value>Prémium: 389.75$</value>
+  </data>
+  <data name="monthlyLabel" xml:space="preserve">
+    <value>Prix Mensuel:</value>
+  </data>
+  <data name="yearlyLabel" xml:space="preserve">
+    <value>Prix Annuel: </value>
   <data name="addMemberButton" xml:space="preserve">
     <value>Ajouter Membre</value>
   </data>

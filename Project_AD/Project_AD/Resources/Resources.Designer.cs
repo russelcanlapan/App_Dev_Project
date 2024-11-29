@@ -97,6 +97,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Check Prices.
+        /// </summary>
+        internal static string checkPricesLabel {
+            get {
+                return ResourceManager.GetString("checkPricesLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to City.
         /// </summary>
         internal static string cityLabel {
@@ -214,6 +223,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Monthly Prices: .
+        /// </summary>
+        internal static string monthlyLabel {
+            get {
+                return ResourceManager.GetString("monthlyLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Monthly.
         /// </summary>
         internal static string monthlyRB {
@@ -232,11 +250,29 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Premium: 29.99$.
+        /// </summary>
+        internal static string premiumMonthlyLabel {
+            get {
+                return ResourceManager.GetString("premiumMonthlyLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Premium.
         /// </summary>
         internal static string premiumRB {
             get {
                 return ResourceManager.GetString("premiumRB", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Premium: 389.75$.
+        /// </summary>
+        internal static string premiumYearlyLabel {
+            get {
+                return ResourceManager.GetString("premiumYearlyLabel", resourceCulture);
             }
         }
         
@@ -250,11 +286,29 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Black Friday! Achieve your fitness goals with our best deals of the year. Join now and save big on memberships.
+        /// </summary>
+        internal static string promotionLabel {
+            get {
+                return ResourceManager.GetString("promotionLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Province.
         /// </summary>
         internal static string provinceLabel {
             get {
                 return ResourceManager.GetString("provinceLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Regular: 19.99$.
+        /// </summary>
+        internal static string regularMonthlyLabel {
+            get {
+                return ResourceManager.GetString("regularMonthlyLabel", resourceCulture);
             }
         }
         
@@ -268,6 +322,14 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Regular: 259.75$.
+        /// </summary>
+        internal static string regularYearlyLabel {
+            get {
+                return ResourceManager.GetString("regularYearlyLabel", resourceCulture);
+            }
+        }
+
         ///   Looks up a localized string similar to Remove Member.
         /// </summary>
         internal static string removeMemberButton {
@@ -354,6 +416,15 @@ namespace Project_AD.Resources {
         internal static string viewProfileButton {
             get {
                 return ResourceManager.GetString("viewProfileButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yearly Prices:.
+        /// </summary>
+        internal static string yearlyLabel {
+            get {
+                return ResourceManager.GetString("yearlyLabel", resourceCulture);
             }
         }
         

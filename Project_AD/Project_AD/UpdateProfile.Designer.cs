@@ -30,6 +30,7 @@ namespace Project_AD
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateProfile));
             backButton = new Button();
             frequencyTypeGB = new GroupBox();
             yearlyRB = new RadioButton();
@@ -278,7 +279,7 @@ namespace Project_AD
             updateLabel.AutoSize = true;
             updateLabel.Location = new Point(373, 24);
             updateLabel.Name = "updateLabel";
-            updateLabel.Size = new Size(61, 20);
+            updateLabel.Size = new Size(58, 20);
             updateLabel.TabIndex = 21;
             updateLabel.Text = "Update";
             // 
@@ -286,6 +287,8 @@ namespace Project_AD
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(800, 450);
             Controls.Add(backButton);
             Controls.Add(frequencyTypeGB);

@@ -110,5 +110,17 @@ namespace Project_AD
             // Show MemberLogin again when ViewProfile is closed
             this.Show();
         }
+
+        private void checkPricesButton_Click(object sender, EventArgs e)
+        {
+            // Hide the MemberLogin form
+            this.Hide();
+
+            MemberCheckPrice memberCheckPriceForm = new MemberCheckPrice();
+
+            memberCheckPriceForm.ShowDialog();
+            
+            this.Show();
+        }
     }
 }
