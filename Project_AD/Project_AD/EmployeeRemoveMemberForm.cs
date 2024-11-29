@@ -15,11 +15,24 @@ namespace Project_AD
         public EmployeeRemoveMemberForm()
         {
             InitializeComponent();
+            UpdateComponent();
         }
 
         private void RemoveBtn_Click(object sender, EventArgs e)
         {
             FileSystemAPI.RemoveMember(int.Parse(MemberIdTB.Text));
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            // Hide the current form (ViewMemberProfile)
+            this.Hide();
+
+            // Show the employee form
+            Application.OpenForms["EmployeeLogin"].Show();
+
+            // Close the current form
+            this.Close();
         }
     }
 }

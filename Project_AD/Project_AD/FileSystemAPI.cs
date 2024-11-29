@@ -86,7 +86,7 @@ namespace Project_AD
             else
             {
                 string tempFilePath = "tempFile.txt";
-                using (StreamReader reader = new StreamReader(filePath))
+                using (StreamReader reader = new StreamReader(memberFilePath))
                 using (StreamWriter writer = new StreamWriter(tempFilePath))
                 {
                     string line;
@@ -98,8 +98,8 @@ namespace Project_AD
                         }
                     }
                 }
-                File.Delete(filePath);
-                File.Move(tempFilePath, filePath);
+                File.Delete(memberFilePath);
+                File.Move(tempFilePath, memberFilePath);
 
                 MessageBox.Show("Member removed.");
             }
