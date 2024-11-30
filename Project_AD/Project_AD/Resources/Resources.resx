@@ -207,9 +207,6 @@
   <data name="backButton" xml:space="preserve">
     <value>Back</value>
   </data>
-  <data name="previousButton" xml:space="preserve">
-    <value>Previous</value>
-  </data>
   <data name="checkPricesLabel" xml:space="preserve">
     <value>Check Prices</value>
   </data>
@@ -233,7 +230,7 @@
   </data>
   <data name="yearlyLabel" xml:space="preserve">
     <value>Yearly Prices:</value>
-    </data>
+  </data>
   <data name="addMemberButton" xml:space="preserve">
     <value>Add Member</value>
   </data>

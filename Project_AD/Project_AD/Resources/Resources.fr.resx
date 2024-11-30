@@ -204,8 +204,8 @@
   <data name="memberIdLabel" xml:space="preserve">
     <value>Membre ID:</value>
   </data>
-  <data name="previousButton" xml:space="preserve">
-    <value>Précédent</value>
+  <data name="backButton" xml:space="preserve">
+    <value>Retour</value>
   </data>
   <data name="checkPricesLabel" xml:space="preserve">
     <value>Vérifier Prix</value>
