@@ -12,6 +12,8 @@ namespace Project_AD
 {
     public partial class SignUp : Form
     {
+        public static bool IsOpenedFromEmployeeLogin = false;
+
         public SignUp()
         {
             InitializeComponent();
@@ -68,16 +70,24 @@ namespace Project_AD
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            // Hide the current form (ViewProfile)
+            // Hide the current form (SignUp)
             this.Hide();
 
-            if (EmployeeLogin.ActiveForm != null)
+            if (SignUp.IsOpenedFromEmployeeLogin)
             {
-                Application.OpenForms["EmployeeLogin"].Show();
+                // If opened from Employee Login, go back to Employee Login
+                if (EmployeeLogin.ActiveForm != null)
+                {
+                    Application.OpenForms["EmployeeLogin"].Show();
+                }
             }
             else
             {
-                Application.OpenForms["Form1"].Show();
+                // If opened from Form1, go back to Form1
+                if (Form1.ActiveForm != null)
+                {
+                    Application.OpenForms["Form1"].Show();
+                }
             }
             // Close the current form
             this.Close();
