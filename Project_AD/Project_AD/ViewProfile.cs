@@ -46,7 +46,7 @@ namespace Project_AD
                 {
                     this.Hide();
 
-                    MemberLogin memberLogin = new MemberLogin();
+                    MemberLogin memberLogin = (MemberLogin)Application.OpenForms["MemberLogin"];
 
                     memberLogin.Show();
                 }

@@ -17,6 +17,7 @@ namespace Project_AD
         {
             InitializeComponent();
             MemberId = memberId;
+            UpdateComponent();
         }
 
         private void submitButton_Click(object sender, EventArgs e)
@@ -25,7 +26,7 @@ namespace Project_AD
             MembershipType selectedMembershipType = regularRB.Checked ? MembershipType.Regular : MembershipType.Premium;
 
             string selectedFrequencyType = monthlyRB.Checked ? "Monthly" : "Yearly";
-            string memberFilePath = "members.txt"; 
+            string memberFilePath = "members.txt";
             string memberData = FileSystemAPI.GetMemberById(MemberId);
 
 
@@ -71,17 +72,17 @@ namespace Project_AD
                 MessageBox.Show("Member not found.");
             }
         }
-    private void cancelButton_Click(object sender, EventArgs e)
+
+        private void backButton_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Are you sure you would like to cancel your membership?", "Cancel?", MessageBoxButtons.YesNo);
-            switch (dr)
-            {
-                case DialogResult.Yes:
-                    FileSystemAPI.RemoveMember(MemberId);
-                    break;
-                case DialogResult.No:
-                    break;
-            }
+            // Hide the current form (ViewProfile)
+            this.Hide();
+
+            // Show the main form (Form1)
+            Application.OpenForms["MemberLogin"].Show();
+
+            // Close the current form
+            this.Close();
         }
     }
 }

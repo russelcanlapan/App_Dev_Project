@@ -1,4 +1,6 @@
-﻿namespace Project_AD
+﻿using System.Resources;
+
+namespace Project_AD
 {
     partial class MemberManage
     {
@@ -35,9 +37,8 @@
             frequencyGB = new GroupBox();
             yearlyRB = new RadioButton();
             monthlyRB = new RadioButton();
-            cancelLabel = new Label();
-            cancelButton = new Button();
             submitButton = new Button();
+            backButton = new Button();
             membershipGB.SuspendLayout();
             frequencyGB.SuspendLayout();
             SuspendLayout();
@@ -45,9 +46,9 @@
             // manageLabel
             // 
             manageLabel.AutoSize = true;
-            manageLabel.Location = new Point(348, 67);
+            manageLabel.Location = new Point(398, 89);
             manageLabel.Name = "manageLabel";
-            manageLabel.Size = new Size(120, 15);
+            manageLabel.Size = new Size(150, 20);
             manageLabel.TabIndex = 0;
             manageLabel.Text = "Manage Membership";
             // 
@@ -55,9 +56,11 @@
             // 
             membershipGB.Controls.Add(premiumRB);
             membershipGB.Controls.Add(regularRB);
-            membershipGB.Location = new Point(185, 116);
+            membershipGB.Location = new Point(211, 155);
+            membershipGB.Margin = new Padding(3, 4, 3, 4);
             membershipGB.Name = "membershipGB";
-            membershipGB.Size = new Size(200, 100);
+            membershipGB.Padding = new Padding(3, 4, 3, 4);
+            membershipGB.Size = new Size(229, 133);
             membershipGB.TabIndex = 1;
             membershipGB.TabStop = false;
             membershipGB.Text = "Membership Type";
@@ -65,9 +68,10 @@
             // premiumRB
             // 
             premiumRB.AutoSize = true;
-            premiumRB.Location = new Point(6, 56);
+            premiumRB.Location = new Point(7, 75);
+            premiumRB.Margin = new Padding(3, 4, 3, 4);
             premiumRB.Name = "premiumRB";
-            premiumRB.Size = new Size(74, 19);
+            premiumRB.Size = new Size(89, 24);
             premiumRB.TabIndex = 3;
             premiumRB.TabStop = true;
             premiumRB.Text = "Premium";
@@ -76,9 +80,10 @@
             // regularRB
             // 
             regularRB.AutoSize = true;
-            regularRB.Location = new Point(6, 22);
+            regularRB.Location = new Point(7, 29);
+            regularRB.Margin = new Padding(3, 4, 3, 4);
             regularRB.Name = "regularRB";
-            regularRB.Size = new Size(65, 19);
+            regularRB.Size = new Size(81, 24);
             regularRB.TabIndex = 3;
             regularRB.TabStop = true;
             regularRB.Text = "Regular";
@@ -88,9 +93,11 @@
             // 
             frequencyGB.Controls.Add(yearlyRB);
             frequencyGB.Controls.Add(monthlyRB);
-            frequencyGB.Location = new Point(445, 116);
+            frequencyGB.Location = new Point(509, 155);
+            frequencyGB.Margin = new Padding(3, 4, 3, 4);
             frequencyGB.Name = "frequencyGB";
-            frequencyGB.Size = new Size(200, 100);
+            frequencyGB.Padding = new Padding(3, 4, 3, 4);
+            frequencyGB.Size = new Size(229, 133);
             frequencyGB.TabIndex = 2;
             frequencyGB.TabStop = false;
             frequencyGB.Text = "Frequency Type";
@@ -98,9 +105,10 @@
             // yearlyRB
             // 
             yearlyRB.AutoSize = true;
-            yearlyRB.Location = new Point(6, 56);
+            yearlyRB.Location = new Point(7, 75);
+            yearlyRB.Margin = new Padding(3, 4, 3, 4);
             yearlyRB.Name = "yearlyRB";
-            yearlyRB.Size = new Size(56, 19);
+            yearlyRB.Size = new Size(69, 24);
             yearlyRB.TabIndex = 1;
             yearlyRB.TabStop = true;
             yearlyRB.Text = "Yearly";
@@ -109,54 +117,47 @@
             // monthlyRB
             // 
             monthlyRB.AutoSize = true;
-            monthlyRB.Location = new Point(6, 22);
+            monthlyRB.Location = new Point(7, 29);
+            monthlyRB.Margin = new Padding(3, 4, 3, 4);
             monthlyRB.Name = "monthlyRB";
-            monthlyRB.Size = new Size(70, 19);
+            monthlyRB.Size = new Size(84, 24);
             monthlyRB.TabIndex = 0;
             monthlyRB.TabStop = true;
             monthlyRB.Text = "Monthly";
             monthlyRB.UseVisualStyleBackColor = true;
             // 
-            // cancelLabel
-            // 
-            cancelLabel.AutoSize = true;
-            cancelLabel.Location = new Point(355, 339);
-            cancelLabel.Name = "cancelLabel";
-            cancelLabel.Size = new Size(113, 15);
-            cancelLabel.TabIndex = 3;
-            cancelLabel.Text = "Cancel Membership";
-            // 
-            // cancelButton
-            // 
-            cancelButton.Location = new Point(335, 366);
-            cancelButton.Name = "cancelButton";
-            cancelButton.Size = new Size(162, 23);
-            cancelButton.TabIndex = 4;
-            cancelButton.Text = "Cancel Membership";
-            cancelButton.UseVisualStyleBackColor = true;
-            cancelButton.Click += cancelButton_Click;
-            // 
             // submitButton
             // 
-            submitButton.Location = new Point(370, 222);
+            submitButton.Location = new Point(423, 317);
+            submitButton.Margin = new Padding(3, 4, 3, 4);
             submitButton.Name = "submitButton";
-            submitButton.Size = new Size(86, 23);
+            submitButton.Size = new Size(98, 31);
             submitButton.TabIndex = 5;
             submitButton.Text = "Submit";
             submitButton.UseVisualStyleBackColor = true;
             submitButton.Click += submitButton_Click;
             // 
+            // backButton
+            // 
+            backButton.Location = new Point(12, 559);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(94, 29);
+            backButton.TabIndex = 6;
+            backButton.Text = "Back";
+            backButton.UseVisualStyleBackColor = true;
+            backButton.Click += backButton_Click;
+            // 
             // MemberManage
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
+            Controls.Add(backButton);
             Controls.Add(submitButton);
-            Controls.Add(cancelButton);
-            Controls.Add(cancelLabel);
             Controls.Add(frequencyGB);
             Controls.Add(membershipGB);
             Controls.Add(manageLabel);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "MemberManage";
             Text = "ManageMembership";
             membershipGB.ResumeLayout(false);
@@ -169,6 +170,21 @@
 
         #endregion
 
+        public void UpdateComponent()
+        {
+            ResourceManager rm = new ResourceManager("Project_AD.Resources.Resources", typeof(Program).Assembly);
+
+            manageLabel.Text = rm.GetString("manageLabel");
+            premiumRB.Text = rm.GetString("premiumRB");
+            regularRB.Text = rm.GetString("regularRB");
+            yearlyRB.Text = rm.GetString("yearlyRB");
+            monthlyRB.Text = rm.GetString("monthlyRB");
+            backButton.Text = rm.GetString("backButton");
+            submitButton.Text = rm.GetString("submitButton");
+            membershipGB.Text = rm.GetString("membershipTypeGB");
+            frequencyGB.Text = rm.GetString("frequencyTypeGB");
+        }
+
         private Label manageLabel;
         private GroupBox membershipGB;
         private RadioButton premiumRB;
@@ -176,8 +192,7 @@
         private GroupBox frequencyGB;
         private RadioButton yearlyRB;
         private RadioButton monthlyRB;
-        private Label cancelLabel;
-        private Button cancelButton;
         private Button submitButton;
+        private Button backButton;
     }
 }
