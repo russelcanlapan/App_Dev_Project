@@ -131,6 +131,9 @@ namespace Project_AD
 
             memberViewNotificationsForm.ShowDialog();
 
+            this.Show();
+        }
+
         private void makePaymentButton_Click(object sender, EventArgs e)
         {
             // Hide the MemberLogin form

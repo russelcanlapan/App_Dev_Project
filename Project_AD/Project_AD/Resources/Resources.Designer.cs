@@ -358,6 +358,15 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Previous.
+        /// </summary>
+        internal static string previousButton {
+            get {
+                return ResourceManager.GetString("previousButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Black Friday! Achieve your fitness goals with our best deals of the year. Join now and save big on memberships.
         /// </summary>
         internal static string promotionLabel {
