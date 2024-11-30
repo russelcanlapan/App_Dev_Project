@@ -78,6 +78,7 @@ namespace Project_AD
             manageMembershipButton.TabIndex = 3;
             manageMembershipButton.Text = "Manage Membership";
             manageMembershipButton.UseVisualStyleBackColor = true;
+            manageMembershipButton.Click += manageMembershipButton_Click;
             // 
             // checkPricesButton
             // 

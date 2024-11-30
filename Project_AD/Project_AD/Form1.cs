@@ -92,7 +92,7 @@ namespace Project_AD
                     this.Hide();
 
                     // Open MemberLogin form
-                    MemberLogin memberLogin = new MemberLogin();
+                    MemberLogin memberLogin = new MemberLogin(int.Parse(memberIdTB.Text));
                     memberLogin.ShowDialog();
 
                     // Clear the TextBox after submit
