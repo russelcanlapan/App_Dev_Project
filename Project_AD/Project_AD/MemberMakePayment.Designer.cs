@@ -339,6 +339,8 @@ namespace Project_AD
         {
             ResourceManager rm = new ResourceManager("Project_AD.Resources.Resources", typeof(Program).Assembly);
 
+            makePaymentLabel.Text = rm.GetString("makePaymentButton");
+
             backButton.Text = rm.GetString("backButton");
 
             creditCardNumberLabel.Text = rm.GetString("cardNumber");

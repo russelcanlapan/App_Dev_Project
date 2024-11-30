@@ -1,4 +1,6 @@
-﻿namespace Project_AD
+﻿using System.Resources;
+
+namespace Project_AD
 {
     partial class MemberViewNotifications
     {
@@ -31,22 +33,33 @@
             components = new System.ComponentModel.Container();
             notificationLabel = new Label();
             notificationTimer = new System.Windows.Forms.Timer(components);
+            backButton = new Button();
             SuspendLayout();
             // 
-            // label1
+            // notificationLabel
             // 
             notificationLabel.AutoSize = true;
             notificationLabel.Location = new Point(128, 149);
-            notificationLabel.Name = "label1";
-            notificationLabel.Size = new Size(50, 20);
+            notificationLabel.Name = "notificationLabel";
+            notificationLabel.Size = new Size(0, 20);
             notificationLabel.TabIndex = 0;
-            notificationLabel.Text = "label1";
+            // 
+            // backButton
+            // 
+            backButton.Location = new Point(12, 409);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(94, 29);
+            backButton.TabIndex = 1;
+            backButton.Text = "Back";
+            backButton.UseVisualStyleBackColor = true;
+            backButton.Click += backButton_Click;
             // 
             // MemberViewNotifications
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(backButton);
             Controls.Add(notificationLabel);
             Name = "MemberViewNotifications";
             Text = "MemberViewNotifications";
@@ -56,7 +69,15 @@
 
         #endregion
 
+        public void UpdateComponent()
+        {
+            ResourceManager rm = new ResourceManager("Project_AD.Resources.Resources", typeof(Program).Assembly);
+
+            backButton.Text = rm.GetString("backButton");
+        }
+
         private Label notificationLabel;
         private System.Windows.Forms.Timer notificationTimer;
+        private Button backButton;
     }
 }
