@@ -334,17 +334,17 @@ namespace Project_AD
         private Label memberIdLabel;
 
         // The information given
-        private Label firstNameResultsLabel;
-        private Label lastNameResultsLabel;
-        private Label streetNumResultsLabel;
-        private Label streetNameResultsLabel;
-        private Label cityResultsLabel;
-        private Label provinceResultsLabel;
-        private Label zipcodeResultsLabel;
-        private Label phoneNumResultsLabel;
-        private Label membershipTypeResultsLabel;
-        private Label balanceResultsLabel;
-        private Label memberIdResultsLabel;
+        public Label firstNameResultsLabel { get; set; }
+        public Label lastNameResultsLabel { get; set; }
+        public Label streetNumResultsLabel { get; set; }
+        public Label streetNameResultsLabel { get; set; }
+        public Label cityResultsLabel { get; set; }
+        public Label provinceResultsLabel { get; set; }
+        public Label zipcodeResultsLabel { get; set; }
+        public Label phoneNumResultsLabel { get; set; }
+        public Label membershipTypeResultsLabel { get; set; }
+        public Label balanceResultsLabel { get; set; }
+        public Label memberIdResultsLabel { get; set; }
 
         // Back button
         private Button backButton;

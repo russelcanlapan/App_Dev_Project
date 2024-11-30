@@ -12,6 +12,9 @@ namespace Project_AD
 {
     public partial class ViewProfile : Form
     {
+        public static bool IsOpenedFromEmployeeLogin = false;
+        public static bool IsOpenedFromMemberLogin = false;
+
         public ViewProfile()
         {
             InitializeComponent();
@@ -20,13 +23,35 @@ namespace Project_AD
 
         private void backButton_Click(object sender, EventArgs e)
         {
-            // Hide the current form (ViewProfile)
             this.Hide();
 
-            // Show the main form (Form1)
-            Application.OpenForms["MemberLogin"].Show();
+            if (ViewProfile.IsOpenedFromEmployeeLogin)
+            {
+                // If opened from Employee Login, go back to Employee Login
+                if (EmployeeLogin.ActiveForm != null)
+                {
+                    this.Hide();
 
-            // Close the current form
+                    EmployeeLogin employeeLogin = new EmployeeLogin();
+                    employeeLogin.memberLoginGB3.Visible = false;
+
+                    employeeLogin.Show();
+                    
+                }
+            }
+            else if (ViewProfile.IsOpenedFromMemberLogin)
+            {
+                // If opened from Form1, go back to Form1
+                if (MemberLogin.ActiveForm != null)
+                {
+                    this.Hide();
+
+                    MemberLogin memberLogin = new MemberLogin();
+
+                    memberLogin.Show();
+                }
+            }
+
             this.Close();
         }
 
