@@ -49,7 +49,7 @@ namespace Project_AD
             zipcodeResultsLabel = new Label();
             phoneNumResultsLabel = new Label();
             membershipTypeResultsLabel = new Label();
-            previousButton = new Button();
+            backButton = new Button();
             balanceLabel = new Label();
             balanceResultsLabel = new Label();
             memberIdLabel = new Label();
@@ -220,14 +220,14 @@ namespace Project_AD
             // 
             // previousButton
             // 
-            previousButton.Location = new Point(14, 553);
-            previousButton.Margin = new Padding(3, 4, 3, 4);
-            previousButton.Name = "previousButton";
-            previousButton.Size = new Size(86, 31);
-            previousButton.TabIndex = 19;
-            previousButton.Text = "Previous";
-            previousButton.UseVisualStyleBackColor = true;
-            previousButton.Click += previousButton_Click;
+            backButton.Location = new Point(14, 553);
+            backButton.Margin = new Padding(3, 4, 3, 4);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(86, 31);
+            backButton.TabIndex = 19;
+            backButton.Text = "Back";
+            backButton.UseVisualStyleBackColor = true;
+            backButton.Click += backButton_Click;
             // 
             // balanceLabel
             // 
@@ -271,7 +271,7 @@ namespace Project_AD
             Controls.Add(memberIdLabel);
             Controls.Add(balanceResultsLabel);
             Controls.Add(balanceLabel);
-            Controls.Add(previousButton);
+            Controls.Add(backButton);
             Controls.Add(firstNameResultsLabel);
             Controls.Add(lastNameResultsLabel);
             Controls.Add(streetNumResultsLabel);
@@ -314,7 +314,7 @@ namespace Project_AD
             zipcodeLabel.Text = rm.GetString("zipCodeLabel");
             phoneNumLabel.Text = rm.GetString("phoneNumberLabel");
             membershipTypeLabel.Text = rm.GetString("membershipTypeGB");
-            previousButton.Text = rm.GetString("previousButton");
+            backButton.Text = rm.GetString("backButton");
             memberIdLabel.Text = rm.GetString("memberIdLabel");
 
         }
@@ -334,19 +334,19 @@ namespace Project_AD
         private Label memberIdLabel;
 
         // The information given
-        private Label firstNameResultsLabel;
-        private Label lastNameResultsLabel;
-        private Label streetNumResultsLabel;
-        private Label streetNameResultsLabel;
-        private Label cityResultsLabel;
-        private Label provinceResultsLabel;
-        private Label zipcodeResultsLabel;
-        private Label phoneNumResultsLabel;
-        private Label membershipTypeResultsLabel;
-        private Label balanceResultsLabel;
-        private Label memberIdResultsLabel;
+        public Label firstNameResultsLabel { get; set; }
+        public Label lastNameResultsLabel { get; set; }
+        public Label streetNumResultsLabel { get; set; }
+        public Label streetNameResultsLabel { get; set; }
+        public Label cityResultsLabel { get; set; }
+        public Label provinceResultsLabel { get; set; }
+        public Label zipcodeResultsLabel { get; set; }
+        public Label phoneNumResultsLabel { get; set; }
+        public Label membershipTypeResultsLabel { get; set; }
+        public Label balanceResultsLabel { get; set; }
+        public Label memberIdResultsLabel { get; set; }
 
         // Back button
-        private Button previousButton;
+        private Button backButton;
     }
 }

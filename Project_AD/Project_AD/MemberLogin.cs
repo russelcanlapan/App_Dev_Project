@@ -131,8 +131,32 @@ namespace Project_AD
 
             MemberManage memberManageMembershipForm = new MemberManage(MemberId);
             memberManageMembershipForm.ShowDialog();
+            
+            this.Show();
+        }
+        
+        private void viewNotificationsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MemberViewNotifications memberViewNotificationsForm = new MemberViewNotifications();
+
+            memberViewNotificationsForm.ShowDialog();
 
             this.Show();
+        }
+
+        private void makePaymentButton_Click(object sender, EventArgs e)
+        {
+            // Hide the MemberLogin form
+            this.Hide();
+
+            MemberMakePayment memberMakePayment = new MemberMakePayment();
+
+            memberMakePayment.ShowDialog();
+
+            this.Show();
+
         }
     }
 }

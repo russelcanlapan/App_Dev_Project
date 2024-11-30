@@ -99,7 +99,7 @@ namespace Project_AD
                             writer.WriteLine(line);
                         }
                     }
-                }
+                }   
                 File.Delete(memberFilePath);
                 File.Move(tempFilePath, memberFilePath);
 
@@ -127,6 +127,45 @@ namespace Project_AD
                 }
             }
             return null; // Member not found
+        }
+
+        public static void UpdateMember(int memberId, string firstName, string lastName, string phoneNumber,
+                                int streetNumber, string streetName, string city, string province,
+                                string zipCode, string membershipType, double balance)
+        {
+            string memberToUpdate = GetMemberById(memberId);
+            if (memberToUpdate == null)
+            {
+                MessageBox.Show("Member Not Found.");
+            }
+            else
+            {
+                string tempFilePath = "tempFile.txt";
+                using (StreamReader reader = new StreamReader(memberFilePath))
+                using (StreamWriter writer = new StreamWriter(tempFilePath))
+                {
+                    string line;
+                    while ((line = reader.ReadLine()) != null)
+                    {
+                        string[] memberData = line.Split(',');
+                        if (int.Parse(memberData[0]) == memberId)
+                        {
+                            // Update member data
+                            writer.WriteLine($"{memberId},{firstName},{lastName},{phoneNumber}," +
+                                             $"{streetNumber},{streetName},{city},{province}," +
+                                             $"{zipCode},{membershipType},{balance:F2}");
+                        }
+                        else
+                        {
+                            writer.WriteLine(line); // Write other members unchanged
+                        }
+                    }
+                }
+                File.Delete(memberFilePath);
+                File.Move(tempFilePath, memberFilePath);
+
+                MessageBox.Show("Member updated successfully.");
+            }
         }
     }
 }

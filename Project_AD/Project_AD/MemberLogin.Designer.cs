@@ -98,6 +98,7 @@ namespace Project_AD
             makePaymentButton.TabIndex = 5;
             makePaymentButton.Text = "Make Payment";
             makePaymentButton.UseVisualStyleBackColor = true;
+            makePaymentButton.Click += makePaymentButton_Click;
             // 
             // viewNotificationsButton
             // 
@@ -107,6 +108,7 @@ namespace Project_AD
             viewNotificationsButton.TabIndex = 6;
             viewNotificationsButton.Text = "View Notifications";
             viewNotificationsButton.UseVisualStyleBackColor = true;
+            viewNotificationsButton.Click += viewNotificationsButton_Click;
             // 
             // logoutButton
             // 
