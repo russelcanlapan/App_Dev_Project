@@ -133,6 +133,24 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Enter amount:.
+        /// </summary>
+        internal static string cashAmount {
+            get {
+                return ResourceManager.GetString("cashAmount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cash.
+        /// </summary>
+        internal static string cashButton {
+            get {
+                return ResourceManager.GetString("cashButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check Prices.
         /// </summary>
         internal static string checkPricesButton {
@@ -156,6 +174,24 @@ namespace Project_AD.Resources {
         internal static string cityLabel {
             get {
                 return ResourceManager.GetString("cityLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Credit Card.
+        /// </summary>
+        internal static string creditCardButton {
+            get {
+                return ResourceManager.GetString("creditCardButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Debit Card.
+        /// </summary>
+        internal static string debitCardButton {
+            get {
+                return ResourceManager.GetString("debitCardButton", resourceCulture);
             }
         }
         

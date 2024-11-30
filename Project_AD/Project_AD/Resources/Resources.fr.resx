@@ -258,4 +258,16 @@
   <data name="cardPinNumber" xml:space="preserve">
     <value>Numéro de code PIN de la carte</value>
   </data>
+  <data name="cashAmount" xml:space="preserve">
+    <value>Saisir le montant</value>
+  </data>
+  <data name="cashButton" xml:space="preserve">
+    <value>Comptant</value>
+  </data>
+  <data name="creditCardButton" xml:space="preserve">
+    <value>Carte de crédit</value>
+  </data>
+  <data name="debitCardButton" xml:space="preserve">
+    <value>Carte de débit</value>
+  </data>
 </root>
