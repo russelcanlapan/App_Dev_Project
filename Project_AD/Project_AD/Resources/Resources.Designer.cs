@@ -88,6 +88,51 @@ namespace Project_AD.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Card CVV:.
+        /// </summary>
+        internal static string cardCVV {
+            get {
+                return ResourceManager.GetString("cardCVV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Card expiration date:.
+        /// </summary>
+        internal static string cardExpirationDate {
+            get {
+                return ResourceManager.GetString("cardExpirationDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cardholder name:.
+        /// </summary>
+        internal static string cardHolderName {
+            get {
+                return ResourceManager.GetString("cardHolderName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Card number:.
+        /// </summary>
+        internal static string cardNumber {
+            get {
+                return ResourceManager.GetString("cardNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Card pin number:.
+        /// </summary>
+        internal static string cardPinNumber {
+            get {
+                return ResourceManager.GetString("cardPinNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check Prices.
         /// </summary>
         internal static string checkPricesButton {
@@ -273,15 +318,6 @@ namespace Project_AD.Resources {
         internal static string premiumYearlyLabel {
             get {
                 return ResourceManager.GetString("premiumYearlyLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Previous.
-        /// </summary>
-        internal static string previousButton {
-            get {
-                return ResourceManager.GetString("previousButton", resourceCulture);
             }
         }
         

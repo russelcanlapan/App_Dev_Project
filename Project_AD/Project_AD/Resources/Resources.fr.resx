@@ -243,4 +243,19 @@
   <data name="viewMemberButton" xml:space="preserve">
     <value>Voir Membre</value>
   </data>
+  <data name="cardNumber" xml:space="preserve">
+    <value>Numéro de carte</value>
+  </data>
+  <data name="cardHolderName" xml:space="preserve">
+    <value>Nom du titulaire de la carte</value>
+  </data>
+  <data name="cardExpirationDate" xml:space="preserve">
+    <value>Date d'expiration de la carte</value>
+  </data>
+  <data name="cardCVV" xml:space="preserve">
+    <value>Carte CVV:</value>
+  </data>
+  <data name="cardPinNumber" xml:space="preserve">
+    <value>Numéro de code PIN de la carte</value>
+  </data>
 </root>

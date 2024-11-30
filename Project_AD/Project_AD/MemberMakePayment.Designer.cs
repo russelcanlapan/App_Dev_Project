@@ -1,4 +1,6 @@
-﻿namespace Project_AD
+﻿using System.Resources;
+
+namespace Project_AD
 {
     partial class MemberMakePayment
     {
@@ -50,6 +52,7 @@
             debitCardCardHolderNameLabel = new Label();
             debitCardNumberLabel = new Label();
             cashButton = new Button();
+            backButton = new Button();
             creditCardGB.SuspendLayout();
             debitCardGB.SuspendLayout();
             SuspendLayout();
@@ -57,7 +60,7 @@
             // makePaymentLabel
             // 
             makePaymentLabel.AutoSize = true;
-            makePaymentLabel.Location = new Point(575, 33);
+            makePaymentLabel.Location = new Point(682, 29);
             makePaymentLabel.Name = "makePaymentLabel";
             makePaymentLabel.Size = new Size(86, 15);
             makePaymentLabel.TabIndex = 0;
@@ -65,7 +68,7 @@
             // 
             // creditCardButton
             // 
-            creditCardButton.Location = new Point(391, 125);
+            creditCardButton.Location = new Point(567, 125);
             creditCardButton.Name = "creditCardButton";
             creditCardButton.Size = new Size(75, 23);
             creditCardButton.TabIndex = 2;
@@ -74,7 +77,7 @@
             // 
             // debitCardButton
             // 
-            debitCardButton.Location = new Point(848, 125);
+            debitCardButton.Location = new Point(1072, 125);
             debitCardButton.Name = "debitCardButton";
             debitCardButton.Size = new Size(75, 23);
             debitCardButton.TabIndex = 3;
@@ -91,9 +94,9 @@
             creditCardGB.Controls.Add(creditCardExpirationDateLabel);
             creditCardGB.Controls.Add(creditCardCardHolderNameLabel);
             creditCardGB.Controls.Add(creditCardNumberLabel);
-            creditCardGB.Location = new Point(254, 204);
+            creditCardGB.Location = new Point(374, 213);
             creditCardGB.Name = "creditCardGB";
-            creditCardGB.Size = new Size(356, 177);
+            creditCardGB.Size = new Size(429, 177);
             creditCardGB.TabIndex = 4;
             creditCardGB.TabStop = false;
             // 
@@ -171,38 +174,38 @@
             debitCardGB.Controls.Add(debitCardExpirationDateLabel);
             debitCardGB.Controls.Add(debitCardCardHolderNameLabel);
             debitCardGB.Controls.Add(debitCardNumberLabel);
-            debitCardGB.Location = new Point(726, 204);
+            debitCardGB.Location = new Point(897, 213);
             debitCardGB.Name = "debitCardGB";
-            debitCardGB.Size = new Size(353, 177);
+            debitCardGB.Size = new Size(429, 177);
             debitCardGB.TabIndex = 5;
             debitCardGB.TabStop = false;
             // 
             // debitCardPinNumberTB
             // 
-            debitCardPinNumberTB.Location = new Point(147, 135);
+            debitCardPinNumberTB.Location = new Point(189, 135);
             debitCardPinNumberTB.Name = "debitCardPinNumberTB";
-            debitCardPinNumberTB.Size = new Size(174, 23);
+            debitCardPinNumberTB.Size = new Size(213, 23);
             debitCardPinNumberTB.TabIndex = 7;
             // 
             // debitCardExpirationDateTB
             // 
-            debitCardExpirationDateTB.Location = new Point(147, 99);
+            debitCardExpirationDateTB.Location = new Point(189, 99);
             debitCardExpirationDateTB.Name = "debitCardExpirationDateTB";
-            debitCardExpirationDateTB.Size = new Size(174, 23);
+            debitCardExpirationDateTB.Size = new Size(213, 23);
             debitCardExpirationDateTB.TabIndex = 6;
             // 
             // debitCardCardHolderNameTB
             // 
-            debitCardCardHolderNameTB.Location = new Point(147, 63);
+            debitCardCardHolderNameTB.Location = new Point(189, 63);
             debitCardCardHolderNameTB.Name = "debitCardCardHolderNameTB";
-            debitCardCardHolderNameTB.Size = new Size(174, 23);
+            debitCardCardHolderNameTB.Size = new Size(213, 23);
             debitCardCardHolderNameTB.TabIndex = 5;
             // 
             // debitCardNumberTB
             // 
-            debitCardNumberTB.Location = new Point(147, 27);
+            debitCardNumberTB.Location = new Point(189, 27);
             debitCardNumberTB.Name = "debitCardNumberTB";
-            debitCardNumberTB.Size = new Size(174, 23);
+            debitCardNumberTB.Size = new Size(213, 23);
             debitCardNumberTB.TabIndex = 4;
             // 
             // debitCardPinNumberLabel
@@ -250,11 +253,21 @@
             cashButton.Text = "Cash";
             cashButton.UseVisualStyleBackColor = true;
             // 
+            // backButton
+            // 
+            backButton.Location = new Point(12, 443);
+            backButton.Name = "backButton";
+            backButton.Size = new Size(75, 23);
+            backButton.TabIndex = 6;
+            backButton.Text = "Back";
+            backButton.UseVisualStyleBackColor = true;
+            // 
             // MemberMakePayment
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1119, 478);
+            ClientSize = new Size(1356, 478);
+            Controls.Add(backButton);
             Controls.Add(debitCardGB);
             Controls.Add(creditCardGB);
             Controls.Add(debitCardButton);
@@ -272,6 +285,23 @@
         }
 
         #endregion
+
+        public void UpdateComponent()
+        {
+            ResourceManager rm = new ResourceManager("Project_AD.Resources.Resources", typeof(Program).Assembly);
+
+            backButton.Text = rm.GetString("backButton");
+
+            creditCardNumberLabel.Text = rm.GetString("cardNumber");
+            creditCardCardHolderNameLabel.Text = rm.GetString("cardHolderName");
+            creditCardExpirationDateLabel.Text = rm.GetString("cardExpirationDate");
+            creditCardCVVLabel.Text = rm.GetString("cardCVV");
+
+            debitCardNumberLabel.Text = rm.GetString("cardNumber");
+            debitCardCardHolderNameLabel.Text = rm.GetString("cardHolderName");
+            debitCardExpirationDateLabel.Text = rm.GetString("cardExpirationDate");
+            debitCardPinNumberLabel.Text = rm.GetString("cardPinNumber");
+        }
 
         private Label makePaymentLabel;
         private Button creditCardButton;
@@ -300,5 +330,7 @@
         private Label debitCardPinNumberLabel;
 
         private Button cashButton;
+
+        private Button backButton;
     }
 }
