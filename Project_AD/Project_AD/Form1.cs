@@ -52,6 +52,7 @@ namespace Project_AD
 
         private void signupButton_Click(object sender, EventArgs e)
         {
+            SignUp.IsOpenedFromEmployeeLogin = false;
             // Hide Form1
             this.Hide();
 

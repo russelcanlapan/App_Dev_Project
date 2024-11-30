@@ -34,6 +34,8 @@ namespace Project_AD
 
         private void AddMemberBtn_Click(object sender, EventArgs e)
         {
+            SignUp.IsOpenedFromEmployeeLogin = true;
+
             this.Hide();
 
             SignUp employeeAddMemberForm = new SignUp();
@@ -113,7 +115,5 @@ namespace Project_AD
             }
             return true;
         }
-
-        
     }
 }
