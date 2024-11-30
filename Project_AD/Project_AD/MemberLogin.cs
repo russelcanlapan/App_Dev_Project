@@ -123,6 +123,14 @@ namespace Project_AD
             this.Show();
         }
 
+        private void viewNotificationsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MemberViewNotifications memberViewNotificationsForm = new MemberViewNotifications();
+
+            memberViewNotificationsForm.ShowDialog();
+
         private void makePaymentButton_Click(object sender, EventArgs e)
         {
             // Hide the MemberLogin form
@@ -133,6 +141,7 @@ namespace Project_AD
             memberMakePayment.ShowDialog();
 
             this.Show();
+
         }
     }
 }

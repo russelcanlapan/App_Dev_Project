@@ -28,12 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "MemberViewNotifications";
+            components = new System.ComponentModel.Container();
+            notificationLabel = new Label();
+            notificationTimer = new System.Windows.Forms.Timer(components);
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            notificationLabel.AutoSize = true;
+            notificationLabel.Location = new Point(128, 149);
+            notificationLabel.Name = "label1";
+            notificationLabel.Size = new Size(50, 20);
+            notificationLabel.TabIndex = 0;
+            notificationLabel.Text = "label1";
+            // 
+            // MemberViewNotifications
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(notificationLabel);
+            Name = "MemberViewNotifications";
+            Text = "MemberViewNotifications";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label notificationLabel;
+        private System.Windows.Forms.Timer notificationTimer;
     }
 }
