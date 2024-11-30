@@ -119,7 +119,19 @@ namespace Project_AD
             MemberCheckPrice memberCheckPriceForm = new MemberCheckPrice();
 
             memberCheckPriceForm.ShowDialog();
-            
+
+            this.Show();
+        }
+
+        private void makePaymentButton_Click(object sender, EventArgs e)
+        {
+            // Hide the MemberLogin form
+            this.Hide();
+
+            MemberMakePayment memberMakePayment = new MemberMakePayment();
+
+            memberMakePayment.ShowDialog();
+
             this.Show();
         }
     }

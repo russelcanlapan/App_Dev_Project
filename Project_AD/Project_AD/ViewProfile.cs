@@ -21,7 +21,7 @@ namespace Project_AD
             UpdateComponent();
         }
 
-        private void previousButton_Click(object sender, EventArgs e)
+        private void backButton_Click(object sender, EventArgs e)
         {
             this.Hide();
 
