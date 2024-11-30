@@ -119,8 +119,20 @@ namespace Project_AD
             MemberCheckPrice memberCheckPriceForm = new MemberCheckPrice();
 
             memberCheckPriceForm.ShowDialog();
-            
+
             this.Show();
+        }
+
+        private void viewNotificationsButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MemberViewNotifications memberViewNotificationsForm = new MemberViewNotifications();
+
+            memberViewNotificationsForm.ShowDialog();
+
+            this.Show();
+
         }
     }
 }

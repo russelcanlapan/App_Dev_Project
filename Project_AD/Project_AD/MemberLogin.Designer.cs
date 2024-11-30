@@ -112,6 +112,7 @@ namespace Project_AD
             viewNotificationsButton.TabIndex = 6;
             viewNotificationsButton.Text = "View Notifications";
             viewNotificationsButton.UseVisualStyleBackColor = true;
+            viewNotificationsButton.Click += viewNotificationsButton_Click;
             // 
             // logoutButton
             // 
