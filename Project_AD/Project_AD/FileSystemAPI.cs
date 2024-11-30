@@ -76,6 +76,8 @@ namespace Project_AD
             }
         }
 
+
+
         public static void RemoveMember(int memberId)   
         {
             string memberToRemove = GetMemberById(memberId);

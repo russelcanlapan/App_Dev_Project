@@ -13,10 +13,12 @@ namespace Project_AD
 {
     public partial class MemberLogin : Form
     {
-        public MemberLogin()
+        public int MemberId { get; set; }
+        public MemberLogin(int memberId)
         {
             InitializeComponent();
             UpdateComponent();
+            MemberId = memberId;
         }
 
         private void viewProfileButton_Click(object sender, EventArgs e)
@@ -119,7 +121,17 @@ namespace Project_AD
             MemberCheckPrice memberCheckPriceForm = new MemberCheckPrice();
 
             memberCheckPriceForm.ShowDialog();
-            
+
+            this.Show();
+        }
+
+        private void manageMembershipButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MemberManage memberManageMembershipForm = new MemberManage(MemberId);
+            memberManageMembershipForm.ShowDialog();
+
             this.Show();
         }
     }
