@@ -83,7 +83,7 @@ namespace Project_AD
             Form1 form1 = (Form1)Application.OpenForms["Form1"];
 
             // Hide the GroupBox in Form1
-            form1.memberLoginGB.Visible = false;
+            form1.employeeLoginGB.Visible = false;
 
             // Show Form1 again
             form1.Show();

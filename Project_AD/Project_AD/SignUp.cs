@@ -89,7 +89,6 @@ namespace Project_AD
                     Application.OpenForms["Form1"].Show();
                 }
             }
-
             // Close the current form
             this.Close();
         }
