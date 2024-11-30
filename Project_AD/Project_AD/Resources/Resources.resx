@@ -207,6 +207,9 @@
   <data name="backButton" xml:space="preserve">
     <value>Back</value>
   </data>
+  <data name="previousButton" xml:space="preserve">
+    <value>Previous</value>
+  </data>
   <data name="checkPricesLabel" xml:space="preserve">
     <value>Check Prices</value>
   </data>
@@ -230,7 +233,7 @@
   </data>
   <data name="yearlyLabel" xml:space="preserve">
     <value>Yearly Prices:</value>
-  </data>
+    </data>
   <data name="addMemberButton" xml:space="preserve">
     <value>Add Member</value>
   </data>
@@ -242,32 +245,5 @@
   </data>
   <data name="viewMemberButton" xml:space="preserve">
     <value>View Member</value>
-  </data>
-  <data name="cardNumber" xml:space="preserve">
-    <value>Card number:</value>
-  </data>
-  <data name="cardHolderName" xml:space="preserve">
-    <value>Cardholder name:</value>
-  </data>
-  <data name="cardExpirationDate" xml:space="preserve">
-    <value>Card expiration date:</value>
-  </data>
-  <data name="cardCVV" xml:space="preserve">
-    <value>Card CVV:</value>
-  </data>
-  <data name="cardPinNumber" xml:space="preserve">
-    <value>Card pin number:</value>
-  </data>
-  <data name="cashAmount" xml:space="preserve">
-    <value>Enter amount:</value>
-  </data>
-  <data name="cashButton" xml:space="preserve">
-    <value>Cash</value>
-  </data>
-  <data name="creditCardButton" xml:space="preserve">
-    <value>Credit Card</value>
-  </data>
-  <data name="debitCardButton" xml:space="preserve">
-    <value>Debit Card</value>
   </data>
 </root>

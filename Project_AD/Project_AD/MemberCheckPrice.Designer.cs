@@ -39,7 +39,6 @@ namespace Project_AD
             premiumYearlyLabel = new Label();
             monthlyLabel = new Label();
             yearlyLabel = new Label();
-            backButton = new Button();
             SuspendLayout();
             // 
             // checkPricesLabel
@@ -47,27 +46,27 @@ namespace Project_AD
             checkPricesLabel.AutoSize = true;
             checkPricesLabel.BackColor = Color.White;
             checkPricesLabel.ForeColor = SystemColors.ActiveCaptionText;
-            checkPricesLabel.Location = new Point(298, 56);
+            checkPricesLabel.Location = new Point(341, 74);
             checkPricesLabel.Name = "checkPricesLabel";
-            checkPricesLabel.Size = new Size(74, 15);
+            checkPricesLabel.Size = new Size(90, 20);
             checkPricesLabel.TabIndex = 0;
             checkPricesLabel.Text = "Check Prices";
             // 
             // regularMonthlyLabel
             // 
             regularMonthlyLabel.AutoSize = true;
-            regularMonthlyLabel.Location = new Point(49, 110);
+            regularMonthlyLabel.Location = new Point(56, 146);
             regularMonthlyLabel.Name = "regularMonthlyLabel";
-            regularMonthlyLabel.Size = new Size(86, 15);
+            regularMonthlyLabel.Size = new Size(110, 20);
             regularMonthlyLabel.TabIndex = 2;
             regularMonthlyLabel.Text = "Regular: 19.99$";
             // 
             // premiumMonthlyLabel
             // 
             premiumMonthlyLabel.AutoSize = true;
-            premiumMonthlyLabel.Location = new Point(49, 124);
+            premiumMonthlyLabel.Location = new Point(56, 166);
             premiumMonthlyLabel.Name = "premiumMonthlyLabel";
-            premiumMonthlyLabel.Size = new Size(95, 15);
+            premiumMonthlyLabel.Size = new Size(118, 20);
             premiumMonthlyLabel.TabIndex = 3;
             premiumMonthlyLabel.Text = "Premium: 29.99$";
             // 
@@ -75,67 +74,56 @@ namespace Project_AD
             // 
             promotionLabel.AutoSize = true;
             promotionLabel.BackColor = Color.ForestGreen;
-            promotionLabel.Location = new Point(2, 182);
+            promotionLabel.Location = new Point(2, 242);
             promotionLabel.Name = "promotionLabel";
-            promotionLabel.Size = new Size(588, 15);
+            promotionLabel.Size = new Size(738, 20);
             promotionLabel.TabIndex = 4;
             promotionLabel.Text = "Black Friday! Achieve your fitness goals with our best deals of the year. Join now and save big on memberships";
             // 
             // regularYearlyLabel
             // 
             regularYearlyLabel.AutoSize = true;
-            regularYearlyLabel.Location = new Point(479, 110);
+            regularYearlyLabel.Location = new Point(547, 146);
             regularYearlyLabel.Name = "regularYearlyLabel";
-            regularYearlyLabel.Size = new Size(95, 15);
+            regularYearlyLabel.Size = new Size(122, 20);
             regularYearlyLabel.TabIndex = 5;
             regularYearlyLabel.Text = "Regular:  259.75$";
             // 
             // premiumYearlyLabel
             // 
             premiumYearlyLabel.AutoSize = true;
-            premiumYearlyLabel.Location = new Point(479, 124);
+            premiumYearlyLabel.Location = new Point(547, 166);
             premiumYearlyLabel.Name = "premiumYearlyLabel";
-            premiumYearlyLabel.Size = new Size(101, 15);
+            premiumYearlyLabel.Size = new Size(126, 20);
             premiumYearlyLabel.TabIndex = 6;
             premiumYearlyLabel.Text = "Premium: 389.75$";
             // 
             // monthlyLabel
             // 
             monthlyLabel.AutoSize = true;
-            monthlyLabel.Location = new Point(49, 87);
+            monthlyLabel.Location = new Point(56, 116);
             monthlyLabel.Name = "monthlyLabel";
-            monthlyLabel.Size = new Size(92, 15);
+            monthlyLabel.Size = new Size(112, 20);
             monthlyLabel.TabIndex = 7;
             monthlyLabel.Text = "Monthly Prices: ";
             // 
             // yearlyLabel
             // 
             yearlyLabel.AutoSize = true;
-            yearlyLabel.Location = new Point(479, 87);
+            yearlyLabel.Location = new Point(547, 116);
             yearlyLabel.Name = "yearlyLabel";
-            yearlyLabel.Size = new Size(75, 15);
+            yearlyLabel.Size = new Size(93, 20);
             yearlyLabel.TabIndex = 8;
             yearlyLabel.Text = "Yearly Prices:";
             // 
-            // backButton
-            // 
-            backButton.Location = new Point(12, 303);
-            backButton.Name = "backButton";
-            backButton.Size = new Size(75, 23);
-            backButton.TabIndex = 9;
-            backButton.Text = "Back";
-            backButton.UseVisualStyleBackColor = true;
-            backButton.Click += backButton_Click;
-            // 
             // MemberCheckPrice
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(700, 338);
-            Controls.Add(backButton);
+            ClientSize = new Size(800, 450);
             Controls.Add(yearlyLabel);
             Controls.Add(monthlyLabel);
             Controls.Add(premiumYearlyLabel);
@@ -144,7 +132,6 @@ namespace Project_AD
             Controls.Add(premiumMonthlyLabel);
             Controls.Add(regularMonthlyLabel);
             Controls.Add(checkPricesLabel);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "MemberCheckPrice";
             Text = "MemberCheckPrice";
             ResumeLayout(false);
@@ -165,7 +152,6 @@ namespace Project_AD
             regularMonthlyLabel.Text = rm.GetString("regularMonthlyLabel");
             regularYearlyLabel.Text = rm.GetString("regularYearlyLabel");
             promotionLabel.Text = rm.GetString("promotionLabel");
-            backButton.Text = rm.GetString("backButton");
         }
 
         private Label checkPricesLabel;
@@ -176,7 +162,6 @@ namespace Project_AD
         private Label premiumYearlyLabel;
         private Label monthlyLabel;
         private Label yearlyLabel;
-        private Button backButton;
     }
 
 }

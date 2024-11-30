@@ -204,8 +204,8 @@
   <data name="memberIdLabel" xml:space="preserve">
     <value>Membre ID:</value>
   </data>
-  <data name="backButton" xml:space="preserve">
-    <value>Retour</value>
+  <data name="previousButton" xml:space="preserve">
+    <value>Précédent</value>
   </data>
   <data name="checkPricesLabel" xml:space="preserve">
     <value>Vérifier Prix</value>
@@ -242,32 +242,5 @@
   </data>
   <data name="viewMemberButton" xml:space="preserve">
     <value>Voir Membre</value>
-  </data>
-  <data name="cardNumber" xml:space="preserve">
-    <value>Numéro de carte</value>
-  </data>
-  <data name="cardHolderName" xml:space="preserve">
-    <value>Nom du titulaire de la carte</value>
-  </data>
-  <data name="cardExpirationDate" xml:space="preserve">
-    <value>Date d'expiration de la carte</value>
-  </data>
-  <data name="cardCVV" xml:space="preserve">
-    <value>Carte CVV:</value>
-  </data>
-  <data name="cardPinNumber" xml:space="preserve">
-    <value>Numéro de code PIN de la carte</value>
-  </data>
-  <data name="cashAmount" xml:space="preserve">
-    <value>Saisir le montant</value>
-  </data>
-  <data name="cashButton" xml:space="preserve">
-    <value>Comptant</value>
-  </data>
-  <data name="creditCardButton" xml:space="preserve">
-    <value>Carte de crédit</value>
-  </data>
-  <data name="debitCardButton" xml:space="preserve">
-    <value>Carte de débit</value>
   </data>
 </root>
