@@ -12,8 +12,15 @@ namespace Project_AD
         Premium
     }
 
+
+
     public static class MembershipTypeExtensions
     {
+        /*
+    * This method returns the monthly price for the given MembershipType.
+    * param: type
+    * return: double
+    */
         public static double MonthlyPrice(this MembershipType type)
         {
             return type switch
@@ -23,7 +30,11 @@ namespace Project_AD
                 _ => throw new System.ArgumentOutOfRangeException(nameof(type), "Invalid membership type")
             };
         }
-
+        /*
+     * This method returns the yearly price for the given MembershipType.
+     * param: type
+     * return: double
+     */
         public static double YearlyPrice(this MembershipType type)
         {
             return type switch

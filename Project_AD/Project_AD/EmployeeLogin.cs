@@ -28,6 +28,13 @@ namespace Project_AD
             UpdateComponent();
         }
 
+ /*
+ * This method sets the employee object and updates the EmployeeName label
+ * with the employee's full name.
+ * param: employee - The Employee object to be assigned.
+ * return: N/A
+ */
+
         public void SetEmployee(Employee employee)
         {
             _employee = employee;
@@ -85,7 +92,12 @@ namespace Project_AD
             // Close the MemberLogin form
             this.Close();
         }
-
+        /*
+ * This method checks if the provided name contains only valid characters:
+ * letters, spaces, and hyphens.
+ * param: Name - The name string to validate.
+ * return: bool - Returns true if the name is valid, otherwise false.
+ */
         private static bool isValidName(string Name)
         {
             foreach (char c in Name)
@@ -97,7 +109,11 @@ namespace Project_AD
             }
             return true;
         }
-
+        /*
+ * This method checks if the provided string contains only numeric digits.
+ * param: Num - The string to validate.
+ * return: bool - Returns true if the string contains only digits, otherwise false.
+ */
         private static bool isValidNumber(string Num)
         {
             foreach (char c in Num)
@@ -109,7 +125,13 @@ namespace Project_AD
             }
             return true;
         }
-
+        /*
+ * This method handles the click event for the first member submit button.
+ * It attempts to parse the Member ID from the textbox and, if valid, removes the member using the RemoveMember method.
+ * param: sender - The object that triggered the event.
+ * param: e - The event data.
+ * return: N/A
+ */
         private void memberSubmitButton1_Click(object sender, EventArgs e)
         {
             // Get the Member ID from the textbox
@@ -124,7 +146,14 @@ namespace Project_AD
                 MessageBox.Show("Please enter a valid Member ID to remove.");
             }
         }
-
+        /*
+ * This method handles the click event for the second member submit button.
+ * It checks if the input Member ID is valid, retrieves the corresponding member data,
+ * and opens the UpdateProfile form if the member is found. If not found, it displays an error message.
+ * param: sender - The object that triggered the event.
+ * param: e - The event data.
+ * return: N/A
+ */
         private void memberSubmitButton2_Click(object sender, EventArgs e)
         {
             int memberId;
@@ -162,6 +191,14 @@ namespace Project_AD
                 MessageBox.Show("Please enter a valid numeric Member ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
+
+        /*
+ * This method handles the click event for themember submit button.
+ * It checks if the Member ID is valid, retrieves the member data, and displays it in the ViewProfile form.
+ * param: sender - The object that triggered the event.
+ * param: e - The event data.
+ * return: N/A
+ */
 
         private void memberSubmitButton3_Click(object sender, EventArgs e)
         {

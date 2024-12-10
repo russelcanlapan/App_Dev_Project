@@ -74,6 +74,7 @@ namespace Project_AD
             ResourceManager rm = new ResourceManager("Project_AD.Resources.Resources", typeof(Program).Assembly);
 
             backButton.Text = rm.GetString("backButton");
+            
         }
 
         private Label notificationLabel;

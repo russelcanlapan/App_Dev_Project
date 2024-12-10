@@ -20,6 +20,14 @@ namespace Project_AD
             UpdateComponent();
         }
 
+        /*
+ * This method updates the membership type and frequency of a member based on their selection.
+ * It retrieves the member's data, updates the membership type and frequency, and writes the updated data to a temporary file.
+ * The original file is replaced with the updated file.
+ * param: sender, e
+ * return: N/A
+ */
+
         private void submitButton_Click(object sender, EventArgs e)
         {
 

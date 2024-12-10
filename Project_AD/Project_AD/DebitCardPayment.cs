@@ -16,7 +16,14 @@ namespace Project_AD
             DebitCardNumber = debitCardNumber;
         }
 
-      
+
+ /*
+ * This method processes a payment and displays a message indicating the amount
+ * and the member's full name.
+ * param: N/A
+ * return: N/A (overridden method providing specific implementation for cash payment)
+ */
+
         public override void ProcessPayment()
         {
       

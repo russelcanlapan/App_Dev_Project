@@ -15,11 +15,14 @@ namespace Project_AD
             Type = type;
         }
 
-        /// <summary>
-        /// Gets the price based on the payment frequency.
-        /// </summary>
-        /// <param name="frequencyType">Frequency of the payment, either "monthly" or "yearly".</param>
-        /// <returns>The price for the given frequency.</returns>
+        /*
+   * This method retrieves the price based on the frequency type.
+   * It returns the monthly price if the frequency is "monthly", 
+   * or the yearly price if the frequency is "yearly". 
+   * If the frequency is invalid, it throws an ArgumentException.
+   * param: frequencyType
+   * return: double
+   */
         public double GetPrice(string frequencyType)
         {
             if (frequencyType.Equals("monthly", System.StringComparison.OrdinalIgnoreCase))

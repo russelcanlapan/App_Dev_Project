@@ -76,6 +76,13 @@ namespace Project_AD
             EmployeeLogin employeeForm = new EmployeeLogin();
         }
 
+        /*
+ * This method checks if the entered Member ID is valid and attempts to retrieve the member's data.
+ * If the member is found, the MemberLogin form is opened with the member's ID.
+ * param: sender, e
+ * return: N/A
+ */
+
         private void submitButton_Click(object sender, EventArgs e)
         {
             int memberId;
@@ -113,7 +120,12 @@ namespace Project_AD
                 MessageBox.Show("Please enter a valid numeric Member ID.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
+        /*
+ * This method checks if the entered Employee ID is valid and attempts to retrieve the employee's data.
+ * If the employee is found, the EmployeeLogin form is opened with the employee's information.
+ * param: sender, e
+ * return: N/A
+ */
         private void employeeSubmitButton_Click(object sender, EventArgs e)
         {
             int employeeId;

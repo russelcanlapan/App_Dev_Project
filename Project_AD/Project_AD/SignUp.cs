@@ -22,7 +22,13 @@ namespace Project_AD
             regularRB.Checked = true;
             monthlyRB.Checked = true;
         }
-
+        /*
+ * This method handles the submission of new member data.
+ * It determines the membership type and frequency, creates a new member instance, 
+ * and saves the member information to a file.
+ * param: sender, e
+ * return: N/A
+ */
         private void submitButton_Click(object sender, EventArgs e)
         {
             MembershipType membershipType = MembershipType.Regular; // Default to Regular
@@ -67,7 +73,12 @@ namespace Project_AD
             MessageBox.Show("User information saved successfully.\n Member ID: " + newUser.MemberId);
             this.Close();
         }
-
+        /*
+ * This method handles the back button click event and navigates the user to the previous form.
+ * If opened from EmployeeLogin, it goes back to EmployeeLogin; if opened from Form1, it goes back to Form1.
+ * param: sender, e
+ * return: N/A
+ */
         private void backButton_Click(object sender, EventArgs e)
         {
             // Hide the current form (SignUp)

@@ -24,6 +24,13 @@ namespace Project_AD
             LoadMemberData();
         }
 
+        /*
+ * This method loads the existing member data from the file and populates the form fields (textboxes and radio buttons).
+ * It retrieves member data based on the provided memberId, splits it, and assigns the values to the corresponding form fields.
+ * param: N/A
+ * return: N/A
+ */
+
         private void LoadMemberData()
         {
             string memberData = FileSystemAPI.GetMemberById(memberId);
@@ -55,6 +62,14 @@ namespace Project_AD
             }
         }
 
+        /*
+ * This method handles the submission of updated member data.
+ * It retrieves the updated values from the textboxes and radio buttons, calculates the balance based on the membership and frequency type,
+ * and updates the member information in the file.
+ * param: sender, e
+ * return: N/A
+ */
+
         private void submitButton_Click(object sender, EventArgs e)
     {
         // Retrieve the updated values from the textboxes and radio buttons
@@ -75,7 +90,12 @@ namespace Project_AD
         // Update the member information in the file
         FileSystemAPI.UpdateMember(memberId, firstName, lastName, phoneNumber, streetNumber, streetName, city, province, zipCode, membershipType, balance);
     }
-
+        /*
+ * This method handles the back button click event and navigates the user to the previous form.
+ * If opened from EmployeeLogin, it goes back to EmployeeLogin; if opened from MemberLogin, it goes back to MemberLogin.
+ * param: sender, e
+ * return: N/A
+ */
         private void backButton_Click(object sender, EventArgs e)
         {
             // Hide the current form (ViewProfile)

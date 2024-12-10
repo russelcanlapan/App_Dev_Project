@@ -64,7 +64,13 @@ namespace Project_AD
             selectedPaymentMethod = "Cash";
             ResetFields();
         }
-
+        /*
+ * This method handles the submission of payment based on the selected payment method.
+ * It checks if the required fields for the selected payment method (Credit, Debit, or Cash) are filled in.
+ * If all fields are filled, a success message is displayed; otherwise, a prompt is shown to fill in the required fields.
+ * param: sender, e
+ * return: N/A
+ */
         private void submitButton_Click(object sender, EventArgs e)
         {
             if (selectedPaymentMethod == "Credit" && AreCreditCardFieldsFilled())
@@ -85,7 +91,11 @@ namespace Project_AD
             }
         }
 
-        // Method to check if all required Credit Card fields are filled
+        /*
+ * This method checks if all required Credit Card fields are filled.
+ * param: N/A
+ * return: bool - true if all Credit Card fields are filled, otherwise false
+ */
         private bool AreCreditCardFieldsFilled()
         {
             return !string.IsNullOrWhiteSpace(creditCardNumberTB.Text) &&
@@ -94,7 +104,11 @@ namespace Project_AD
                    !string.IsNullOrWhiteSpace(creditCardCvvTB.Text);
         }
 
-        // Method to check if all required Debit Card fields are filled
+        /*
+  * This method checks if all required Debit Card fields are filled.
+  * param: N/A
+  * return: bool - true if all Debit Card fields are filled, otherwise false
+  */
         private bool AreDebitCardFieldsFilled()
         {
             return !string.IsNullOrWhiteSpace(debitCardNumberTB.Text) &&
@@ -103,7 +117,11 @@ namespace Project_AD
                    !string.IsNullOrWhiteSpace(debitCardPinNumberTB.Text);
         }
 
-        // Method to check if Cash fields are filled
+        /*
+ * This method checks if Cash fields are filled.
+ * param: N/A
+ * return: bool - true if the Cash field is filled, otherwise false
+ */
         private bool AreCashFieldsFilled()
         {
             return !string.IsNullOrWhiteSpace(cashAmountTB.Text);

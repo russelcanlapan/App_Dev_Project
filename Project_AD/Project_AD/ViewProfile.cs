@@ -20,7 +20,13 @@ namespace Project_AD
             InitializeComponent();
             UpdateComponent();
         }
-
+        /*
+ * This method handles the back button click event. It determines where to navigate based on the origin of the form (EmployeeLogin or MemberLogin).
+ * If the form was opened from Employee Login, it hides the current form and navigates to EmployeeLogin.
+ * If the form was opened from MemberLogin, it hides the current form and navigates to MemberLogin.
+ * param: sender, e
+ * return: N/A
+ */
         private void backButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -54,7 +60,12 @@ namespace Project_AD
 
             this.Close();
         }
-
+        /*
+ * This method sets the member data on the ViewProfile form by assigning the provided values to corresponding labels on the form.
+ * It updates the member's information including ID, name, contact details, address, membership type, and balance.
+ * param: memberId, firstName, lastName, phoneNumber, streetNumber, streetName, city, province, zipCode, membershipType, balance
+ * return: N/A
+ */
         public void SetMemberData(string memberId, string firstName, string lastName, string phoneNumber, string streetNumber, string streetName,
                                     string city, string province, string zipCode, string membershipType, double balance)
         {

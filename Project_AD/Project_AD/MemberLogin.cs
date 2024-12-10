@@ -21,6 +21,13 @@ namespace Project_AD
             MemberId = memberId;
         }
 
+        /*
+ * This method retrieves the Member ID from the main form and opens the ViewProfile form with the member's data.
+ * If the Member ID is valid, the member's data is fetched from the file, parsed, and displayed in the ViewProfile form.
+ * param: sender, e
+ * return: N/A
+ */
+
         private void viewProfileButton_Click(object sender, EventArgs e)
         {
             // Reference to the main form (Form1) to get the Member ID TextBox
